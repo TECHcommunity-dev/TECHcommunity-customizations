@@ -1,0 +1,14 @@
+<script type="text/discourse-plugin" version="0.8">
+  const ajax = require('discourse/lib/ajax').ajax;
+  const Topic = require('discourse/models/topic').default;
+
+    api.onPageChange(() => {
+        $(window).on('load', function(){
+            $(".btn-products, .products-caret, .dd-products").click(function() {
+                $('.dd-products').toggle();
+               //event.stopPropagation();
+            });
+        }); 
+    });
+
+</script>
