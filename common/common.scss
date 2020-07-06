@@ -1,0 +1,422 @@
+/*Customize topics in a news category*/
+
+//hide avatar flair
+.category-news .avatar-flair,
+.category-news .tl-avatar-flair {
+    display: none !important;
+}
+
+//remove author info if it is a regular user
+body.category-news:not(.staff) #post_1 .trigger-user-card,
+body.category-news:not(.staff) #post_1 .topic-avatar {
+    display:none;
+}
+
+body.category-news:not(.staff) #post_1 .topic-meta-data {
+    margin-left: -7px !important;   
+}
+
+//hide suggested topic and share\bookmark\flag\notification buttons
+.category-news #topic-footer-buttons,
+.category-news .suggested-topics-wrapper {
+    display: none;
+}
+
+.category-news .topic-status-info {
+    border-top: 0 !important;
+}
+
+/*end customize topics*/
+
+/*Customize tags page*/
+
+//make tags box wider
+.tags-list .discourse-tag {
+	max-width: 15em !important;
+}
+
+.tags-list .tag-box {
+    width: 270px;
+}
+
+.tags-list {
+    margin-top: 1em!important;
+}
+
+//move sort by option
+.tag-sort-options {
+	float: right;
+	margin-top: -37px;
+	margin-right: 80px;
+}
+
+/*end customize tags page*/
+
+/*small misc changes*/
+
+//make category description wider
+.category-title-contents {
+	max-width: 1000px !important;
+}
+
+
+//make solved checkbox green and bigger
+.topic-statuses {
+    margin-bottom: -5px;
+}
+.d-icon-far-check-square {
+    color: #7fc02a; //color: #ffffff;
+    height: 0.96em !important;
+    width: 0.91em !important;
+    //background-color: #7fc02a;
+    //border-radius: 3px;
+    margin-top: 0.16em;
+    //margin-bottom: 0px;
+}
+.topic-list-icons .d-icon-thumbtack.unpinned, .latest-topic-list .d-icon-thumbtack.unpinned, .top-topic-list .d-icon-thumbtack.unpinned, .topic-list .d-icon-thumbtack.unpinned {
+    top: -2px;
+}
+
+//make smaller solved/unsolved dropdown filter on forum discussion category
+.solved-status-filter .select-kit,
+.solved-status-filter .select-kit-collection{
+	min-width: 73px !important;
+}
+
+
+//hide views column on home page
+.topic-list .views {
+    display: none;
+}
+
+//hide no-tags option in tags dropdown menu
+.select-kit.combo-box.tag-drop .select-kit-row[data-value="no-tags"] {
+    display: none;
+}
+
+//make tags box wider just on topic pages
+.link-bottom-line .discourse-tag,
+.topic-header-extra .discourse-tag{
+	max-width: 20em !important;
+}
+
+
+//change places of tags and categories dropdown menus
+ol.category-breadcrumb {
+    display: flex !important;
+}
+
+ol.category-breadcrumb .tag-drop {
+    order: 1;
+}
+ol.category-breadcrumb .category-drop {
+    order: 2;
+}
+
+ol.category-breadcrumb .solved-status-filter {
+    order: 3;
+}
+
+.category-news .topic-body,p
+.category-knowlege-base .topic-body {
+    background-color: #ffffff !important;
+}
+
+
+//custom CSS for tables and links in posts
+[data-techcommunity-table] table td {
+    border: 1px solid #e9e9e9;
+} 
+
+[data-techcommunity-button] a {
+    border-radius: 15px 0 15px 0;
+    color: #ffffff;
+    background-color: #0899cc;
+    padding: 8px 20px;
+    font-size: 1.6rem;
+}
+
+[data-techcommunity-product-tags] a {
+    color: #000000;
+    background-color: #e9e9e9;
+    padding: 8px 12px;
+    line-height: 1.1;
+    font-size: 1rem;
+    vertical-align: -webkit-baseline-middle;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+//hide number of clicks displayed after links
+.clicks {
+    display: none;
+}
+
+//hide edits on news topic for non staff
+body.category-news:not(.staff) .topic-area .edits {
+	display: none;
+}
+
+//move date on news topic for non staff
+body.category-news:not(.staff) .topic-meta-data {
+	float: right;
+	margin-top: -38px;
+}
+
+body.category-news:not(.staff) #topic-title {
+    margin-bottom: 0px !important;
+}
+
+//hide replies column in news category
+body.category-news .topic-list .posts {
+    display: none;
+}
+
+
+//change color of links in titles
+.topic-body h1 a, .topic-body h2 a, .topic-body h3 a, .topic-body h4 a, .topic-body h5 a, .topic-body h6 a {
+    color: #222 !important;
+}
+
+//hide tag info button 
+body:not(.staff) #show-tag-info {
+    display: none !important;
+}
+
+//Versatile banner custom style
+.single-box a {
+    color: #011f3d !important;
+    background-color: #f2f2ea;
+    display: block;
+    width: 250px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.single-box a:hover {
+    box-shadow: 1px 1px 3px 1px #ffffff3d;
+    color: #9a50f8 !important;
+}
+
+//change background color and font size on tag sidebar
+.tag-title-header {
+    background-color: #f2f2ea !important;
+}
+
+.tag-title-header .tag-title-contents h1 {
+    font-size: 1.22em !important;
+    text-transform: uppercase;
+}
+
+#banner {
+    background-color: #f2f2ea;
+}
+
+.custom-footer {
+    background: #011f3d !important;
+}
+
+.cc-color-override--659527902.cc-window {
+    background: #1c5569 !important;
+    border-top: 1px solid #fff;
+}
+.cc-color-override--659527902 .cc-btn {
+    //background: #1cd469 !important;
+    background: #D9EC27 !important;
+}
+
+.signup-cta {
+    margin-bottom: 1em !important;
+}
+
+//hide delete my account button on user preferences page
+.user-preferences-page .delete-account .btn-danger {
+	display: none !important;
+}
+
+/*end small misc changes*/
+
+
+/*New topic button*/
+
+//place create new topic button on forum discussions topic pages and change its style
+#new-create-topic {
+    float: right;
+    font-size: 1.1487em !important;
+    background-color: #3cc1b7 !important;
+    color: #011f3d !important;
+    font-weight: bold !important;
+}
+
+#new-create-topic .svg-icon {
+    color: #011f3d !important;
+   // height: 0.8em !important;
+    width: 0.8em !important;
+}
+
+//change create topic button style on homepage
+#create-topic {
+    background-color: #3cc1b7 !important;
+    color: #011f3d !important;
+    font-weight: bold !important;
+}
+
+#create-topic .svg-icon {
+    color: #011f3d !important;
+ //   height: 0.8em !important;
+    width: 0.8em !important;
+ //   vertical-align: 0 !important;
+}
+
+
+body.category-news:not(.staff) #new-create-topic,
+body.category-news:not(.staff) #create-topic,
+html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
+    display: none !important;
+}
+
+@media (max-width: 850px){
+#new-create-topic span {
+    display: inline-block !important;
+}
+}
+
+/*end New topic button*/
+
+
+/*Try free button and dropdown menu in header*/
+
+.try-free a {
+    padding: 6px 18px 5px 18px !important;
+    font-weight: bold !important;
+    margin-right: 5px;
+    //background-color: #3cc1b7;
+    background-color: #d9ec27;
+    color: #011f3d !important;
+    display: inline-block;
+    line-height: 1;
+    font-size: 14px !important;
+}
+.dropdown-try-free-menu {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 1px;
+    width: 280px;
+    padding: 15px 0;
+    margin: -55px;
+    list-style: none;
+    background: #ffffff;
+    background-clip: border-box;
+    border: 1px #ccc solid;
+    z-index: 1001;
+}
+
+.dd-try-free {
+    color: #fff;
+    margin-left: 25px;
+}
+
+.dd-try-free a {
+    color: #333 !important;
+}
+
+.custom-header-links .try-free {
+    padding: 24px 0px;
+}
+.custom-header-links:hover+.dropdown-try-free-menu,
+.dropdown-try-free-menu:hover {
+	display: block !important;
+}
+
+/*End try free button and dropdown menu in header*/
+
+/*tag-sidebar custom style*/
+body.custom-sidebar .tag-sidebar {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background-color: #f2f2ea;
+    color: #000;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+body.custom-sidebar .tag-sidebar .cooked {
+    max-width: 1100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+body.custom-sidebar .wrap::before {
+    display: none !important;
+}
+
+body.custom-sidebar #navigation-bar a[href='/top'],
+body.custom-sidebar #navigation-bar a[href='/categories']{
+    display: none;
+}
+
+//.custom-sidebar .latest-topics-link,
+//.custom-sidebar .new-topics-link,
+//.custom-sidebar .unread-topics-link,
+//.custom-sidebar .top-topics-link,
+//.custom-sidebar .category-drop,
+.custom-sidebar .tag-title-header,
+body.category-header .tag-sidebar,
+body.navigation-topics .tag-sidebar {
+    display: none !important;
+}
+
+.tag-sidebar [data-techcommunity-product-tags] a {
+    background-color: #fff !important;
+}
+
+.tag-sidebar [data-techcommunity-product-tags] a:hover {
+    color: #fff !important;
+    background: #9a50f8 !important;
+    transition: all .3s ease;
+}
+
+/*end tag-sidebar custom style*/
+
+
+/*webmethods tag-sidebar box elements style*/
+div[data-webmethods-tag-box] {
+    border: 3px solid #ccc;
+	width: 300px;
+	height: 190px;
+	margin: 0 16px 16px 0;
+    display: inline-table;
+    background-color: #fff;
+}
+ 
+div[data-webmethods-tag-box] h3 {
+    color: #000 !important;
+    text-align: center;
+    margin-top: 15px !important;
+}
+
+div[data-webmethods-tag-box-element] {
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+div[data-webmethods-tag-box-element] a {
+    display: block;
+	color: #787878 !important;
+	text-decoration: none;
+	text-align: left;
+}
+
+.tag-sidebar-webMethods .cooked {
+    text-align: center;
+}
+
+.tag-sidebar .tag-sidebar-webMethods a:hover {
+    color: #9a50f8 !important; 
+    transition: all .3s ease;
+}
+/*End webmethods tag-sidebar box elements style*/
+
