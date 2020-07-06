@@ -1,0 +1,349 @@
+<script type="text/discourse-plugin" version="0.8">
+  
+
+/*Products dropdown menu in header*/  
+const h = require("virtual-dom").h;
+const dropdownMenu = [];
+const products = [];
+const integration = [];
+const iot = [];
+const adanat = [];
+const transformation = [];
+
+products.push(
+    h (
+        'div.btn-products', "Products"
+      ),
+     h(
+        'span.products-caret'
+      )
+    )
+
+api.decorateWidget("home-logo:after", helper => {
+    return h(
+      'div.products', products
+    );
+  });
+
+  
+  integration.push(
+     h(
+         `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-title',
+            {
+                href:'/tag/webMethods'
+                
+            }, 
+            "Integration & APIs"  
+        )
+         
+    ),
+     h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Integration-and-ESB'
+                
+            }, 
+            "webMethods Integration"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/B2B-Integration'
+                
+            }, 
+            "webMethods B2B"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/API-Management'
+                
+            }, 
+            "webMethods API Management"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Mainframe-Integration'
+                
+            }, 
+            "Mainframe & Data Integration"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/webMethods-io-integration'
+                
+            }, 
+            "webMethods.io Integration"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/webMethods-io-B2B'
+                
+            }, 
+            "webMethods.io B2B"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/webMethods-io-API'
+                
+            }, 
+            "webMethods.io API"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/webMethods'
+                
+            }, 
+            "webMethods General"  
+        )
+    )
+)
+ 
+ iot.push(
+     h(
+         `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-title',
+            {
+                href:'/tag/IoT'
+                
+            }, 
+            "IoT & Analytics"  
+        )
+         
+    ),
+     h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Cumulocity-IoT'
+                
+            }, 
+            "Cumulocity IoT"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/TrendMiner'
+                
+            }, 
+            "TrendMiner"  
+        )
+    )
+)
+
+adanat.push(
+    h(
+        `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-title',
+            {
+                href:'/tag/Adabas-Natural'
+                
+            }, 
+            "Adabas & Natural"  
+        )
+    ),
+     h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Adabas'
+                
+            }, 
+            "Adabas"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Natural'
+                
+            }, 
+            "Natural"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/NaturalONE'
+                
+            }, 
+            "NaturalONE"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Adabas-Natural-Cloud'
+                
+            }, 
+            "Cloud & Containers"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/tag/Mainframe-Integration'
+                
+            }, 
+            "Integration"  
+        )
+    )
+)
+
+transformation.push(
+    h(
+         `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-title',
+            {
+                href:'/t/process-it-transformation'
+                
+            }, 
+            "Transformation"  
+        )
+    ),
+     h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'https://tech.forums.softwareag.com/ariscommunity'//, 
+                //target:'_blank'
+                
+            }, 
+            "ARIS"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/t/alfabet-or-alfabet-fastlane-customer'
+            }, 
+            "Alfabet"  
+        )
+    ),
+    h(
+          `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-item',
+            {
+                href:'/t/alfabet-fastlane-user/'
+            }, 
+            "Alfabet FastLane"  
+        )
+    )
+)
+
+  dropdownMenu.push(
+     h(
+          'ul.dd-products-integration', integration
+    ),
+    h(
+          'ul.dd-products-iot', iot
+    ),
+    h(
+          'ul.dd-products-adanat', adanat
+    ),
+    h(
+          'ul.dd-products-transformation', transformation
+    )
+)
+
+  
+api.decorateWidget("home-logo:after", helper => {
+    return h(
+      'div.dd-products', dropdownMenu
+    );
+  });
+  
+  
+/*End products dropdown menu in header*/
+
+</script>
+
+<script type="text/discourse-plugin" version="0.8">
+  const ajax = require('discourse/lib/ajax').ajax;
+  const Topic = require('discourse/models/topic').default;
+  // We're using ajax and the Topic model from Discourse
+
+  api.registerConnectorClass('above-main-container', 'featured-topics', {
+    // above-main-container is the plugin outlet,
+    // featured-topics is your custom component name
+
+    setupComponent(args, component) {
+
+      api.onPageChange((url, title) => {
+        if ((url == "/") || (url == "/categories") ){
+        // on page change, check if url matches
+        // if your homepage isn't /latest change this to /categories
+        
+          $('html').addClass('custom-featured-topics');
+          // add a class to the HTML tag for easy CSS targetting
+
+          component.set('displayfeaturedTopics', true);
+          // we'll use this later to show our template
+
+        } 
+        else {
+        // If the page doesn't match the urls above, do this:
+
+          $('html').removeClass('custom-featured-topics');
+          // Remove our custom class
+
+          component.set('displayfeaturedTopics', false);
+          // Don't display our customization
+        }
+      });
+     }
+  });
+  
+  
+</script>
+
