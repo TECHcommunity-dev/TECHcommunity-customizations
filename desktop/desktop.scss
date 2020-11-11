@@ -159,7 +159,7 @@ div#adanat ul{
 
 
 .topic-area #new-create-topic {
-    margin-top: -67px !important;
+    margin-top: -29px !important;
 }
 
 #banner-content ul {
@@ -197,3 +197,7 @@ div#adanat ul{
     width: 88% !important;
 }
 /*end Customize topics in a news category*/
+
+div[class^="category-title-header"] {
+    padding-top: 0 !important;
+}
