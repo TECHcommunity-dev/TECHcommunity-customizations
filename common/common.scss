@@ -106,12 +106,12 @@ ol.category-breadcrumb {
     display: flex !important;
 }
 
-ol.category-breadcrumb .tag-drop {
+/*ol.category-breadcrumb .tag-drop {
     order: 1;
 }
 ol.category-breadcrumb .category-drop {
     order: 2;
-}
+}*/
 
 ol.category-breadcrumb .solved-status-filter {
     order: 3;
@@ -415,4 +415,21 @@ div[data-webmethods-tag-box-element] a {
 /*Navigation changes*/
 .d-header {
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.12) !important;
+}
+
+/*End navigation changes*/
+
+body.category.archetype-regular.category-knowlege-base .cooked h1, 
+body.category.archetype-regular.category-knowlege-base .cooked h2, 
+body.category.archetype-regular.category-knowlege-base .cooked h3, 
+body.category.archetype-regular.category-knowlege-base .cooked h4, 
+body.category.archetype-regular.category-knowlege-base .cooked h5, 
+.cooked h6, 
+.d-editor-preview h1, 
+body.category.archetype-regular.category-knowlege-base .d-editor-preview h2, 
+body.category.archetype-regular.category-knowlege-base .d-editor-preview h3, 
+body.category.archetype-regular.category-knowlege-base .d-editor-preview h4, 
+body.category.archetype-regular.category-knowlege-base .d-editor-preview h5, 
+body.category.archetype-regular.category-knowlege-base .d-editor-preview h6 {
+    margin: 24px 0 10px;
 }
