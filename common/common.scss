@@ -16,6 +16,10 @@ body.category-news:not(.staff) #post_1 .topic-meta-data {
     margin-left: -7px !important;   
 }
 
+body.category-news #topic-title {
+    justify-content: normal !important;
+}
+
 //hide suggested topic and share\bookmark\flag\notification buttons
 .category-news #topic-footer-buttons,
 .category-news .suggested-topics-wrapper {
