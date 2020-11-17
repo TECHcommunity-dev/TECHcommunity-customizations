@@ -160,7 +160,11 @@ body.category-news:not(.staff) .topic-area .edits {
 //move date on news topic for non staff
 body.category-news:not(.staff) .topic-meta-data {
 	float: right;
-	margin-top: -38px;
+	margin-top: -29px;
+}
+
+body.category-news .topic-area .returning-user {
+    display: none;
 }
 
 body.category-news:not(.staff) #topic-title {
