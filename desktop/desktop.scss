@@ -204,3 +204,15 @@ div[class^="category-title-header"] {
 .container.posts .topic-navigation {
     margin-left: -3em !important;
 }
+
+div.poll .poll-info {
+    display: none !important;
+}
+
+div.poll {
+    width: 101% !important;
+}
+
+div.poll .poll-container {
+    border-right: unset ! important;
+}
