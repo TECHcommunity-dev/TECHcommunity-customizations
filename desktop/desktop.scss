@@ -216,3 +216,33 @@ div.poll {
 div.poll .poll-container {
     border-right: unset ! important;
 }
+
+div[data-wrap="webmethods-int-trial"] img {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+div[data-wrap="webmethods-int-trial"] {
+    border-bottom: 3px solid var(--primary);
+}
+
+div[data-wrap="webmethods-int-trial"] p {
+    margin-bottom: 30px;
+}
+
+div[data-wrap="webmethods-int-trial"] a:first-child {
+	float: left;
+	margin-right: 20px;
+}
+
+div[data-wrap="webmethods-int-trial"] h2 {
+    margin-bottom: -24px;
+}
+
+div[data-wrap="iframe-terracotta-form"] iframe {
+	border: unset !important;
+}
+
+body.published-page .published-page-author {
+	display: none !important;
+}
