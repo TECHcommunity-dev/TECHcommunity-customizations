@@ -1,6 +1,5 @@
 <script type="text/javascript">
-
-$(window).load(function() {
+$( document ).ready(function() {
     if ( $('body.archetype-regular.category-news:not(.staff) .topic-status').attr('title') == 'This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link' ) {
         $('body.archetype-regular.category-news:not(.staff) .topic-category').css("display", "none");
         $('body.archetype-regular.category-news:not(.staff) .topic-status').css("display", "none");
