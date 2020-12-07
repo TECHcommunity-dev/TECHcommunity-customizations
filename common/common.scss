@@ -446,6 +446,6 @@ body.category.archetype-regular.category-knowlege-base .d-editor-preview h6 {
     padding-top: 0px !important;
 }
 
-body.archetype-regular.category-news span[title="This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link"] {
+body.archetype-regular.category-news:not(.staff) span[title="This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link"] {
     display: none !important;
 }
