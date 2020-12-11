@@ -449,3 +449,7 @@ body.category.archetype-regular.category-knowlege-base .d-editor-preview h6 {
 body.archetype-regular.category-news:not(.staff) span[title="This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link"] {
     display: none !important;
 }
+
+iframe {
+    max-width: unset !important;
+}
