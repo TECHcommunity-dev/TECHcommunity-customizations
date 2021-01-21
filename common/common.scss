@@ -453,3 +453,126 @@ body.archetype-regular.category-news:not(.staff) span[title="This topic is unlis
 iframe {
     max-width: unset !important;
 }
+
+/*Alfabet user group category changes*/
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .default,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .posters,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .posts,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .likes,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .views,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .activity,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings #navigation-bar,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .tag-drop,
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings .solved-status-filter,
+
+body.category.category-alfabet-alfabet-release-information .topic-list .default,
+body.category.category-alfabet-alfabet-release-information .topic-list .posters,
+body.category.category-alfabet-alfabet-release-information .topic-list .posts,
+body.category.category-alfabet-alfabet-release-information .topic-list .likes,
+body.category.category-alfabet-alfabet-release-information .topic-list .views,
+body.category.category-alfabet-alfabet-release-information .topic-list .activity,
+body.category.category-alfabet-alfabet-release-information #navigation-bar,
+body.category.category-alfabet-alfabet-release-information .tag-drop,
+body.category.category-alfabet-alfabet-release-information .solved-status-filter,
+
+body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .default,
+body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .posters,
+body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .posts,
+body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .likes,
+body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .views,
+body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .activity,
+body.category.category-alfabet-alfabet-cookbook-use-cases #navigation-bar,
+body.category.category-alfabet-alfabet-cookbook-use-cases .tag-drop,
+body.category.category-alfabet-alfabet-cookbook-use-cases .solved-status-filter,
+
+body.category.category-alfabet-alfabet-user-group-meetings .topic-list .default,
+body.category.category-alfabet-alfabet-user-group-meetings .topic-list .posters,
+body.category.category-alfabet-alfabet-user-group-meetings .topic-list .posts,
+body.category.category-alfabet-alfabet-user-group-meetings .topic-list .likes,
+body.category.category-alfabet-alfabet-user-group-meetings .topic-list .views,
+body.category.category-alfabet-alfabet-user-group-meetings .topic-list .activity,
+body.category.category-alfabet-alfabet-user-group-meetings #navigation-bar,
+body.category.category-alfabet-alfabet-user-group-meetings .tag-drop,
+body.category.category-alfabet-alfabet-user-group-meetings .solved-status-filter,
+
+body.category.category-alfabet-alfabet-newsletter .topic-list .default,
+body.category.category-alfabet-alfabet-newsletter .topic-list .posters,
+body.category.category-alfabet-alfabet-newsletter .topic-list .posts,
+body.category.category-alfabet-alfabet-newsletter .topic-list .likes,
+body.category.category-alfabet-alfabet-newsletter .topic-list .views,
+body.category.category-alfabet-alfabet-newsletter .topic-list .activity,
+body.category.category-alfabet-alfabet-newsletter #navigation-bar,
+body.category.category-alfabet-alfabet-newsletter .tag-drop,
+body.category.category-alfabet-alfabet-newsletter .solved-status-filter,
+
+body.category.category-alfabet .tag-drop,
+body.category.category-alfabet .solved-status-filter,
+body.category.category-alfabet #navigation-bar,
+body.category.category-alfabet .category-box .category-details .description,
+body.category.category-alfabet .category-box .category-details .category-box-heading .d-icon,
+body.category.category-alfabet #banner,
+body.category.category-alfabet .topic-list,
+body.category.category-alfabet #main-outlet footer.topic-list-bottom
+{
+	display: none !important;
+}
+
+body.category.category-alfabet .category-boxes .category-box {
+    width: 30% !important;
+}
+
+body.category.category-alfabet .category-boxes .category-box .category-box-inner {
+    padding: 3em !important;
+}
+
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings #new-create-topic,
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .topic-meta-data,
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .topic-avatar,
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .timeline-container,
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .suggested-topics-wrapper,
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings #banner,
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .topic-notifications-button .reason,
+
+body.archetype-regular.category-alfabet-alfabet-release-information #new-create-topic,
+body.archetype-regular.category-alfabet-alfabet-release-information .topic-meta-data,
+body.archetype-regular.category-alfabet-alfabet-release-information .topic-avatar,
+body.archetype-regular.category-alfabet-alfabet-release-information .timeline-container,
+body.archetype-regular.category-alfabet-alfabet-release-information .suggested-topics-wrapper,
+body.archetype-regular.category-alfabet-alfabet-release-information #banner,
+body.archetype-regular.category-alfabet-alfabet-release-information .topic-notifications-button .reason,
+
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases #new-create-topic,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .topic-meta-data,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .topic-avatar,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .timeline-container,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .suggested-topics-wrapper,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases #banner,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .topic-notifications-button .reason,
+
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings #new-create-topic,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .topic-meta-data,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .topic-avatar,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .timeline-container,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .suggested-topics-wrapper,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings #banner,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .topic-notifications-button .reason,
+
+body.archetype-regular.category-alfabet-alfabet-newsletter #new-create-topic,
+body.archetype-regular.category-alfabet-alfabet-newsletter .topic-meta-data,
+body.archetype-regular.category-alfabet-alfabet-newsletter .topic-avatar,
+body.archetype-regular.category-alfabet-alfabet-newsletter .timeline-container,
+body.archetype-regular.category-alfabet-alfabet-newsletter .suggested-topics-wrapper,
+body.archetype-regular.category-alfabet-alfabet-newsletter #banner,
+body.archetype-regular.category-alfabet-alfabet-newsletter .topic-notifications-button .reason{
+    display: none !important;
+}
+/*End Alfabet user group category changes*/
+
+div[data-wrap="webmethods-int-trial"] a:first-child {
+    margin-top: -15px;
+}
+
+div[data-wrap="webmethods-int-trial"] img {
+    width: 115px !important;
+    height: 115px !important;
+}
