@@ -10,6 +10,16 @@ const iot = [];
 const adanat = [];
 const transformation = [];
 
+const forumblog = [];
+
+const sections = [];
+const dropdownMenuSections = [];
+const knowledgeBase = [];
+const forum = [];
+const news = [];
+const feedback = [];
+
+
 products.push(
     h (
         'div.btn-products', "Products"
@@ -18,6 +28,7 @@ products.push(
         'span.products-caret'
       )
     )
+    
 
 api.decorateWidget("home-logo:after", helper => {
     return h(
@@ -314,6 +325,130 @@ api.decorateWidget("home-logo:after", helper => {
     );
   });
   
+sections.push(
+    h (
+        'div.btn-sections', "Sections"
+      ),
+     h(
+        'span.sections-caret'
+      )
+    )
+	
+api.decorateWidget("home-logo:after", helper => {
+    return h(
+      'div.sections', sections
+    );
+  });
+  
+  
+knowledgeBase.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/c/knowledge-base/6'
+                
+            }, 
+            "Knowledge base"
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Tips, tricks and code from the Community"  
+        )
+    )
+)
+
+forum.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/c/forum/1'
+                
+            }, 
+            "Forum"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Questions, answers and product discussions"  
+        )
+    )
+)
+
+news.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/c/news/7'
+                
+            }, 
+            "News"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Get the latest Software AG news and announcements"  
+        )
+    )
+)
+
+feedback.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/c/feedback/2'
+                
+            }, 
+            "Feedback"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Discussion about this site, organization, how it works, how we can impove it."  
+        )
+    )
+)
+ dropdownMenuSections.push(
+    h(
+          'ul.dd-sections-knowledgeBase', knowledgeBase
+    ),
+    h(
+          'ul.dd-sections-forum', forum
+    ),
+    h(
+          'ul.dd-sections-news', news
+    ),
+    h(
+          'ul.dd-sections-feedback', feedback
+    )
+)
+
+api.decorateWidget("home-logo:after", helper => {
+    return h(
+      'div.dd-sections', dropdownMenuSections
+    );
+  });
+
   
 /*End products dropdown menu in header*/
 
