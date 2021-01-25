@@ -77,9 +77,16 @@
     //width: 520px;
 }
 
+.d-header .d-header-icons .search-dropdown {	
+    position: absolute !important;	
+    right: 310px;	
+}
+
 //hide products dropdown menu on topic page
 header.hide-menus .products,
-header.hide-menus .products-caret {
+header.hide-menus .products-caret,
+header.hide-menus .btn-forum-blog,
+header.hide-menus .search-dropdown {
     display: none;
 }
 
