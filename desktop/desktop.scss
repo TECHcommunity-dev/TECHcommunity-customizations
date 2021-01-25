@@ -67,6 +67,16 @@
 	display: inline-block !important;
 }
 
+.products:hover .products-caret {
+    border-top-color: #9a50f8 !important;
+}
+
+.products:hover .btn-products,
+.btn-products:hover,
+.btn-products:hover a{
+    color: #9a50f8 !important;
+}
+
 .search-header {
     margin-left: 225px !important;
 }
