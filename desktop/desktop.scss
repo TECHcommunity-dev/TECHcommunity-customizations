@@ -2,32 +2,33 @@
 
 .products {
     position: absolute;
-    margin-left: 50px;
+    margin-left: 400px;
     padding-left: 40px;
     padding-right: 50px;
-    padding-top: 18px;
+    padding-top: 23px;
     top: 0;
     height: 50px;
     cursor: pointer;
 }
 
 .btn-products {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #787878;
+    font-size: 1em;
     text-transform: uppercase;
     height: 50px;
+    font-weight: 600;
+    color: #011f3d;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
 }
 
 .products-caret {
     cursor: pointer;
     position: relative;
-    padding-top: 34px;
-    margin-left: 120px;
-    border-top: 8px dashed;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
-    border-top-color: #888888 !important;
+    padding-top: 37.5px;
+    margin-left: 87px;
+    border-top: 7px dashed;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top-color: #011f3d !important;
 }
 
 .dd-products {
