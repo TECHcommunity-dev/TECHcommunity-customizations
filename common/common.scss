@@ -515,6 +515,14 @@ div[data-wrap="webmethods-int-trial"] img {
     height: 115px !important;
 }
 
+body.category.archetype-regular .topic-area span div.topic-above-posts-outlet div.post-stream button#new-create-topic {
+ display: none !important;
+}
+
+body.category-knowledge-base li[title="Topics that have not been answered"] {
+    display: none !important;
+}
+
 /*Alfabet user group category changes*/
 body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .default,
 body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .posters,
@@ -674,5 +682,14 @@ ul.nav.compact-version .navigation-toggle a {
 
 ul.compact-version .navigation-toggle a svg {
     margin-right: unset !important;
+}
+
+@media screen and (min-width: 767px) {
+.custom-sidebar .contents>.topic-list thead {
+    grid-area: unset !important;
+}
+.custom-sidebar .contents>.topic-list tbody {
+    grid-area: unset !important;
+}
 }
 /*End tag pages*/
