@@ -473,6 +473,10 @@ html.anon .d-header .d-header-icons .search-dropdown {
     width: 700px !important;
 }
 
+.logo-big {
+	height: 1.9em !important;
+}
+
 /*End navigation changes*/
 
 body.category.archetype-regular.category-knowledge-base .cooked h1, 
@@ -500,6 +504,15 @@ body.archetype-regular.category-news:not(.staff) span[title="This topic is unlis
 
 iframe {
     max-width: unset !important;
+}
+
+div[data-wrap="webmethods-int-trial"] a:first-child {
+    margin-top: -15px;
+}
+
+div[data-wrap="webmethods-int-trial"] img {
+    width: 115px !important;
+    height: 115px !important;
 }
 
 /*Alfabet user group category changes*/
@@ -616,11 +629,50 @@ body.archetype-regular.category-alfabet-alfabet-newsletter .topic-notifications-
 }
 /*End Alfabet user group category changes*/
 
-div[data-wrap="webmethods-int-trial"] a:first-child {
-    margin-top: -15px;
+/*Tag pages*/
+body.tags-page:not([class*="category-"]) li[title="Topics that have not been answered"] {
+    display: none !important;
 }
 
-div[data-wrap="webmethods-int-trial"] img {
-    width: 115px !important;
-    height: 115px !important;
+body.tags-page li[title="topics you have bookmarked"] {
+    display: none !important;
 }
+
+body.custom-sidebar.tags-page .contents>.topic-list .category-sidebar {
+    display: none !important;
+}
+
+body.tags-page:not([class*="category-"]) .category-drop {
+    display: none !important;
+}
+
+body.tags-page.category-forum .category-drop {
+    display: none !important;
+}
+
+ul.nav.compact-version .navigation-toggle{
+    background: rgb(247, 247, 247) !important;
+    margin-right: 1em !important;
+}
+
+ul.nav.compact-version .navigation-toggle a:hover{
+    background: rgb(247, 247, 247) !important;
+}
+
+ul.nav.compact-version {
+    margin-left: -8px !important;
+}
+
+ul.nav.compact-version .drop li[title="all topics grouped by category"] {
+    display: none !important;
+}
+
+ul.nav.compact-version .navigation-toggle a {
+	font-size: 1.1487em !important;
+	padding: 0 0.25em 0 0.5em !important;
+}
+
+ul.compact-version .navigation-toggle a svg {
+    margin-right: unset !important;
+}
+/*End tag pages*
