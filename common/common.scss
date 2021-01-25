@@ -340,6 +340,11 @@ html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
 	display: block !important;
 }
 
+.try-free a:hover {
+    background-color: #abbb17;
+    transition: all 0.25s;
+}
+
 /*End try free button and dropdown menu in header*/
 
 /*tag-sidebar custom style*/
@@ -450,7 +455,17 @@ html.anon .d-header .d-header-icons .search-dropdown {
     margin-top: 0px !important;
 }
 
+.d-header .d-header-icons .d-icon-search {
+    color: var(--header_primary-medium) !important;
+}
+
+.d-header .d-header-icons .d-icon-search:hover,
+.d-header .d-header-icons #search-button:hover .d-icon-search{
+    color: var(--primary-high) !important;
+}
+
 .d-header {
+	background-color: var(--header_background) !important;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.12) !important;
 }
 
