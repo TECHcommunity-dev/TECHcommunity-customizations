@@ -96,6 +96,97 @@ header.hide-menus .products-caret {
 
 /*End products dropdown menu in header*/
 
+/*Section dropdown menu in header*/
+
+.sections {
+    position: absolute;
+    margin-left: 540px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 23px;
+    top: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.btn-sections {
+    font-size: 1em;
+    text-transform: uppercase;
+    height: 50px;
+    font-weight: 600;
+    color: #011f3d;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+
+.sections-caret {
+    cursor: pointer;
+    position: relative;
+    padding-top: 37.5px;
+    margin-left: 80px;
+    border-top: 7px dashed;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top-color: #011f3d !important;
+}
+
+.dd-sections {
+    width: 71em;
+    position: absolute;
+    top: 52px;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    padding: 24px 0px 20px 40px;
+    display: none;
+}
+
+.dd-sections ul {
+    list-style: none;
+    margin-left: 0px !important;
+    float: left;
+}
+
+.sections:hover .btn-sections, .btn-sections:hover, .btn-sections:hover a {
+    color: #9a50f8 !important;
+}
+
+.sections:hover .sections-caret {
+    border-top-color: #9a50f8 !important;
+}
+
+.sections:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
+    display: inline-block !important;
+}
+
+.dd-sections .dd-sections-title {
+    font-weight: bold;
+    font-size: 20px !important;
+}
+
+.dd-sections-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 254px;
+    font-size: 1.04em;
+    color: var(--primary-high);
+}
+
+div.btn-forum-blog {
+    margin-left: 380px !important;
+}
+
+header.hide-menus .sections, header.hide-menus .sections-caret {
+    display: none;
+}
+
+div.btn-forum-blog {
+    display: none !important;
+}
+
+/*End sections dropdown menu in header*/
+
 #banner-content img {
     width: 260px;
     height: auto;
