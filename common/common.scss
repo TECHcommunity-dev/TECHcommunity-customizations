@@ -423,6 +423,33 @@ div[data-webmethods-tag-box-element] a {
 /*End webmethods tag-sidebar box elements style*/
 
 /*Navigation changes*/
+button.widget-button.btn.btn-primary.btn-small.sign-up-button.btn-text,
+.d-header .d-header-icons li.vdm {
+    display: none !important;
+}
+
+.d-header .login-button .fa {
+    display: none;
+}
+
+.d-header .login-button .d-button-label {
+    color: #011f3d !important;
+    font-weight: bold !important;
+}
+
+.header-buttons .login-button {
+    padding: 8.3px 18px 6.8px 18px !important
+}
+
+html.anon .d-header .d-header-icons .search-dropdown {
+    position: absolute !important;
+    right: 224px;
+}
+
+.header-buttons {
+    margin-top: 0px !important;
+}
+
 .d-header {
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.12) !important;
 }
