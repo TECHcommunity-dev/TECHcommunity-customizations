@@ -639,6 +639,15 @@ body.archetype-regular.category-alfabet-alfabet-newsletter #banner,
 body.archetype-regular.category-alfabet-alfabet-newsletter .topic-notifications-button .reason{
     display: none !important;
 }
+
+body.category-alfabet:not(.staff) #create-topic,
+body.category-alfabet-alfabet-deep-dive-feature-trainings:not(.staff) #create-topic,
+body.category-alfabet-alfabet-cookbook-use-cases:not(.staff) #create-topic,
+body.category-alfabet-alfabet-release-information:not(.staff) #create-topic,
+body.category-alfabet-alfabet-newsletter:not(.staff) #create-topic,
+body.category-alfabet-alfabet-user-group-meetings:not(.staff) #create-topic {
+    display: none !important;
+}
 /*End Alfabet user group category changes*/
 
 /*Tag pages*/
