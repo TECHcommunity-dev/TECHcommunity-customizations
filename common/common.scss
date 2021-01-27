@@ -32,6 +32,10 @@ body.category-news #topic-title {
     border-top: 0 !important;
 }
 
+body.category-news #navigation-bar li[title="Topics that have not been answered"] {
+    display: none;
+}
+
 /*end customize topics*/
 
 /*Customize tags page*/
