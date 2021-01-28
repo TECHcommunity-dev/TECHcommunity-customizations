@@ -316,6 +316,30 @@ body.category.category-alfabet .category-boxes .category-box {
 
 /*end alfabet user section*/
 
+/*webmethods-connectors category*/
+
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-a .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-c .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-d .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-e .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-f .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-g .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-i .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-j .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-l .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-m .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-n .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-o .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-r .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-s .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-t .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-w .topic-body,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z .topic-body {
+    width: calc(790px + (11px * 2)) !important;
+}
+
+/*end webmethods-connectors category*/
+
 div[class^="category-title-header"] {
     padding-top: 0 !important;
 }
