@@ -123,6 +123,25 @@ body.custom-sidebar .tag-sidebar .tag-sidebar-webMethods .cooked {
 
 /*End tag-sidebar custom style*/
 
+/*Alfabet user section*/
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list topic-list-item .pull-left,
+body.archetype-regular.category-alfabet-alfabet-release-information .topic-list topic-list-item .pull-left,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .topic-list topic-list-item .pull-left,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .topic-list topic-list-item .pull-left,
+body.archetype-regular.category-alfabet-alfabet-newsletter .topic-list topic-list-item .pull-left {
+    display: none !important;
+}
+
+body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list topic-list-item .right,
+body.archetype-regular.category-alfabet-alfabet-release-information .topic-list topic-list-item .right,
+body.archetype-regular.category-alfabet-alfabet-cookbook-use-cases .topic-list topic-list-item .right,
+body.archetype-regular.category-alfabet-alfabet-user-group-meetings .topic-list topic-list-item .right,
+body.archetype-regular.category-alfabet-alfabet-newsletter .topic-list topic-list-item .right {
+   margin-left: 0px !important;
+}
+
+/*end alfabet user section*/
+
 //style anon welcome banner 
 #banner-content ul li {
     list-style: none;
