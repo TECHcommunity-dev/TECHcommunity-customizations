@@ -693,7 +693,8 @@ ul.compact-version .navigation-toggle a svg {
 .custom-sidebar .contents>.topic-list thead {
     grid-area: unset !important;
 }
-.custom-sidebar .contents>.topic-list tbody {
+	
+body:not(.category-knowledge-base).custom-sidebar .contents>.topic-list tbody {
     grid-area: unset !important;
 }
 }
