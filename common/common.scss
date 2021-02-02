@@ -685,6 +685,10 @@ ul.compact-version .navigation-toggle a svg {
     margin-right: unset !important;
 }
 
+ul.nav.compact-version .navigation-toggle {
+	height: 28px;
+}
+
 @media screen and (min-width: 767px) {
 .custom-sidebar .contents>.topic-list thead {
     grid-area: unset !important;
