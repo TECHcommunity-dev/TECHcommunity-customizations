@@ -312,7 +312,19 @@ html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
     //line-height: 1;
     //font-size: 14px !important;
 }
-.dropdown-try-free-menu {
+
+.custom-header-links .try-free {
+    padding: 8.3px 18px 6.8px 18px !important;
+    background-color: #d9ec27;
+}
+
+.try-free:hover {
+    background-color: #abbb17 !important;
+    transition: all 0.25s;
+}
+
+/*Hide dropdown menu*/
+/*.dropdown-try-free-menu {
     display: none;
     position: absolute;
     top: 100px;
@@ -336,23 +348,14 @@ html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
     color: #333 !important;
 }
 
-.custom-header-links .try-free {
-    padding: 8.3px 18px 6.8px 18px !important;
-    background-color: #d9ec27;
-}
 .custom-header-links:hover+.dropdown-try-free-menu,
 .dropdown-try-free-menu:hover {
 	display: block !important;
 }
 
-.try-free:hover {
-    background-color: #abbb17 !important;
-    transition: all 0.25s;
-}
-
 .custom-header-links {
      height: 45px
-}
+}*/
 
 /*End try free button and dropdown menu in header*/
 
