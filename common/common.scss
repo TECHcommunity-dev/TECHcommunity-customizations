@@ -302,15 +302,15 @@ html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
 /*Try free button and dropdown menu in header*/
 
 .try-free a {
-    padding: 8px 18px 8.5px 18px !important;
+    //padding: 8px 18px 8.5px 18px !important;
     font-weight: bold !important;
-    margin-right: 5px;
+    //margin-right: 5px;
     //background-color: #3cc1b7;
-    background-color: #d9ec27;
+    //background-color: #d9ec27;
     color: #011f3d !important;
-    display: inline-block;
-    line-height: 1;
-    font-size: 14px !important;
+    //display: inline-block;
+    //line-height: 1;
+    //font-size: 14px !important;
 }
 .dropdown-try-free-menu {
     display: none;
@@ -337,14 +337,15 @@ html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
 }
 
 .custom-header-links .try-free {
-    padding: 24px 0px;
+    padding: 8.3px 18px 6.8px 18px !important;
+    background-color: #d9ec27;
 }
 .custom-header-links:hover+.dropdown-try-free-menu,
 .dropdown-try-free-menu:hover {
 	display: block !important;
 }
 
-.try-free a:hover {
+.try-free:hover {
     background-color: #abbb17;
     transition: all 0.25s;
 }
