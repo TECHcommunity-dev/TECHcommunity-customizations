@@ -912,6 +912,7 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors #list-
     margin-top: 18%;
     object-fit: contain !important;
     filter: none !important;
+    max-height: 90px;
 }
 
 body.category.category-webmethods-cloudstreams-connectors-a .topic-list .topic-list-item .badge-wrapper,
@@ -933,42 +934,8 @@ body.category.category-webmethods-cloudstreams-connectors-w .topic-list .topic-l
 body.category.category-webmethods-cloudstreams-connectors-z .topic-list .topic-list-item .badge-wrapper,
 body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .badge-wrapper,
 
-body.category.category-webmethods-cloudstreams-connectors-a .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-c .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-d .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-e .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-f .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-g .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-i .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-j .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-l .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-m .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-n .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-o .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-r .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-s .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-t .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-w .topic-list .topic-list-item .posters a,
-body.category.category-webmethods-cloudstreams-connectors-z .topic-list .topic-list-item .posters a,
 body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .posters a,
 
-body.category.category-webmethods-cloudstreams-connectors-a .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-c .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-d .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-e .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-f .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-g .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-i .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-j .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-l .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-m .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-n .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-o .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-r .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-s .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-t .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-w .topic-list .topic-list-item td.num.age.activity a,
-body.category.category-webmethods-cloudstreams-connectors-z .topic-list .topic-list-item td.num.age.activity a,
 body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item td.num.age.activity a,
 
 body.category.category-webmethods-cloudstreams-connectors-a #list-area .topic-list-thumbnail .main-thumbnail,
@@ -995,28 +962,6 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors #list-
 
 
 /*end webmethods-connectors category*/
-
-/*body.navigation-topics .list-container table.topic-list tr.category-knowledge-base,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-a,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-c,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-d,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-e,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-f,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-g,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-i,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-j,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-l,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-m,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-n,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-o,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-r,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-s,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-t,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-w,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors-z,
-body.navigation-topics .list-container table.topic-list tr.category-webmethods-cloudstreams-connectors {
-	display: none;
-}*/
 
 body.archetype-regular .topic-body .cooked img {
 	margin-top: 5px;
