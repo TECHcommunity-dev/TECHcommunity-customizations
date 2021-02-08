@@ -1050,3 +1050,7 @@ body.archetype-regular .topic-body .cooked img {
 body.category.archetype-regular.category-knowledge-base .topic-body .contents a {
 	color: blue !important;
 }
+
+body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-thumbnails-list .topic-list-thumbnail, .topic-thumbnails-grid .topic-list-thumbnail, .topic-thumbnails-masonry .topic-list-thumbnail {
+	position: unset !important;
+}
