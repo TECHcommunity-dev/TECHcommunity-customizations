@@ -982,6 +982,7 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors #list-
     filter: none !important;
     margin-left: 95px;
     max-height: 90px;
+    z-index: 1000;
 }
 
 body.category.category-webmethods-cloudstreams-connectors-a .topic-list .topic-list-item .badge-wrapper,
@@ -1009,6 +1010,8 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors .topic
 
 body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item td.num.likes,
 
+body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .link-bottom-line,
+
 body.category.category-webmethods-cloudstreams-connectors-a #list-area .topic-list-thumbnail .main-thumbnail,
 body.category.category-webmethods-cloudstreams-connectors-c #list-area .topic-list-thumbnail .main-thumbnail,
 body.category.category-webmethods-cloudstreams-connectors-d #list-area .topic-list-thumbnail .main-thumbnail,
@@ -1031,7 +1034,7 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors #list-
 	display: none !important;
 }
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .link-top-line a:visited {
+body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list-item.visited a.title:not(.badge-notification) {
 	color: var(--primary) !important;
 }
 
