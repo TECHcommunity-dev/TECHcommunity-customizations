@@ -983,6 +983,12 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors #list-
     filter: none !important;
     max-height: 90px;
     z-index: 1000;
+    left: 0px !important
+}
+
+body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-thumbnails-list .topic-list-thumbnail, 
+.topic-thumbnails-grid .topic-list-thumbnail, .topic-thumbnails-masonry .topic-list-thumbnail {
+	position: unset !important;
 }
 
 body.category.category-webmethods-cloudstreams-connectors-a .topic-list .topic-list-item .badge-wrapper,
@@ -1051,6 +1057,3 @@ body.category.archetype-regular.category-knowledge-base .topic-body .contents a 
 	color: blue !important;
 }
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-thumbnails-list .topic-list-thumbnail, .topic-thumbnails-grid .topic-list-thumbnail, .topic-thumbnails-masonry .topic-list-thumbnail {
-	position: unset !important;
-}
