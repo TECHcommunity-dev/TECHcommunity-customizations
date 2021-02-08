@@ -667,7 +667,8 @@ body.tags-page:not([class*="category-"]) .category-drop {
     display: none !important;
 }
 
-body.tags-page.category-forum .category-drop {
+body.tags-page.category-forum .category-drop,
+body.tags-page.category-news .category-drop {
     display: none !important;
 }
 
