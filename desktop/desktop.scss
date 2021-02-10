@@ -393,3 +393,10 @@ body.published-page .published-page-author {
 .logo-big {
     height: 1.9em !important;
 }
+
+.custom-sidebar #main-outlet {
+    display: grid;
+}
+.custom-sidebar #main-outlet .discovery-list-container-parent {
+    order: -1 !important;
+}
