@@ -340,6 +340,22 @@ body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z .t
 
 /*end webmethods-connectors category*/
 
+/*edit drafts category*/
+
+body.category.archetype-regular.category-drafts .topic-body {
+    width: calc(815px + (11px * 2)) !important;
+}
+
+body.category.archetype-regular.category-drafts #post_1 .row {
+	justify-content: left !important;
+}
+
+body.category.archetype-regular.category-drafts #topic-title h1 {
+	font-size: 2.4em !important;
+}
+
+/*end edit drafts category*/
+
 div[class^="category-title-header"] {
     padding-top: 0 !important;
 }
