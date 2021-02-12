@@ -346,12 +346,17 @@ body.category.archetype-regular.category-drafts .topic-body {
     width: calc(815px + (11px * 2)) !important;
 }
 
-body.category.archetype-regular.category-drafts #post_1 .row {
+body.category.archetype-regular.category-drafts #post_1 .row,
+body.category.archetype-regular.category-drafts #topic-title {
 	justify-content: left !important;
 }
 
 body.category.archetype-regular.category-drafts #topic-title h1 {
 	font-size: 2.4em !important;
+}
+
+body.category.archetype-regular.category-drafts #topic-title .title-wrapper {
+	width: calc(690px + (11px * 2)) !important;
 }
 
 /*end edit drafts category*/
