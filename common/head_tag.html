@@ -447,31 +447,31 @@ api.decorateWidget("home-logo:after", helper => {
   const Topic = require('discourse/models/topic').default;
   // We're using ajax and the Topic model from Discourse
 
-  api.registerConnectorClass('above-main-container', 'featured-topics', {
+  api.registerConnectorClass('discovery-below', 'connectors-foot-note', {
     // above-main-container is the plugin outlet,
     // featured-topics is your custom component name
 
     setupComponent(args, component) {
 
       api.onPageChange((url, title) => {
-        if ((url == "/") || (url == "/categories") ){
+        if ((url == "/c/cumulocity-iot/31")){
         // on page change, check if url matches
         // if your homepage isn't /latest change this to /categories
         
-          $('html').addClass('custom-featured-topics');
+          $('html').addClass('connectors-foot-note');
           // add a class to the HTML tag for easy CSS targetting
 
-          component.set('displayfeaturedTopics', true);
+          component.set('displayfootNoteTopics', true);
           // we'll use this later to show our template
 
         } 
         else {
         // If the page doesn't match the urls above, do this:
 
-          $('html').removeClass('custom-featured-topics');
+          $('html').removeClass('connectors-foot-note');
           // Remove our custom class
 
-          component.set('displayfeaturedTopics', false);
+          component.set('displayfootNoteTopics', false);
           // Don't display our customization
         }
       });
