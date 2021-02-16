@@ -1058,8 +1058,7 @@ body.category.archetype-regular.category-knowledge-base .topic-body .contents a 
 }
 
 div.connectors-foot-note {
-    margin-bottom: 50px;
-    margin-top: -50px;
+    margin-bottom: 30x;
 }
 
 .connectors-foot-note-wrapper {
@@ -1069,4 +1068,8 @@ div.connectors-foot-note {
 
 html.connectors-foot-note .footer-message {
     display: none;
+}
+
+html.connectors-foot-note .full-width #list-area {
+	margin-bottom: 0px !important;
 }
