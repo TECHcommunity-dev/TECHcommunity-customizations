@@ -454,3 +454,7 @@ body.published-page .published-page-author {
 .logo-big {
     height: 1.9em !important;
 }
+
+.category-knowledge-base .container.posts, .category-news .container.posts, .category-drafts .container.posts, .category-alfabet-user-group-meetings .container.posts {
+	padding-left: 0px !important;
+}
