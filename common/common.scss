@@ -1046,6 +1046,10 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors .topic
 	color: var(--primary) !important;
 }
 
+html.anon body.categories-list.category.category-webmethods-cloudstreams-connectors .navigation-controls #new-create-topic {
+	display: none;
+}
+
 /*end webmethods-connectors category*/
 
 body.archetype-regular .topic-body .cooked img {
