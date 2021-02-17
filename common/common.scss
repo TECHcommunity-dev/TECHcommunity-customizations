@@ -360,7 +360,7 @@ html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
 /*End try free button and dropdown menu in header*/
 
 /*tag-sidebar custom style*/
-body.custom-sidebar .tag-sidebar {
+body.custom-tag-sidebar .tag-sidebar {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     background-color: #f2f2ea;
@@ -369,15 +369,19 @@ body.custom-sidebar .tag-sidebar {
     margin-bottom: 15px;
 }
 
-body.custom-sidebar .tag-sidebar .cooked {
+body.custom-tag-sidebar .tag-sidebar .cooked {
     max-width: 1100px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0 auto;
 }
 
-body.custom-sidebar .wrap::before {
+body.custom-tag-sidebar .wrap::before {
     display: none !important;
+}
+
+body.custom-tag-sidebar .tag-header-widget {
+    display: none;
 }
 
 body.custom-sidebar #navigation-bar a[href='/top'],
