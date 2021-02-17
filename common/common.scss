@@ -1082,3 +1082,41 @@ html.connectors-foot-note .full-width #list-area {
 	margin-bottom: 0px !important;
 }
 
+
+ .custom-sidebar #main-outlet .discovery-list-container-top-outlet.tag-sidebar{
+    margin-left: calc(-50vw + 50.75%) !important;
+    margin-right: calc(-50vw + 50.75%) !important;
+    .tag-sidebar{
+        margin: 0px !important;
+        background-color: transparent;
+        background-image: url("https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/techcommunity/original/2X/9/95177e5fca7480ad758256d3deb913d49cc906b4.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+     .sticky-sidebar{
+        display: flex;
+        text-align: center;
+        background: none !important;
+        max-width: calc(100% - 16px);
+        width: 1110px;
+        margin: auto;
+        justify-content: left !important;
+        padding: 0px !important;
+    }
+    
+    .tag-sidebar-contents{
+        padding: 15px 20px !important;
+        background-color: #f2f2ea;
+        margin: 20px 0px;
+        text-align: left;
+        color: black;
+        display: block;
+        float: left;
+        min-width: 340px;
+    }
+    .cooked{
+        padding: 0px !important;
+    }
+}
+
+
