@@ -458,3 +458,8 @@ body.published-page .published-page-author {
 .category-knowledge-base .container.posts, .category-news .container.posts, .category-drafts .container.posts, .category-alfabet-user-group-meetings .container.posts {
 	padding-left: 0px !important;
 }
+
+body.archetype-regular.category.category-news .topic-body iframe {
+    width: 690px !important;
+    height: 430px !important;
+}
