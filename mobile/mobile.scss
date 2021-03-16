@@ -68,11 +68,11 @@
 
 header.hide-menus .products,
 header.hide-menus .products-caret {
-    display: none;
+    display: none !important;
 }
 
 .extra-info-wrapper {
-    width: 75em;
+    width: 75em !important;
 }
 
 .d-header #site-logo {
