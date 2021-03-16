@@ -9,7 +9,7 @@
 }
 
 //remove author info if it is a regular user
-body.category-news:not(.staff) #post_1 .trigger-user-card,
+body.category-news:not(.staff) #post_1 .topic-meta-data .trigger-user-card,
 body.category-news:not(.staff) #post_1 .topic-avatar {
     display:none;
 }
