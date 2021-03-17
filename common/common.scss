@@ -712,6 +712,18 @@ body:not(.category-knowledge-base).custom-sidebar .contents>.topic-list tbody {
     grid-area: unset !important;
 }
 }
+
+.topic-list a.badge-wrapper.box, 
+.topic-list a.discourse-tag.box::before {
+    content: "#";
+    color: var(--primary-low-mid) !important;
+}
+
+.topic-list a.badge-wrapper.box, 
+.topic-list a.discourse-tag.box {
+    color: var(--primary-medium) !important;
+    background-color: unset !important;
+}
 /*End tag pages*/
 
 /*webmethods-connectors category*/
