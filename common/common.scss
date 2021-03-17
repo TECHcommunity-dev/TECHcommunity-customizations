@@ -32,11 +32,15 @@ body.category-news #topic-title {
     border-top: 0 !important;
 }
 
+//hide Unanswered topic button on home and news page
 body.category-news #navigation-bar li[title="Topics that have not been answered"],
 body.navigation-topics #navigation-bar li[title="Topics that have not been answered"]{
     display: none;
 }
 
+body.archetype-regular.category-news:not(.staff) span[title="This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link"] {
+    display: none !important;
+}
 
 /*end customize topics*/
 
@@ -117,13 +121,6 @@ body.navigation-topics #navigation-bar li[title="Topics that have not been answe
 ol.category-breadcrumb {
     display: flex !important;
 }
-
-/*ol.category-breadcrumb .tag-drop {
-    order: 1;
-}
-ol.category-breadcrumb .category-drop {
-    order: 2;
-}*/
 
 ol.category-breadcrumb .solved-status-filter {
     order: 3;
@@ -391,11 +388,6 @@ body.custom-sidebar #navigation-bar a[href='/categories']{
     display: none;
 }
 
-//.custom-sidebar .latest-topics-link,
-//.custom-sidebar .new-topics-link,
-//.custom-sidebar .unread-topics-link,
-//.custom-sidebar .top-topics-link,
-//.custom-sidebar .category-drop,
 .custom-sidebar .tag-title-header,
 body.category-header .tag-sidebar,
 body.navigation-topics .tag-sidebar {
@@ -491,6 +483,24 @@ html.anon .d-header .d-header-icons .search-dropdown {
     width: 700px !important;
 }
 
+.hamburger-panel .panel-body-contents .category-links .heading,
+.hamburger-panel .panel-body-contents .category-links li.category-link .badge.badge-notification,
+.hamburger-panel .panel-body-contents .category-links li.category-link .topics-count{
+	display: none;
+}
+
+.hamburger-panel .panel-body-contents .category-links li.category-link .badge-wrapper .category-name {
+	font-size: 1.2em !important;
+}
+
+.hamburger-panel .panel-body-contents .category-links li.category-link .badge-wrapper span.badge-category {
+	max-width: 150px !important;
+}
+
+.d-header .extra-info-wrapper .discourse-tags {
+	display: inline-block !important;
+}
+
 /*End navigation changes*/
 
 body.category.archetype-regular.category-knowledge-base .cooked h1, 
@@ -512,10 +522,6 @@ body.category.archetype-regular.category-knowledge-base .d-editor-preview h6 {
     padding-top: 0px !important;
 }
 
-body.archetype-regular.category-news:not(.staff) span[title="This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link"] {
-    display: none !important;
-}
-
 iframe {
     max-width: unset !important;
 }
@@ -530,11 +536,12 @@ div[data-wrap="webmethods-int-trial"] img {
 }
 
 body.category.archetype-regular .topic-area span div.topic-above-posts-outlet div.post-stream button#new-create-topic {
- display: none !important;
+     display: none !important;
 }
 
-body.category-knowledge-base li[title="Topics that have not been answered"] {
-    display: none !important;
+body.archetype-regular .topic-body .cooked img {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*Alfabet user group category changes*/
@@ -665,10 +672,6 @@ body.tags-page li[title="topics you have bookmarked"] {
     display: none !important;
 }
 
-/*body.custom-sidebar.tags-page .contents>.topic-list .category-sidebar {
-    display: none !important;
-}*/
-
 body.tags-page:not([class*="category-"]) .category-drop {
     display: none !important;
 }
@@ -699,10 +702,6 @@ ul.nav.compact-version .navigation-toggle a {
 ul.compact-version .navigation-toggle a svg {
     margin-right: unset !important;
 }
-
-/*ul.nav.compact-version .navigation-toggle {
-	height: 28px;
-}*/
 
 @media screen and (min-width: 767px) {
 .custom-sidebar .contents>.topic-list thead {
@@ -1056,17 +1055,6 @@ html.anon body.categories-list.category.category-webmethods-cloudstreams-connect
 	display: none;
 }
 
-/*end webmethods-connectors category*/
-
-body.archetype-regular .topic-body .cooked img {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-body.category.archetype-regular.category-knowledge-base .topic-body .contents a {
-	color: blue !important;
-}
-
 div.connectors-foot-note {
     margin-bottom: 30px;
 }
@@ -1084,6 +1072,7 @@ html.connectors-foot-note .full-width #list-area {
 	margin-bottom: 0px !important;
 }
 
+/*end webmethods-connectors category*/
 
  .custom-tag-sidebar #main-outlet .discovery-list-container-top-outlet.tag-sidebar{
     margin-left: calc(-50vw + 50.75%) !important;
@@ -1121,20 +1110,4 @@ html.connectors-foot-note .full-width #list-area {
     }
 }
 
-.hamburger-panel .panel-body-contents .category-links .heading,
-.hamburger-panel .panel-body-contents .category-links li.category-link .badge.badge-notification,
-.hamburger-panel .panel-body-contents .category-links li.category-link .topics-count{
-	display: none;
-}
 
-.hamburger-panel .panel-body-contents .category-links li.category-link .badge-wrapper .category-name {
-	font-size: 1.2em !important;
-}
-
-.hamburger-panel .panel-body-contents .category-links li.category-link .badge-wrapper span.badge-category {
-	max-width: 150px !important;
-}
-
-.d-header .extra-info-wrapper .discourse-tags {
-	display: inline-block !important;
-}
