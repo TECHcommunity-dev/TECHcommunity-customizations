@@ -458,6 +458,18 @@ body.published-page .published-page-author {
     height: 1.9em !important;
 }
 
+.list-controls {
+    z-index: 50;
+}
+
+.nav-pills>li a.active {
+    background: transparent !important;
+}
+
+.list-controls .combo-box .combo-box-header {
+    background: #f7f7f7 !important;
+}
+
 .category-knowledge-base .container.posts, .category-news .container.posts, 
 .category-drafts .container.posts, 
 .category-alfabet-user-group-meetings .container.posts {
