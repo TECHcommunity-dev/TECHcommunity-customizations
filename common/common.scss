@@ -661,6 +661,10 @@ body.category-alfabet-alfabet-newsletter:not(.staff) #create-topic,
 body.category-alfabet-alfabet-user-group-meetings:not(.staff) #create-topic {
     display: none !important;
 }
+
+html:not(.anon) body.tag-Alfabet div.tag-sidebar div.tag-sidebar-contents div[data-techcommunity-alfabet-tag-sidebar] {
+	display: none !important;
+}
 /*End Alfabet user group category changes*/
 
 /*Tag pages*/
