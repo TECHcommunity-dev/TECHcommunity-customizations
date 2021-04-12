@@ -665,6 +665,10 @@ body.category-alfabet-alfabet-user-group-meetings:not(.staff) #create-topic {
 html:not(.anon) body.tag-Alfabet div.tag-sidebar div.tag-sidebar-contents div[data-techcommunity-alfabet-tag-sidebar] {
 	display: none !important;
 }
+
+body.tag-Alfabet div.tag-sidebar div.tag-sidebar-contents div[data-techcommunity-alfabet-tag-sidebar] {
+	line-height: 1.7;
+}
 /*End Alfabet user group category changes*/
 
 /*Tag pages*/
