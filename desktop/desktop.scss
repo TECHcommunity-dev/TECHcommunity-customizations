@@ -290,28 +290,39 @@ div#adanat ul{
 /*Customize topics in a news category*/
 
 //make topic title and body wider
-.category-news #topic-title .title-wrapper {
-	width: calc(961px + (11px * 2)) !important;
+
+.category-news {
+	#topic-title {
+		.title-wrapper {
+			width: calc(961px + (11px * 2)) !important;
+		}
+
+		//make topic title smaller
+		h1 {
+    			font-size: 2.5em !important;
+		}
+	}
+
+	.topic-body {
+		width: calc(950px + (11px * 2)) !important;
+	}
 }
 
-.category-news .topic-body {
-	width: calc(950px + (11px * 2)) !important;
-}
-
-//make topic title smaller
-.category-news #topic-title h1 {
-    font-size: 2.5em !important;
-}
-
-#topic-title .title-wrapper {
-    width: 70% !important;
+#topic-title {
+	.title-wrapper {
+    		width: 70% !important;
+	}
 }
 /*end Customize topics in a news category*/
 
 /*Alfabet user section*/
 
-body.category.category-alfabet .category-boxes .category-box {
-    width: 30% !important;
+body.category.category-alfabet {
+	.category-boxes {
+		.category-box {
+	    		width: 30% !important;
+		}
+	}
 }
 
 /*end alfabet user section*/
@@ -336,7 +347,7 @@ body.archetype-regular.category.category-webmethods-cloudstreams-connectors-t,
 body.archetype-regular.category.category-webmethods-cloudstreams-connectors-w,
 body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z {
 	.topic-body {
-		width:calc(790px+(11px*2))!important;
+		width:calc(790px + (11px*2))!important;
 	}
 }
 
@@ -346,18 +357,18 @@ body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z {
 
 body.category.archetype-regular.category-drafts {
 	.topic-body {
-    	width: calc(815px + (11px * 2)) !important;
+    		width: calc(815px + (11px * 2)) !important;
 	}
 
 	#topic-title {
 		justify-content: left !important;
 
-			h1 {
-				font-size: 2.4em !important;
-			}
-			.title-wrapper {
-				width: calc(690px + (11px * 2)) !important;
-			}
+		h1 {
+			font-size: 2.4em !important;
+		}
+		.title-wrapper {
+			width: calc(690px + (11px * 2)) !important;
+		}
 	}
 }
 
@@ -408,19 +419,19 @@ div[data-wrap="webmethods-int-trial"] {
     border-bottom: 3px solid var(--primary);
 
     img {
-		width: 130px !important;
-		height: 130px !important;
-	}
-	p {
+	width: 130px !important;
+	height: 130px !important;
+    }
+    p {
     	margin-bottom: 30px;
-	}
-	a:first-child {
-		float: left;
-		margin-right: 20px;
-	}
-	h2 {
+    }
+     a:first-child {
+	float: left;
+	margin-right: 20px;
+    }
+    h2 {
     	margin-bottom: -24px;
-	}
+    }
 }
 
 /*end webmethods free trial page custom*/
