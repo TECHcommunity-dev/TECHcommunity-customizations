@@ -11,6 +11,16 @@
     top: 0;
     height: 50px;
     cursor: pointer;
+
+    &:hover {
+    	.products-caret {
+    		border-top-color: #9a50f8 !important;
+		}
+
+		.btn-products {
+			color: #9a50f8 !important;
+		}
+    }
 }
 
 .btn-products {
@@ -20,6 +30,14 @@
     font-weight: 600;
     color: #011f3d;
     font-family: Roboto,Arial,Helvetica,sans-serif;
+
+    &:hover {
+    	color: #9a50f8 !important;
+
+    	a {
+    		color: #9a50f8 !important;
+		}
+    }
 }
 
 .products-caret {
@@ -34,13 +52,29 @@
 }
 
 .dd-products {
-//	width: 71em;
     position: absolute;
     top: 52px;
     background-color: #fff;
     border: 1px #ccc solid;
     padding: 24px 0px 20px 40px;
     display: none;
+
+    .dd-products-list-item {
+    	a:hover {
+    		color: #9a50f8;
+		}
+    }
+
+    ul {
+    	list-style: none;
+    	margin-left: 0px !important;
+    	float: left;
+	}
+
+	.dd-products-title {
+    	font-weight: bold;
+    	font-size: 20px !important;
+	}
 }
 
 .dd-products-item {
@@ -54,40 +88,24 @@
 .dd-products-transformation .dd-products-item {
     margin-right: 0;
 }
-.dd-products .dd-products-list-item a:hover {
-    color: #9a50f8;
-}
 
 .dd-products-hovered {
     display: inline-block !important;
 }
+
 .products:hover~.dd-products,
 .products-caret:hover~.dd-products,
 .dd-products:hover {
 	display: inline-block !important;
 }
 
-.products:hover .products-caret {
-    border-top-color: #9a50f8 !important;
-}
-
-.products:hover .btn-products,
-.btn-products:hover,
-.btn-products:hover a{
-    color: #9a50f8 !important;
-}
-
 .search-header {
     margin-left: 225px !important;
 }
 .title .search-header {
-    //width: 480px;
     width: 605px;
 }
 //when clicked
-.title .search-header.show-header-results {
-    //width: 520px;
-}
 
 .d-header .d-header-icons .search-dropdown {	
     position: absolute !important;	
@@ -95,22 +113,10 @@
 }
 
 //hide products dropdown menu on topic page
-header.hide-menus .products,
-header.hide-menus .products-caret,
-header.hide-menus .btn-forum-blog,
-header.hide-menus .search-dropdown {
-    display: none;
-}
-
-.dd-products ul {
-    list-style: none;
-    margin-left: 0px !important;
-    float: left;
-}
-
-.dd-products .dd-products-title {
-    font-weight: bold;
-    font-size: 20px !important;
+header.hide-menus {
+	.products, .products-caret, .search-dropdown {
+		display: none;
+	}
 }
 
 /*End products dropdown menu in header*/
