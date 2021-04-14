@@ -318,45 +318,47 @@ body.category.category-alfabet .category-boxes .category-box {
 
 /*webmethods-connectors category*/
 
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-a .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-c .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-d .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-e .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-f .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-g .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-i .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-j .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-l .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-m .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-n .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-o .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-r .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-s .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-t .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-w .topic-body,
-body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z .topic-body {
-    width: calc(790px + (11px * 2)) !important;
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-a,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-c,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-d,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-e,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-f,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-g,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-i,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-j,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-l,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-m,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-n,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-o,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-r,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-s,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-t,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-w,
+body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z {
+	.topic-body {
+		width:calc(790px+(11px*2))!important;
+	}
 }
 
 /*end webmethods-connectors category*/
 
 /*edit drafts category*/
 
-body.category.archetype-regular.category-drafts .topic-body {
-    width: calc(815px + (11px * 2)) !important;
-}
+body.category.archetype-regular.category-drafts {
+	.topic-body {
+    	width: calc(815px + (11px * 2)) !important;
+	}
 
-body.category.archetype-regular.category-drafts #post_1 .row,
-body.category.archetype-regular.category-drafts #topic-title {
-	justify-content: left !important;
-}
+	#topic-title {
+		justify-content: left !important;
 
-body.category.archetype-regular.category-drafts #topic-title h1 {
-	font-size: 2.4em !important;
-}
-
-body.category.archetype-regular.category-drafts #topic-title .title-wrapper {
-	width: calc(690px + (11px * 2)) !important;
+			h1 {
+				font-size: 2.4em !important;
+			}
+			.title-wrapper {
+				width: calc(690px + (11px * 2)) !important;
+			}
+	}
 }
 
 /*end edit drafts category*/
@@ -402,26 +404,23 @@ html:not(.anon) .d-header .extra-info-wrapper+.panel .header-buttons {
 /*end fix header on large font size*/
 
 /*webmethods free trial page custom*/
-div[data-wrap="webmethods-int-trial"] img {
-	width: 130px !important;
-	height: 130px !important;
-}
-
 div[data-wrap="webmethods-int-trial"] {
     border-bottom: 3px solid var(--primary);
-}
 
-div[data-wrap="webmethods-int-trial"] p {
-    margin-bottom: 30px;
-}
-
-div[data-wrap="webmethods-int-trial"] a:first-child {
-	float: left;
-	margin-right: 20px;
-}
-
-div[data-wrap="webmethods-int-trial"] h2 {
-    margin-bottom: -24px;
+    img {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	p {
+    	margin-bottom: 30px;
+	}
+	a:first-child {
+		float: left;
+		margin-right: 20px;
+	}
+	h2 {
+    	margin-bottom: -24px;
+	}
 }
 
 /*end webmethods free trial page custom*/
