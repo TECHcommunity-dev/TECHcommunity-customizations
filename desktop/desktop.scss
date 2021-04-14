@@ -126,8 +126,17 @@ header.hide-menus .search-dropdown {
     top: 0;
     height: 50px;
     cursor: pointer;
-}
 
+    &:hover {
+    	.btn-sections {
+    		color: #9a50f8 !important;
+    	}
+
+    	.sections-caret {
+    		border-top-color: #9a50f8 !important;
+	}
+    }
+}
 
 .btn-sections {
     font-size: 1em;
@@ -136,6 +145,14 @@ header.hide-menus .search-dropdown {
     font-weight: 600;
     color: #011f3d;
     font-family: Roboto,Arial,Helvetica,sans-serif;
+
+    &:hover {
+    	color: #9a50f8 !important;
+
+    	a {
+    		color: #9a50f8 !important;
+    	}
+    }
 }
 
 
@@ -151,36 +168,23 @@ header.hide-menus .search-dropdown {
 }
 
 .dd-sections {
-   // width: 71em;
     position: absolute;
     top: 52px;
     background-color: #fff;
     border: 1px #ccc solid;
     padding: 24px 0px 20px 40px;
     display: none;
-}
 
-.dd-sections ul {
-    list-style: none;
-    margin-left: 0px !important;
-    float: left;
-}
+    ul {
+    	list-style: none;
+    	margin-left: 0px !important;
+    	float: left;
+    }
 
-.sections:hover .btn-sections, .btn-sections:hover, .btn-sections:hover a {
-    color: #9a50f8 !important;
-}
-
-.sections:hover .sections-caret {
-    border-top-color: #9a50f8 !important;
-}
-
-.sections:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
-    display: inline-block !important;
-}
-
-.dd-sections .dd-sections-title {
-    font-weight: bold;
-    font-size: 20px !important;
+    .dd-sections-title {
+    	font-weight: bold;
+    	font-size: 20px !important;
+    }
 }
 
 .dd-sections-item {
@@ -192,29 +196,25 @@ header.hide-menus .search-dropdown {
     color: var(--primary-high);
 }
 
-div.btn-forum-blog {
-    margin-left: 380px !important;
+
+.sections:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
+    display: inline-block !important;
 }
 
-header.hide-menus .sections, header.hide-menus .sections-caret {
-    display: none;
-}
-
-div.btn-forum-blog {
-    display: none !important;
+header.hide-menus {
+    .sections, .sections-caret {
+    	display: none;
+    }
 }
 
 /*End sections dropdown menu in header*/
 
-#banner-content img {
-    width: 260px;
-    height: auto;
-    margin-top: 5px;
-}
-
-body .custom-banner-outlet .banner-box .container {
-    max-width: calc(100% - 16px);
-    width: 1100px;
+#banner-content {
+    img {
+	width: 260px;
+    	height: auto;
+    	margin-top: 5px;
+    }
 }
 
 /*tags-section*/
