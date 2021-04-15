@@ -497,7 +497,11 @@ body.published-page .published-page-author {
 	padding-left: 0px !important;
 }
 
-body.archetype-regular.category.category-news .topic-body iframe {
+body.archetype-regular.category.category-news.tag-unlisted .topic-body iframe {
     width: 690px !important;
     height: 200px !important;
+}
+
+body.archetype-regular.category.category-news .topic-body iframe {
+    width: 690px !important;
 }
