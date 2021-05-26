@@ -451,8 +451,10 @@ div[class^="category-title-header"] {
     padding-top: 0 !important;
 }
 
-.container.posts .topic-navigation {
-    margin-left: -3em !important;
+.container.posts {
+	.topic-navigation {
+    		margin-left: -3em !important;
+	}
 }
 
 div.poll {
@@ -468,12 +470,16 @@ div.poll {
 }
 
 
-div[data-wrap="iframe-terracotta-form"] iframe {
-	border: unset !important;
+div[data-wrap="iframe-terracotta-form"] {
+	iframe {
+	   border: unset !important;
+	}
 }
 
-body.published-page .published-page-author {
-	display: none !important;
+body.published-page {
+	.published-page-author {
+		display: none !important;
+	}
 }
 
 .logo-big {
@@ -482,17 +488,21 @@ body.published-page .published-page-author {
 
 .list-controls {
     z-index: 50;
+	
+    .combo-box {
+	    .combo-box-header {
+    		background: #f7f7f7 !important;
+	    }
+    }
 }
 
 .nav-pills>li a.active {
     background: transparent !important;
 }
 
-.list-controls .combo-box .combo-box-header {
-    background: #f7f7f7 !important;
-}
 
-.category-knowledge-base .container.posts,
+.category-knowledge-base,
+.category-news,
 .category-drafts,
 .category-alfabet-user-group-meetings {
 	.container.posts {
