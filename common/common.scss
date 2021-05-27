@@ -740,50 +740,33 @@ body:not(.category-knowledge-base).custom-sidebar .contents>.topic-list tbody {
 
 /*webmethods-connectors category*/
 
+body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-box-inner {
+	.featured-topics, svg.fa {
+		display: none !important;
+	}
+}
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-box-inner svg.fa,
-body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-box-inner .featured-topics,
-
-
-body.categories-list.category.category-webmethods-cloudstreams-connectors #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-a #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-c #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-d #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-e #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-f #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-g #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-i #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-j #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-l #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-m #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-n #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-o #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-r #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-s #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-t #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-w #navigation-bar li[title="Topics that have not been answered"],
-body.category.category-webmethods-cloudstreams-connectors-z #navigation-bar li[title="Topics that have not been answered"],
-
-body.categories-list.category.category-webmethods-cloudstreams-connectors #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-a #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-c #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-d #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-e #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-f #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-g #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-i #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-j #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-l #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-m #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-n #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-o #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-r #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-s #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-t #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-w #navigation-bar li[title="topics with recent posts"],
-body.category.category-webmethods-cloudstreams-connectors-z #navigation-bar li[title="topics with recent posts"]
-{
-	display: none !important;
+body.categories-list.category.category-webmethods-cloudstreams-connectors #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-a #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-c #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-d #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-e #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-f #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-g #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-i #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-j #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-l #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-m #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-n #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-o #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-r #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-s #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-t #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-w #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors-z #navigation-bar {
+	li[title="Topics that have not been answered"], li[title="topics with recent posts"] {
+		display: none !important;
+	}
 }
 
 body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-boxes-with-topics .category-box {
