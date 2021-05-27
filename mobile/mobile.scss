@@ -22,7 +22,7 @@
 
 
 .dd-products {
-	width: auto;
+    width: auto;
     position: absolute;
     top: 52px;
     left: 35px;
@@ -30,10 +30,20 @@
     border: #ccc solid;
     padding: 10px 20px 10px 20px;
     display: none;
+	
+    ul {
+      list-style: none;
+      margin-left: 0px !important;
+    }
+	
+    .dd-products-title {
+      font-weight: bold;
+      font-size: 20px !important;
+    }
 }
 
 .dd-products-item {
-	display: inline-block;
+    display: inline-block;
     margin-right: 15px;
     margin-top: 10px;
 }   
@@ -46,110 +56,119 @@
     display: inline-block !important;
 }
 
-/*.products:hover~.dd-products,
-.products-caret:hover~.dd-products,
-.dd-products:hover {
-	display: inline-block !important;
-}*/
-
 .search-header {
     margin-left: 270px !important;
 }
 
-.dd-products ul {
-    list-style: none;
-    margin-left: 0px !important;
-}
-
-.dd-products .dd-products-title {
-    font-weight: bold;
-    font-size: 20px !important;
-}
-
-header.hide-menus .products,
-header.hide-menus .products-caret {
-    display: none !important;
+header.hide-menus {
+    .products-caret, .products {
+        display: none !important;
+    }
 }
 
 .extra-info-wrapper {
     width: 75em !important;
 }
 
-.d-header #site-logo {
-    max-width: unset !important;
-}
-
-.d-header .sections,
-.d-header .dd-sections {	
-    display: none !important;	
+.d-header {
+    #site-logo {
+       max-width: unset !important;
+    }
+	
+    .dd-sections, .sections {	
+       display: none !important;	
+    }
 }
 
 /*End Products dropdown menu*/
 
 /*New topic button style*/
 
-html.anon .list-controls .nav-pills .navigation-toggle {
-    margin-bottom: 4px;
+html.anon {
+    .list-controls .nav-pills .navigation-toggle {
+       margin-bottom: 4px;
+    }
+	
+    #new-create-topic {
+       font-size: 1em !important;
+	    
+       .d-button-label {
+           padding-top: 5px;
+           padding-bottom: 5px;
+        }
+    }
 }
 
-html.anon #new-create-topic {
-    font-size: 1em !important;
-}
-
-.topic-area #new-create-topic {
-    margin-bottom: 10px !important;
-    float: unset !important;
-}
-
-html.anon #new-create-topic .d-button-label {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.topic-area {
+    #new-create-topic {
+       margin-bottom: 10px !important;
+       float: unset !important;
+    }
 }
 
 /*End New topic button style*/
 
 /*tag-sidebar custom style*/
 
-body.custom-sidebar .tag-sidebar .cooked {
-    padding-top: 25px;
-    margin-left: 12px !important;
-    margin-right: 12px !important;
-
-}
-
-body.custom-sidebar .tag-sidebar .tag-sidebar-webMethods .cooked {
-   margin-left: auto !important;
+body.custom-sidebar .tag-sidebar {
+    .cooked {
+       padding-top: 25px;
+       margin-left: 12px !important;
+       margin-right: 12px !important;
+    }
+	
+    .tag-sidebar-webMethods {
+	.cooked {
+           margin-left: auto !important;
+        }
+     }
 }
 
 /*End tag-sidebar custom style*/
 
 /*Alfabet user section*/
-body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .topic-list-item .pull-left,
-body.category.category-alfabet-alfabet-release-information .topic-list .topic-list-item .pull-left,
-body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .topic-list-item .pull-left,
-body.category.category-alfabet-alfabet-user-group-meetings .topic-list .topic-list-item .pull-left,
-body.category.category-alfabet-alfabet-newsletter .topic-list .topic-list-item .pull-left {
-    display: none !important;
-}
-
-body.category.category-alfabet-alfabet-deep-dive-feature-trainings .topic-list .topic-list-item .right,
-body.category.category-alfabet-alfabet-release-information .topic-list .topic-list-item .right,
-body.category.category-alfabet-alfabet-cookbook-use-cases .topic-list .topic-list-item .right,
-body.category.category-alfabet-alfabet-user-group-meetings .topic-list .topic-list-item .right,
-body.category.category-alfabet-alfabet-newsletter .topic-list .topic-list-item .right {
-   margin-left: 0px !important;
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings,
+body.category.category-alfabet-alfabet-release-information,
+body.category.category-alfabet-alfabet-cookbook-use-cases,
+body.category.category-alfabet-alfabet-user-group-meetings,
+body.category.category-alfabet-alfabet-newsletter {
+    .topic-list {
+       .topic-list-item {
+	    .pull-left {
+    		display: none !important;
+             }
+	       
+	     .right {
+   		margin-left: 0px !important;
+	     }
+	}
+    }
 }
 
 /*end alfabet user section*/
 
 //style anon welcome banner 
-#banner-content ul li {
-    list-style: none;
-    margin-bottom: 10px;
+#banner-content {
+    ul {
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+    }
 }
 
-.d-header .d-header-icons .search-dropdown {
-    right: 90px !important;
+.d-header {
+    .d-header-icons {
+       .search-dropdown {
+          right: 90px !important;
+	}
+    }
+	
+    .header-buttons {
+	.try-free {
+	   display: none !important;
+	 }
+    }
 }
 
 html.anon .d-header .d-header-icons .search-dropdown {
@@ -160,8 +179,5 @@ body.category-news:not(.staff) .topic-meta-data {
     margin-top: -35px;
 }
 
-.d-header .header-buttons .try-free {
-	display: none !important;
-}
 
 
