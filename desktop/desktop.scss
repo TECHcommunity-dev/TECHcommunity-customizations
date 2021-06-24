@@ -525,3 +525,36 @@ body.archetype-regular.category.category-news {
 		}
 	}
 }
+
+//move Solved/Unsolved dropdown menu in navigation
+.navigation-container {
+    li.solved-status-filter {
+       position: absolute;
+        height: auto;
+        margin-top: 46px;
+    }
+}
+
+body.category-forum {
+    .topic-list-bottom {
+       margin-top: 45px !important;
+    }
+	
+    div.dropdown-select-box.period-chooser {
+       margin-top: 35px;
+       margin-left: 5px;
+    }
+}
+
+body.category-forum.staff {
+    .topic-list {
+        margin-top: 28px !important;
+    }
+}
+
+body.category-news,
+body.category-knowledge-base {
+    li.solved-status-filter {
+        display: none !important;
+    }
+}
