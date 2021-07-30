@@ -718,7 +718,13 @@ body.category .navigation-container #navigation-bar li {
     margin-right: 0.1em !important;
 }
 
-.d-header .d-header-icons li.vdo .icon .svg-icon {
-    color: #011f3de0;
-    width: 69%;
+.d-header .d-header-icons {
+	li.vdo,
+	.hamburger-dropdown,
+	.search-dropdown {
+		.icon .svg-icon {
+    			color: #011f3de0 !important;
+    			width: 69%;
+		}
+	}
 }
