@@ -959,3 +959,17 @@ html.connectors-foot-note .full-width #list-area {
 		}
 	}
 }
+
+.archetype-private_message {
+	.topic-body {
+		.cooked {
+    			margin-left: 0em !important;
+		}
+	}
+}
+
+.archetype-private_message {
+	#new-create-topic {
+    		display: none;
+	}
+}
