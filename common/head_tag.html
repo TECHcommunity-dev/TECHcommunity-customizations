@@ -16,6 +16,7 @@ const knowledgeBase = [];
 const forum = [];
 const news = [];
 const feedback = [];
+const video = [];
 
 
 products.push(
@@ -416,6 +417,29 @@ feedback.push(
         )
     )
 )
+
+video.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/c/knowledge-base/video/8'
+                
+            }, 
+            "Video"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Watch technical video tutorials and guides, all in one place for you to better leverage the Software AG products."  
+        )
+    )
+)
+
  dropdownMenuSections.push(
     h(
           'ul.dd-sections-knowledgeBase', knowledgeBase
@@ -428,6 +452,9 @@ feedback.push(
     ),
     h(
           'ul.dd-sections-feedback', feedback
+    ),
+    h(
+          'ul.dd-sections-video', video
     )
 )
 
