@@ -185,6 +185,7 @@ header.hide-menus {
     	list-style: none;
     	margin-left: 0px !important;
     	float: left;
+	margin-right: 75px;
     }
 
     .dd-sections-title {
@@ -211,6 +212,11 @@ header.hide-menus {
     .sections, .sections-caret {
     	display: none;
     }
+}
+
+ul.dd-sections-knowledgeBase, 
+ul.dd-sections-videos {
+    margin-left: 35px !important;
 }
 
 /*End sections dropdown menu in header*/
