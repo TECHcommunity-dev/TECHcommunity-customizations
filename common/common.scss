@@ -973,3 +973,41 @@ html.connectors-foot-note .full-width #list-area {
     		display: none;
 	}
 }
+
+body.tags-page.category-video,
+body.category.category-knowledge-base-video {
+    #navigation-bar {
+        li[title="Topics that have not been answered"] {
+            display: none !important;
+        }
+    }
+}
+
+body.tags-page.category-knowledge-base,
+body.tags-page.category-forum,
+body.category.category-knowledge-base,
+body.category.category-feedback{
+    .navigation-container {
+        .category-breadcrumb,
+        #navigation-bar,
+        .navigation-controls {
+             z-index: 50 !important;
+        }
+    }
+}
+
+
+body.tags-page.category-feedback {
+    li.solved-status-filter {
+        display: none;
+    }
+} 
+
+body.archetype-regular.category-knowledge-base-video {
+    .topic-body {
+        iframe {
+            width: 815px !important;
+            height: 450px !important;
+        }
+    }
+}
