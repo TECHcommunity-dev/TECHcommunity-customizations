@@ -500,12 +500,12 @@ body.published-page {
 
 .list-controls {
     z-index: 50;
-    padding: 10px 0px;
 	
     .combo-box {
 	    .combo-box-header {
     		background: #f7f7f7 !important;
 		font-size: 1.1rem !important;
+		padding: 10px 0.25em 10px 0.5em;    
 	    }
     }
 }
