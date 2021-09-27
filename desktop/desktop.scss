@@ -618,6 +618,19 @@ body.category-knowledge-base {
 	}
 }
 
+body.tags-page.category-knowledge-base,
+body.tags-page.category-forum,
+body.category.category-knowledge-base,
+body.category.category-feedback{
+    .navigation-container {
+        .category-breadcrumb,
+        #navigation-bar,
+        .navigation-controls {
+             z-index: 50 !important;
+        }
+    }
+}
+
 //add icons to nav
 .navigation-container {
     #navigation-bar > {
