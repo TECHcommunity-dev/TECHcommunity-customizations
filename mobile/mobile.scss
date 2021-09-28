@@ -184,5 +184,16 @@ body.category-news {
     }
 }
 
+body:not(.tags-page) {
+	.navigation-container {
+		li.solved-status-filter {
+    			margin-top: 10px !important;
+   			 margin-left: 0px !important;
+		}
+	}
+}
 
+ol.category-breadcrumb {
+    margin-left: 0px !important;
+}
 
