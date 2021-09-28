@@ -590,20 +590,15 @@ body.archetype-regular.category.category-news {
     --nav-space: 0em;
 }
 
-/*body.category-forum {
-    .topic-list {
-        margin-top: 48px !important;
+body.category-forum {
+    .list-controls {
+        margin-bottom: 50px !important;
     }
-	
-    .topic-list-bottom {
-       margin-top: 55px !important;
+    
+     .dropdown-select-box.period-chooser {
+       margin-top: 20px;
     }
-	
-    .dropdown-select-box.period-chooser {
-       margin-top: 60px;
-       margin-bottom: -60px;
-    }
-}*/
+}
 
 body.category-news,
 body.category-knowledge-base {
