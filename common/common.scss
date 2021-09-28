@@ -1025,3 +1025,24 @@ body.category.category-knowledge-base {
         display: none !important;
     }
 }
+
+//change notifications-button 
+.list-controls .navigation-controls .notifications-button summary.btn {
+    background: var(--highlight-low)!important;
+    border: 1px solid #d7ef00;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    &:after {
+        content: "subscribe";
+        position: absolute;
+        top: 57px;
+        right: 9px;
+        font-size: 0.7rem;
+        color: gray;
+    }
+    
+    &:hover svg.d-icon {
+        color: var(--hljs-symbol) !important;
+    }
+}
