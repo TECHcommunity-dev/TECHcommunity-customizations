@@ -273,15 +273,16 @@ body:not(.staff) #show-tag-info {
     background-color: #3cc1b7 !important;
     color: #011f3d !important;
     font-weight: bold !important;
+	
+    .svg-icon {
+    	color: #011f3d !important;
+    	width: 0.8em !important;
+    }
+	
+    .d-button-label {
+    	font-weight: bold;
+    }
 }
-
-#create-topic .svg-icon {
-    color: #011f3d !important;
- //   height: 0.8em !important;
-    width: 0.8em !important;
- //   vertical-align: 0 !important;
-}
-
 
 body.category-news:not(.staff) #new-create-topic,
 body.category-news:not(.staff) #create-topic,
