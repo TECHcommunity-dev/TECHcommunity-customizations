@@ -1046,3 +1046,11 @@ body.category.category-knowledge-base {
         color: var(--hljs-symbol) !important;
     }
 }
+
+.navigation-controls .notifications-button summary.btn:focus svg.d-icon {
+    color: var(--tertiary) !important;
+}
+
+#create-topic .d-button-label {
+    font-size: 1.1rem;
+}
