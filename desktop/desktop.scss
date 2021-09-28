@@ -583,7 +583,7 @@ body.archetype-regular.category.category-news {
     li.solved-status-filter {
        position: absolute;
         height: auto;
-        margin-top: 50px;
+        margin-top: 57px;
 	z-index: 50;
     }
 
@@ -591,19 +591,17 @@ body.archetype-regular.category.category-news {
 }
 
 body.category-forum {
+    .topic-list {
+        margin-top: 48px !important;
+    }
+	
     .topic-list-bottom {
-       margin-top: 45px !important;
+       margin-top: 55px !important;
     }
 	
     div.dropdown-select-box.period-chooser {
        margin-top: 60px;
        margin-bottom: -45px;
-    }
-}
-
-body.category-forum {
-    .topic-list {
-        margin-top: 28px !important;
     }
 }
 
@@ -617,6 +615,10 @@ body.category-knowledge-base {
 .list-controls {
 	.navigation-controls {
     		margin-left: auto;
+		
+		.notifications-button div.select-kit-header-wrapper {
+    			padding: 10px 0.5em 10px 0.5em !important;
+		}
 	}
 }
 
