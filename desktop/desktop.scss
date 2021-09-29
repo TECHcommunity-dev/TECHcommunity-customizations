@@ -123,7 +123,7 @@ header.hide-menus {
 
 /*Section dropdown menu in header*/
 
-.sections {
+.sections-techcomm {
     position: absolute;
     margin-left: 540px;
     padding-left: 40px;
@@ -210,12 +210,12 @@ header.hide-menus {
 }
 
 
-.sections:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
+.sections-techcomm:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
     display: inline-block !important;
 }
 
 header.hide-menus {
-    .sections, .sections-caret {
+    .sections-techcomm, .sections-caret {
     	display: none;
     }
 }
@@ -441,7 +441,7 @@ html:not(.anon) .d-header .d-header-icons .search-dropdown {
 }
 
 .products,
-.sections {
+.sections-techcomm {
     padding-top: 1.5em !important;
 }
 
