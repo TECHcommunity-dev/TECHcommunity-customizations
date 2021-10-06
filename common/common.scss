@@ -257,16 +257,16 @@ body:not(.staff) #show-tag-info {
 //place create new topic button on forum discussions topic pages and change its style
 #new-create-topic {
     float: right;
-    font-size: 1.1487em !important;
+    font-size: 1.1rem !important;
     background-color: #3cc1b7 !important;
     color: #011f3d !important;
     font-weight: bold !important;
+    padding: 17px 0.5em 16px 0.5em !important;
 }
 
 #new-create-topic .svg-icon {
     color: #011f3d !important;
-   // height: 0.8em !important;
-    width: 0.8em !important;
+    width: 0.73em !important;
 }
 
 //change create topic button style on homepage
