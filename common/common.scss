@@ -254,21 +254,6 @@ body:not(.staff) #show-tag-info {
 
 /*New topic button*/
 
-//place create new topic button on forum discussions topic pages and change its style
-#new-create-topic {
-    float: right;
-    font-size: 1.1rem !important;
-    background-color: #3cc1b7 !important;
-    color: #011f3d !important;
-    font-weight: bold !important;
-    padding: 17px 0.5em 16px 0.5em !important;
-}
-
-#new-create-topic .svg-icon {
-    color: #011f3d !important;
-    width: 0.73em !important;
-}
-
 //change create topic button style on homepage
 #create-topic {
     background-color: #3cc1b7 !important;
@@ -283,18 +268,6 @@ body:not(.staff) #show-tag-info {
     .d-button-label {
     	font-weight: bold;
     }
-}
-
-body.category-news:not(.staff) #new-create-topic,
-body.category-news:not(.staff) #create-topic,
-html:not(.anon) .before-create-topic-button-outlet #new-create-topic{
-    display: none !important;
-}
-
-@media (max-width: 850px){
-#new-create-topic span {
-    display: inline-block !important;
-}
 }
 
 /*end New topic button*/
@@ -938,10 +911,6 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors .topic
 	color: var(--primary) !important;
 }
 
-html.anon body.categories-list.category.category-webmethods-cloudstreams-connectors .navigation-controls #new-create-topic {
-	display: none;
-}
-
 div.connectors-foot-note {
     margin-bottom: 30px;
 }
@@ -974,12 +943,6 @@ html.connectors-foot-note .full-width #list-area {
 		.cooked {
     			margin-left: 0em !important;
 		}
-	}
-}
-
-.archetype-private_message {
-	#new-create-topic {
-    		display: none;
 	}
 }
 
