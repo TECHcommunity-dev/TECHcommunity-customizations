@@ -767,8 +767,12 @@ body.tags-page.category-forum {
         #navigation-bar > {
             li[title="Topics that have not been answered"] {
                 position: absolute;
-                top: 3.5em;
+                top: 4em;
                 right: 10.5em;
+		    
+		a {
+                    padding: 15px 15px !important;
+                }
             }
         }
     }
