@@ -273,59 +273,36 @@ body:not(.staff) #show-tag-info {
 /*end New topic button*/
 
 
-/*Try free button and dropdown menu in header*/
+/*Try free button in header*/
 
-.try-free a {
-    //padding: 8px 18px 8.5px 18px !important;
-    font-weight: bold !important;
-    //margin-right: 5px;
-    //background-color: #3cc1b7;
-    //background-color: #d9ec27;
-    color: #011f3d !important;
-    //display: inline-block;
-    //line-height: 1;
-    //font-size: 14px !important;
-}
-
-.custom-header-links .try-free {
-    padding: 8.3px 18px 6.8px 18px !important;
-    background-color: #d9ec27;
-}
-
-.try-free:hover {
-    background-color: #abbb17 !important;
-    transition: all 0.25s;
-}
-
-/*Hide dropdown menu*/
-/*.dropdown-try-free-menu {
-    display: none;
-    position: absolute;
-    top: 100px;
-    left: 1px;
-    width: 280px;
-    padding: 15px 0;
-    margin: -55px;
-    list-style: none;
-    background: #ffffff;
-    background-clip: border-box;
-    border: 1px #ccc solid;
-    z-index: 1001;
-}
-.dd-try-free {
-    color: #fff;
-    margin-left: 25px;
-}
-.dd-try-free a {
-    color: #333 !important;
-}
-.custom-header-links:hover+.dropdown-try-free-menu,
-.dropdown-try-free-menu:hover {
-	display: block !important;
-}
 .custom-header-links {
-     height: 45px
-}*/
+	.try-free-custom-header-links {
+		padding: 6.3px 18px 5.8px 18px !important;
+		background-color: #d9ec27;
+		cursor: pointer;
+		
+		&:hover {
+			background-color: #abbb17 !important;
+			transition: all 0.25s;
+		}
+		
+		a {
+			padding: 0px !important;
+			color: #333;
+			font-size: var(--font-down-1);
+			font-weight: bold !important;
+			color: #011f3d !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+    html:not(.anon) {
+        .custom-header-links {
+            margin-right: -40px;
+        }
+    }
+}
 
 /*End try free button and dropdown menu in header*/
 
