@@ -994,3 +994,13 @@ body.category.category-knowledge-base {
 #create-topic .d-button-label {
     font-size: 1.1rem;
 }
+
+
+.category-knowledge-base, 
+.category-news,
+.category-drafts,
+.category-alfabet-user-group-meetings {
+	#post_1 .cooked>p img:not(.emoji) {
+		display: block !important;
+	}
+}
