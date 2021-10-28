@@ -1004,3 +1004,14 @@ body.category.category-knowledge-base {
 		display: block !important;
 	}
 }
+
+.btn-flat.unaccepted {
+    .d-button-label {
+	    color: var(--primary-low-mid-or-secondary-high) !important;
+    }
+    
+    &:hover .d-button-label {
+	    color: var(--primary) !important;
+    }
+}
+
