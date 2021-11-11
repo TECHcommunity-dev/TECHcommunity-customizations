@@ -931,6 +931,12 @@ html.connectors-foot-note .full-width #list-area {
 	margin-bottom: 0px !important;
 }
 
+body.category.category-webmethods-cloudstreams-connectors{
+    #header-list-area .category-boxes-with-topics .category-box .custom-topic-count {
+        display: none;
+    }
+}
+
 /*end webmethods-connectors category*/
 
 .published-page-header {
