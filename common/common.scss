@@ -615,6 +615,38 @@ html:not(.anon) body.tag-Alfabet div.tag-sidebar div.tag-sidebar-contents h1 {
 body.tag-Alfabet div.tag-sidebar div.tag-sidebar-contents div[data-techcommunity-alfabet-tag-sidebar] {
 	line-height: 1.7;
 }
+
+body.category.category-alfabet {
+    #header-list-area .category-box .custom-topic-count {
+        display: none;
+    }
+}
+
+
+body.staff.category.category-alfabet-alfabet-deep-dive-feature-trainings,
+body.staff.category.category-alfabet-alfabet-cookbook-use-cases,
+body.staff.category.category-alfabet-alfabet-release-information,
+body.staff.category.category-alfabet-alfabet-user-group-meetings,
+body.staff.category.category-alfabet-alfabet-newsletter {
+    .topic-list {
+        margin-top: 50px;
+        
+        td.views {
+            display: block !important;
+        }
+    }
+}
+
+body.category.category-alfabet-alfabet-deep-dive-feature-trainings,
+body.category.category-alfabet-alfabet-cookbook-use-cases,
+body.category.category-alfabet-alfabet-release-information,
+body.category.category-alfabet-alfabet-user-group-meetings,
+body.category.category-alfabet-alfabet-newsletter {
+    .topic-list {
+        margin-top: 40px;
+  
+    }
+}
 /*End Alfabet user group category changes*/
 
 /*Tag pages*/
