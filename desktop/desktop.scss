@@ -804,3 +804,18 @@ body.category .navigation-container #navigation-bar li {
     		display: block;
 	}
 }
+
+//webMethods Integration Download page cust - https://tech.forums.softwareag.com/t/webmethods-integration-free-trial-download/235077
+div[data-wrap="webmethods-int-trial-guide"] {
+    div[data-wrap="webmethods-int-trial-getting-started"] {
+        div[data-wrap="webmethods-int-trial-getting-started-column"] {
+            float: left;
+            width: 33%;
+            
+            p {
+        		width: 80%;
+            }
+        }
+    }
+}
+//end webMethods Integration Download page cust
