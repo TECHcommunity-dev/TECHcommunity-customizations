@@ -1124,3 +1124,12 @@ div[data-wrap="webmethods-int-trial-info"] {
 
 //end webMethods Integration Download page cust
 
+//remove sticky avatars 
+body:not(.category-forum) .topic-post.sticky-avatar {
+  .topic-avatar {
+    position: relative !important;
+    top: unset  !important;
+  }
+}
+//end remove sticky avatars
+
