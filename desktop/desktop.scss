@@ -363,6 +363,25 @@ body {
 }
 /*end Customize topics in a news category*/
 
+//Added the text for the post-control buttons for Desktop view (Like, Share and Bookmark) [Added by: Saurabh; Date: 24-11-2021]
+.container.posts {
+	.post-stream {
+		.post-controls {
+			.actions {
+				@include breakpoint(large) {
+					button.like::after { content: "" !important; }
+					button.share::after { content: "" !important; }
+					button.bookmark::after { content: "" !important; }
+				}
+				button.like::after { content: " Like"; }
+				button.share::after { content: " Share"; }
+				button.bookmark::after { content: " Bookmark"; }
+			}
+		}
+	}
+}
+//End of Adding the text for the post-control buttons
+
 /*Alfabet user section*/
 
 body.category.category-alfabet {
