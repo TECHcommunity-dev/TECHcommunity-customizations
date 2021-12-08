@@ -1022,6 +1022,10 @@ body.category.category-knowledge-base {
     &:focus svg.d-icon {
     	color: var(--tertiary) !important;
     }
+	
+    .select-kit-selected-name.selected-name {
+        margin-top: -5px;
+    }
 }
 
 #create-topic .d-button-label {
