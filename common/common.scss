@@ -41,7 +41,9 @@ body.tags-page.category-video,
 body.category.category-knowledge-base-video,
 body.tags-page.category-community-news,
 body.tags-page.category-empower-news-and-announcements,
-body.tags-page:not([class*="category-"]) {
+body.tags-page:not([class*="category-"]),
+body.category-feedback-technology-radar,
+body.category-news-empower-news-and-announcements {
     #navigation-bar {
         li[title="Topics that have not been answered"] {
             display: none !important;
