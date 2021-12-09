@@ -993,7 +993,8 @@ body.category.category-knowledge-base {
 }
 
 body.tags-page.category-knowledge-base,
-body.category.category-knowledge-base {
+body.category.category-knowledge-base,
+body.tags-page.category-news {
     .category-breadcrumb li:nth-child(2) {
         display: none !important;
     }
