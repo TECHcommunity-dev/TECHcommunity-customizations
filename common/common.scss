@@ -34,9 +34,19 @@ body.category-news #topic-title {
 }
 
 //hide Unanswered topic button on home and news page
-body.category-news #navigation-bar li[title="Topics that have not been answered"],
-body.navigation-topics #navigation-bar li[title="Topics that have not been answered"]{
-    display: none;
+
+body.category-news,
+body.navigation-topics,
+body.tags-page.category-video,
+body.category.category-knowledge-base-video,
+body.tags-page.category-community-news,
+body.tags-page.category-empower-news-and-announcements,
+body.tags-page:not([class*="category-"]) {
+    #navigation-bar {
+        li[title="Topics that have not been answered"] {
+            display: none !important;
+        }
+    }
 }
 
 body.archetype-regular.category-news:not(.staff) span[title="This topic is unlisted; it will not be displayed in topic lists, and can only be accessed via a direct link"] {
@@ -650,9 +660,6 @@ body.category.category-alfabet-alfabet-newsletter {
 /*End Alfabet user group category changes*/
 
 /*Tag pages*/
-body.tags-page:not([class*="category-"]) li[title="Topics that have not been answered"] {
-    display: none !important;
-}
 
 body.tags-page li[title="topics you have bookmarked"] {
     display: none !important;
@@ -955,20 +962,10 @@ body.category.category-webmethods-cloudstreams-connectors{
 	}
 }
 
-body.tags-page.category-video,
-body.category.category-knowledge-base-video,
-body.tags-page.category-community-news,
-body.tags-page.category-empower-news-and-announcements {
-    #navigation-bar {
-        li[title="Topics that have not been answered"] {
-            display: none !important;
-        }
-    }
-}
-
 
 body.tags-page.category-feedback,
-body.category-feedback {
+body.category-feedback,
+body.category-community-news {
     li.solved-status-filter {
         display: none;
     }
