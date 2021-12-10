@@ -1056,17 +1056,22 @@ body.tags-page.category-news {
 }
 
 //webMethods Integration Download page cust - https://tech.forums.softwareag.com/t/webmethods-integration-free-trial-download/235077
-div[data-wrap="webmethods-int-trial-guide"] {
-    display: inline-block;
+div[data-wrap="free-trial-guide"] {
+	display: inline-block;
     background-color: #F2F4F5;
     margin-top: 50px;
     
-    div[data-wrap="webmethods-int-trial-getting-started"] {
+    div[data-wrap="free-trial-getting-started"] {
         padding: 40px 60px;
         
-        div[data-wrap="webmethods-int-trial-getting-started-column"] {
+        div[data-wrap="free-trial-getting-started-column"],
+        div[data-wrap="free-trial-getting-started-column-2"] {
+            float: left;
+            width: 33%;
         
             p {
+        		width: 80%;
+        		
         		a {
         		    display: flex;
         		    color: #3b2c5e !important;
@@ -1084,9 +1089,17 @@ div[data-wrap="webmethods-int-trial-guide"] {
         	}
     	
         }
+        
+        div[data-wrap="free-trial-getting-started-column-2"] {
+            width: 50% !important;
+        
+            p {
+        		width: 90% !important;
+        	}
+        }
     }
     
-    div[data-wrap="webmethods-int-trial-about"] {
+    div[data-wrap="free-trial-about"] {
     	float: left;
     	padding: 0px 60px 40px 60px;
     	
@@ -1098,12 +1111,15 @@ div[data-wrap="webmethods-int-trial-guide"] {
     }
 }
 
-div[data-wrap="webmethods-int-trial-info"] {
-    img[src="https://aws1.discourse-cdn.com/techcommunity/original/2X/2/217856cbfb35f00c05bfd9a2469b298227ec57d5.png"] {
+
+
+div[data-wrap="free-trial-info"] {
+
+    img[src="https://aws1.discourse-cdn.com/techcommunitystaging/original/2X/2/217856cbfb35f00c05bfd9a2469b298227ec57d5.png"] {
         width: 10% !important;
     }
     
-    h2 {
+    h1 {
         font-size: var(--font-up-6) !important;
         margin-top: 5px !important;
     }
@@ -1121,6 +1137,7 @@ div[data-wrap="webmethods-int-trial-info"] {
     p {
         color: var(--secondary-medium);
     }
+
 }
 
 //end webMethods Integration Download page cust
