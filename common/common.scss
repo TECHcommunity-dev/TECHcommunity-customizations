@@ -556,6 +556,9 @@ body.category.category-alfabet #main-outlet footer.topic-list-bottom
 
 body.category.category-alfabet .category-boxes .category-box .category-box-inner {
     padding: 3em !important;
+    border: 1px solid var(--primary-low) !important;
+    background: #ffffff !important;
+    box-shadow: 0px 0px 5px 1px #e4e5e5;
 }
 
 body.archetype-regular.category-alfabet-alfabet-deep-dive-feature-trainings #new-create-topic,
