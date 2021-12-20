@@ -1000,32 +1000,53 @@ body.tags-page.category-news {
 }
 
 //change notifications-button 
-.list-controls .navigation-controls .notifications-button summary.btn {
-    background: var(--highlight-low)!important;
-    border: 1px solid #d7ef00;
-    padding-left: 16px;
-    padding-right: 16px;
-    
-    &:after {
-        content: "subscribe";
-        position: absolute;
-        top: 37px;
-        right: 9px;
-        font-size: 0.7rem;
-        color: gray;
+.list-controls .navigation-controls .notifications-button {
+    summary.btn {
+        background: var(--highlight-low)!important;
+        border: 1px solid #d7ef00;
+        padding-left: 16px;
+        padding-right: 16px;
+        
+        &:after {
+            position: absolute;
+            top: 37px;
+            right: 9px;
+            font-size: 0.7rem;
+            color: gray;
+        }
+        
+        &:hover svg.d-icon {
+            color: var(--hljs-symbol) !important;
+        }
+        
+        &:focus svg.d-icon {
+        	color: var(--tertiary) !important;
+        }
+        
+        .select-kit-selected-name.selected-name {
+            margin-top: -5px;
+        }
     }
     
-    &:hover svg.d-icon {
-        color: var(--hljs-symbol) !important;
+    summary.btn[data-name="regular"],
+    summary.btn[data-name="muted"] {
+        &:after {
+            content: "subscribe";
+        }
     }
-	
-    &:focus svg.d-icon {
-    	color: var(--tertiary) !important;
+    
+    summary.btn[data-name="watching_first_post"],
+    summary.btn[data-name="watching"],
+    summary.btn[data-name="tracking"] {
+        &:after {
+            content: "subscribed";
+            right: 6px !important;
+        }
+        
+        background: var(--success-low)!important;
+        border: 1px solid var(--success-medium) !important;
     }
-	
-    .select-kit-selected-name.selected-name {
-        margin-top: -5px;
-    }
+    
 }
 
 #create-topic .d-button-label {
