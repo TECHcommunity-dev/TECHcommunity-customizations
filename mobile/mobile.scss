@@ -198,28 +198,3 @@ body:not(.tags-page) {
 ol.category-breadcrumb {
     margin-left: 0px !important;
 }
-
-// Resolved the issue of ovelapping Header navigation over the Subscribe/All sections/All tags drop-down popup [Added by: Saurabh; Date: 23-12-2021]
-body {
-    .list-controls {
-        z-index: auto;
-    }
-    .select-kit{
-        &.notifications-button.tag-notifications-button.is-expanded, &.category-drop.is-expanded, &.tag-drop.is-expanded {
-            z-index: auto;
-            .select-kit-body {
-                z-index: 1001;
-            }
-        }
-    }
-}
-
-// Binjan; Show content (Advance options) for Advance Search button; 22.12.2021
-.search-menu .search-input {
-    input#search-term {
-        padding-right: 150px; 
-    }
-    a.show-advanced-search:after {
-        content: ' Advanced options';
-    }
-}
