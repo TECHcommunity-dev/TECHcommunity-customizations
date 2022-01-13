@@ -17,6 +17,7 @@ const forum = [];
 const news = [];
 const feedback = [];
 const videos = [];
+const events = [];
 
 
 products.push(
@@ -440,6 +441,28 @@ videos.push(
     )
 )
 
+events.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/upcoming-events'
+                
+            }, 
+            "Events"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Upcoming User Group meetings, hackatons and other events."  
+        )
+    )
+)
+
  dropdownMenuSections.push(
     h(
           'ul.dd-sections-knowledgeBase', knowledgeBase
@@ -455,6 +478,9 @@ videos.push(
     ),
     h(
           'ul.dd-sections-feedback', feedback
+    ),
+    h(
+          'ul.dd-sections-feedback', events
     )
 )
 
