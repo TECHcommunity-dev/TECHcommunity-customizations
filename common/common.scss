@@ -1199,3 +1199,23 @@ body {
         content: ' Advanced options';
     }
 }
+
+// Hide the below 7 section on the topic page if the topic contains plain-view tag [Added by: Saurabh; Date:10-01-2022]
+//1. New Topic button
+//2. Topic categories and tags section
+//3. Topic metadata (i.e Author name, badges and create date                            
+//4. Suggested topics      
+// [Note: Below 3 sections will displayed only to staff members [Added by: Ajroddin; Date:12-01-2022]
+//5. Post controls   
+//6. Post Links container
+//7. Topic footer buttons
+body.archetype-regular.tag-plain-view {
+    #new-create-topic, .topic-category, .topic-meta-data, .suggested-topics{
+        display: none !important;
+    }
+    &:not(.staff){
+	.post-controls, .post-links-container, #topic-footer-buttons{
+		display: none !important;
+	}
+    }
+}
