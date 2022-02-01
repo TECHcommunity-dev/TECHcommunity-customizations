@@ -199,3 +199,15 @@ body:not(.tags-page) {
 ol.category-breadcrumb {
     margin-left: 0px !important;
 }
+
+html.anon .d-header .products-caret {
+    display: none !important;
+}
+
+.b-header .header-dropdown-toggle {
+    display: none;
+}
+
+.topic-list-body .topic-list-item td {
+    padding: 10px;
+}
