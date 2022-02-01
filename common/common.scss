@@ -1235,3 +1235,16 @@ body.navigation-topics {
 }
 
 // end change topic-list background-color
+
+
+// hide topic date for this topic https://tech.forums.softwareag.com/t/software-ag-product-roadmaps/235298
+[data-topic-id="235298"] article#post_1 .topic-body { 
+    .topic-meta-data a.post-date[href*="/t/software-ag-product-roadmaps/235298"] {
+        display: none;
+    }
+}
+
+// hide scrollbar on terracotta thank you page
+div[data-wrap="iframe-terracotta-form"] {
+    overflow: hidden;
+}
