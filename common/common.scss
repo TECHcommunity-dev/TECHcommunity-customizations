@@ -1219,3 +1219,19 @@ body.archetype-regular.tag-plain-view {
 	}
     }
 }
+
+// change topic-list and topic-list-item background-color for all categories and tag pages
+body.category-header:not(.category-knowledge-base),
+body.tags-page:not(.category-knowledge-base),
+body.navigation-topics {
+    #main>div:first-child{
+        background-color: #F2F4F5;
+        
+        .topic-list .topic-list-item {
+            background: #ffffff !important;
+            border-bottom: 10px solid #F2F4F5 !important;
+        }
+    }
+}
+
+// end change topic-list background-color
