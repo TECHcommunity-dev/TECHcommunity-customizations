@@ -211,3 +211,13 @@ html.anon .d-header .products-caret {
 .topic-list-body .topic-list-item td {
     padding: 10px;
 }
+
+.list-controls .navigation-controls .notifications-button summary.btn {
+    .select-kit-selected-name.selected-name {
+        margin-top: 0px !important;
+    }
+    
+    &:after {
+        right: 1.7px !important;
+    }
+}
