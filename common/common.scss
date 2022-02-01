@@ -1248,3 +1248,20 @@ body.navigation-topics {
 div[data-wrap="iframe-terracotta-form"] {
     overflow: hidden;
 }
+
+// hide topic info for topics with tag free-use (download pages)
+body.category-news.tag-free-use:not(.staff) {
+    .title-wrapper .topic-category {
+        display: none !important;
+    }
+    
+    .topic-body .post-infos {
+        display: none !important;
+    }   
+}
+
+body:not(.staff) .topic-list-item .link-bottom-line a[href="/tag/free-use"] {
+    display: none;
+}
+
+// end hide topic info for topics with tag free-use(download page)
