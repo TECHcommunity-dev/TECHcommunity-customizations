@@ -1265,3 +1265,13 @@ body:not(.staff) .topic-list-item .link-bottom-line a[href="/tag/free-use"] {
 }
 
 // end hide topic info for topics with tag free-use(download page)
+
+// fix admin post menu position
+.post-menu-area .post-admin-menu.popup-menu {
+    bottom: unset !important;
+}
+
+// hide thumbnail on topic-list fro tag newsletter
+body.tags-page.tag-newsletter .topic-list-thumbnail {
+    display: none;
+}
