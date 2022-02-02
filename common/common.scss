@@ -1275,3 +1275,78 @@ body:not(.staff) .topic-list-item .link-bottom-line a[href="/tag/free-use"] {
 body.tags-page.tag-newsletter .topic-list-thumbnail {
     display: none;
 }
+
+//Apply style on the hamburger menu,search icon,user menu in the header And topic-notifications [Added by: Ajroddin; Date:20-01-2022]
+/* search icon in header */
+body:not(.archetype-regular):not(.archetype-private_message) .d-header {
+    #search-button {
+      background: #9a50f838;
+      border-radius: 40%;
+      border-bottom-right-radius: 0;
+      padding-bottom: 1px;
+      padding-right: 1px;
+      margin-left: -2px;
+    }
+  }
+  .contents .panel {
+    .panel-body, .panel-body-contents {
+      .category-links {
+        background-color: #f2f2ea;
+      }
+    }
+    /*user menu on header*/
+    .user-menu {
+      font-size: 1.15rem;
+      .glyphs .widget-button .d-icon {
+        color: #3cc1b7;
+        height: 1.5em;
+        width: 1.5em;
+      }
+      div.menu-links-header .menu-links-row button.active .d-icon {
+        color: #9a50f8;
+      }
+    }
+  }
+  html.anon .header-dropdown-toggle.search-dropdown {
+    padding-right: 5px;
+  }
+  /*topic list avatars */
+  .topic-list-body .posters.topic-list-data {
+    img.avatar:hover {
+      transform: scale(1.4);
+      border-radius: 25%;
+    }
+  }
+  /* topic-notifications */
+  body.category {
+    #topic {
+      .topic-timer-info .topic-timer-heading {
+        color: var(--primary-low);
+        font-weight: 300;
+      }
+    }
+    #topic-footer-buttons {
+      .reason  .topic-notifications-options {
+        .dropdown-select-box-header {
+          background: var(--highlight-low);
+          border: 1px solid #d7ef00;
+          padding: 1em;
+        }
+        .topic-notifications-options {
+          display: inline !important;
+        }
+      }
+      .select-kit-header-wrapper,
+      .d-icon {
+        color: var(--primary-high);
+      }
+      .topic-notifications-button {
+        background: var(--primary-low);
+        .topic-notifications-options.has-selection:hover
+          .select-kit-selected-name
+          .d-icon {
+          color: var(--hljs-symbol) !important;
+        }
+      }
+    }
+  }
