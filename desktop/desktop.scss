@@ -54,7 +54,7 @@
 
 .dd-products {
     position: absolute;
-    top: 52px;
+    top: 3.5em;
     background-color: #fff;
     border: 1px #ccc solid;
     padding: 24px 0px 20px 40px;
@@ -176,7 +176,7 @@ header.hide-menus {
 
 .dd-sections {
     position: absolute;
-    top: 52px;
+    top: 3.5em;
     background-color: #fff;
     border: 1px #ccc solid;
     padding: 24px 0px 20px 40px;
@@ -458,11 +458,6 @@ html:not(.anon) .d-header .d-header-icons .search-dropdown {
 .products,
 .sections-techcomm {
     padding-top: 1.5em !important;
-}
-
-.dd-products,
-.dd-sections {
-    top: 3.5em !important;
 }
 
 .d-header {
