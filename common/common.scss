@@ -1332,3 +1332,22 @@ body:not(.archetype-regular):not(.archetype-private_message) .d-header {
       }
     }
   }
+
+[data-topic-id="254619"] .post-stream #post_1 .topic-body table {
+    
+    td {
+        width: 50%;
+    }
+    
+    tr:nth-child(1) td>div {
+        height: 50em;
+        overflow: auto;
+    }
+    
+    tr:nth-child(3) td>div {
+        height: 40em;
+        overflow: auto;
+    }
+}
+
+
