@@ -638,6 +638,22 @@ body.category.category-feedback{
     }
 }
 
+body.tags-page.category-knowledge-base,
+body.category.category-knowledge-base,
+body.tags-page.category-news {
+    .category-breadcrumb .combo-box.tag-drop {
+        margin-left: -14px;
+    }
+}
+
+
+body.tags-page.category-forum, 
+body.tags-page.tag-banner {
+    .category-breadcrumb .combo-box.tag-drop {
+        margin-left: -6px;
+    }
+}
+
 //add icons to nav
 .navigation-container {
     #navigation-bar > {
