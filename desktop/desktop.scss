@@ -179,7 +179,7 @@ header.hide-menus {
     top: 3.5em;
     background-color: #fff;
     border: 1px #ccc solid;
-    padding: 24px 0px 20px 40px;
+    padding: 24px 0px 20px 68px;
     display: none;
 
     ul {
@@ -219,11 +219,6 @@ header.hide-menus {
     .sections-techcomm, .sections-caret {
     	display: none;
     }
-}
-
-ul.dd-sections-knowledgeBase, 
-ul.dd-sections-videos {
-    margin-left: 35px !important;
 }
 
 /*End sections dropdown menu in header*/
