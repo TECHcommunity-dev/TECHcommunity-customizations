@@ -221,3 +221,24 @@ html.anon .d-header .products-caret {
         right: 1.7px !important;
     }
 }
+
+body.tags-page.category-forum {
+    .category-breadcrumb {
+            .combo-box.tag-drop {
+                margin-left: -176px;
+            }
+            
+            .solved-status-filter {
+                margin-left: 0px !important;
+            }
+    }
+}
+
+body.tag-banner.tags-page {
+    .category-breadcrumb {
+        .combo-box.tag-drop {
+            margin-left: -176px;
+        }
+            
+    }
+}
