@@ -986,7 +986,7 @@ body.tags-page.category-news,
 body.tags-page.category-knowledge-base,
 body.category.category-knowledge-base,
 body.tags-page.tag-banner {
-    .category-breadcrumb li:first-child {
+    .category-breadcrumb+li:first-child {
         display: none !important;
     }
 }
@@ -994,7 +994,7 @@ body.tags-page.tag-banner {
 body.tags-page.category-knowledge-base,
 body.category.category-knowledge-base,
 body.tags-page.category-news {
-    .category-breadcrumb li:nth-child(2) {
+    .category-breadcrumb+li:nth-child(2) {
         display: none !important;
     }
 }
