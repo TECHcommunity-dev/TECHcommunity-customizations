@@ -1,4 +1,4 @@
- @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);
 //TECHcommunity-customizations - common.scss
 
 /*Customize topics in a news category*/
@@ -134,18 +134,18 @@ ol.category-breadcrumb .solved-status-filter {
 
 .category-news .topic-body,p
 .category-knowledge-base .topic-body {
-    background-color: #ffffff !important;
+    background-color: var(--secondary) !important;
 }
 
 
 //custom CSS for tables and links in posts
 [data-techcommunity-table] table td {
-    border: 1px solid #e9e9e9;
+    border: 1px solid var(--primary-low);
 } 
 
 [data-techcommunity-button] a {
     border-radius: 15px 0 15px 0;
-    color: #ffffff;
+    color: var(--secondary);
     background-color: #0899cc;
     padding: 8px 20px;
     font-size: 1.6rem;
@@ -153,7 +153,7 @@ ol.category-breadcrumb .solved-status-filter {
 
 [data-techcommunity-product-tags] a {
     color: #000000;
-    background-color: #e9e9e9;
+    background-color: var(--primary-low);
     padding: 8px 12px;
     line-height: 1.1;
     font-size: 1rem;
@@ -194,7 +194,7 @@ body.category-news .topic-list .posts {
 
 //change color of links in titles
 .topic-body h1 a, .topic-body h2 a, .topic-body h3 a, .topic-body h4 a, .topic-body h5 a, .topic-body h6 a {
-    color: #222 !important;
+    color: var(--primary-or-primary-low-mid) !important;
 }
 
 //hide tag info button 
@@ -237,12 +237,12 @@ body:not(.staff) #show-tag-info {
 }
 
 .cc-color-override--659527902.cc-window {
-    background: #1c5569 !important;
-    border-top: 1px solid #fff;
+    background: var(--quaternary) !important;
+    border-top: 1px solid var(--secondary);
 }
 .cc-color-override--659527902 .cc-btn {
     //background: #1cd469 !important;
-    background: #D9EC27 !important;
+    background: var(--highlight) !important;
 }
 
 .signup-cta {
@@ -256,7 +256,7 @@ body:not(.staff) #show-tag-info {
 
 //change create topic button style on homepage
 #create-topic {
-    background-color: #3cc1b7 !important;
+    background-color: var(--tertiary) !important;
     color: #011f3d !important;
     font-weight: bold !important;
 	
@@ -278,7 +278,7 @@ body:not(.staff) #show-tag-info {
 .custom-header-links {
 	.try-free-custom-header-links {
 		padding: 6.3px 18px 5.8px 18px !important;
-		background-color: #d9ec27;
+		background-color: var(--highlight);
 		cursor: pointer;
 		
 		&:hover {
@@ -346,7 +346,7 @@ body.navigation-topics .tag-sidebar {
 }
 
 .tag-sidebar [data-techcommunity-product-tags] a:hover {
-    color: #fff !important;
+    color: var(--secondary) !important;
     background: #9a50f8 !important;
     transition: all .3s ease;
 }
@@ -361,7 +361,7 @@ div[data-webmethods-tag-box] {
 	height: 190px;
 	margin: 0 16px 16px 0;
     display: inline-table;
-    background-color: #fff;
+    background-color: var(--secondary);
 }
  
 div[data-webmethods-tag-box] h3 {
@@ -557,7 +557,7 @@ body.category.category-alfabet #main-outlet footer.topic-list-bottom
 body.category.category-alfabet .category-boxes .category-box .category-box-inner {
     padding: 3em !important;
     border: 1px solid var(--primary-low) !important;
-    background: #ffffff !important;
+    background: var(--secondary) !important;
     box-shadow: 0px 0px 5px 1px #e4e5e5;
 }
 
@@ -813,19 +813,19 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors .categ
 body.category.category-webmethods-cloudstreams-connectors-a .category-navigation li.tag-drop,
 body.category.category-webmethods-cloudstreams-connectors-c .category-navigation li.tag-drop,
 body.category.category-webmethods-cloudstreams-connectors-d .category-navigation li.tag-drop,
-body.category.category-webmethods-cloudstreams-connectors-e .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-f .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-g .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-i .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-j .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-l .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-m .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-n .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-o .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-r .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-s .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-t .category-navigation li.tag-drop,,
-body.category.category-webmethods-cloudstreams-connectors-w .category-navigation li.tag-drop,,
+body.category.category-webmethods-cloudstreams-connectors-e .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-f .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-g .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-i .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-j .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-l .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-m .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-n .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-o .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-r .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-s .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-t .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors-w .category-navigation li.tag-drop,
 body.category.category-webmethods-cloudstreams-connectors-z .category-navigation li.tag-drop,
 
 body.archetype-regular.category.category-webmethods-cloudstreams-connectors-a .topic-body iframe.pdf-preview,
@@ -994,7 +994,7 @@ body.archetype-regular.category-knowledge-base-video {
             top: 37px;
             right: 9px;
             font-size: 0.7rem;
-            color: gray;
+            color: var(--secondary-medium);
         }
         
         &:hover svg.d-icon {
@@ -1133,7 +1133,7 @@ div[data-wrap="free-trial-info"] {
     div[data-wrap="download-button"] {
         a {
             background-color: #8e3cf7;
-            color: #ffff;
+            color: var(--secondary);
             padding: 12px;
         }
         
@@ -1269,69 +1269,76 @@ body:not(.archetype-regular):not(.archetype-private_message) .d-header {
       padding-right: 1px;
       margin-left: -2px;
     }
-  }
-  .contents .panel {
+}
+.drop-down-mode .d-header-icons .search-dropdown.active .icon {
+    background: var(--secondary) !important;
+}
+
+.drop-down-mode .d-header-icons .search-dropdown.active .icon:after {
+    border-top: none !important;
+}
+.contents .panel {
     .panel-body, .panel-body-contents {
-      .category-links {
-        background-color: #f2f2ea;
-      }
+        .category-links {
+            background-color: #f2f2ea;
+        }
     }
     /*user menu on header*/
     .user-menu {
-      font-size: 1.15rem;
-      .glyphs .widget-button .d-icon {
-        color: #3cc1b7;
-        height: 1.5em;
-        width: 1.5em;
-      }
-      div.menu-links-header .menu-links-row button.active .d-icon {
-        color: #9a50f8;
-      }
+        font-size: 1.15rem;
+        .glyphs .widget-button .d-icon {
+            color: #3cc1b7;
+            height: 1.5em;
+            width: 1.5em;
+        }
+        div.menu-links-header .menu-links-row button.active .d-icon {
+            color: #9a50f8;
+        }
     }
-  }
-  html.anon .header-dropdown-toggle.search-dropdown {
+}
+html.anon .header-dropdown-toggle.search-dropdown {
     padding-right: 5px;
-  }
-  /*topic list avatars */
-  .topic-list-body .posters.topic-list-data {
+}
+/*topic list avatars */
+.topic-list-body .posters.topic-list-data {
     img.avatar:hover {
-      transform: scale(1.4);
-      border-radius: 25%;
+        transform: scale(1.4);
+        border-radius: 25%;
     }
-  }
-  /* topic-notifications */
-  body.category {
+}
+/* topic-notifications */
+body.category {
     #topic {
-      .topic-timer-info .topic-timer-heading {
-        color: var(--primary-low);
-        font-weight: 300;
-      }
+        .topic-timer-info .topic-timer-heading {
+            color: var(--primary-low);
+            font-weight: 300;
+        }
     }
     #topic-footer-buttons {
-      .reason  .topic-notifications-options {
-        .dropdown-select-box-header {
-          background: var(--highlight-low);
-          border: 1px solid #d7ef00;
-          padding: 1em;
+        .reason  .topic-notifications-options {
+            .dropdown-select-box-header {
+                background: var(--highlight-low);
+                border: 1px solid #d7ef00;
+                padding: 1em;
+            }
+            .topic-notifications-options {
+                display: inline !important;
+            }
         }
-        .topic-notifications-options {
-          display: inline !important;
+        .select-kit-header-wrapper,
+        .d-icon {
+            color: var(--primary-high);
         }
-      }
-      .select-kit-header-wrapper,
-      .d-icon {
-        color: var(--primary-high);
-      }
-      .topic-notifications-button {
-        background: var(--primary-low);
-        .topic-notifications-options.has-selection:hover
-          .select-kit-selected-name
-          .d-icon {
-          color: var(--hljs-symbol) !important;
+        .topic-notifications-button {
+            background: var(--primary-low);
+            .topic-notifications-options.has-selection:hover
+                .select-kit-selected-name
+                .d-icon {
+                    color: var(--hljs-symbol) !important;
+            }
         }
-      }
     }
-  }
+}
 
 [data-topic-id="254619"] .post-stream #post_1 .topic-body table {
     
@@ -1350,4 +1357,363 @@ body:not(.archetype-regular):not(.archetype-private_message) .d-header {
     }
 }
 
+// ------ CSS Moved From The "my component - common.scss" [Date: 11-02-2022] ------------
 
+//Display the posters and activity headers of the topic-list in the table cell format mandatorily.
+.posters, .activity {
+    display: table-cell !important;
+}
+
+/*** Topics list CSS ***/
+//secondary nav
+.nav-pills>li>a {
+    font-size: 1em;
+}
+
+//make hearts lighter
+.likes svg.fa.d-icon.d-icon-heart.svg-icon.svg-string {
+    fill: #c2c2c2;
+}
+
+//Applying margin to the tags in the topic-list
+.topic-list .link-bottom-line a.badge-wrapper.box, .topic-list .link-bottom-line a.discourse-tag.box {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.link-bottom-line .discourse-tag, .topic-header-extra .discourse-tag {
+    margin-bottom: 2px;
+}
+
+//Set the Background color to #ecffec for the topic item in the topic-list if the topic has accepted answer (i.e. Solved).
+body.navigation-topics #main>div:first-child .topic-list .topic-list-item.status-solved, .status-solved {
+    background: #ecffec !important;
+}
+/*** Topic list CSS Ends ***/
+
+/*** Tag selected view ***/
+//Hide the welcome banner on tags pages that have the custom sidebare enabled
+.custom-sidebar #banner {
+    display: none;
+}
+.custom-sidebar #list-area .show-more.has-topics .alert {
+    width: 73%;
+    padding-top: 7px;
+    padding-bottom: 9px;
+}
+/*** Tag selected view Ends ***/
+
+/*** Composer CSS ***/
+//make composer more compact
+#reply-control .reply-to {
+    margin: 0px 0 4px 0;
+}
+.composer-fields .title-and-category {
+    margin-bottom: 0 !important;
+}
+
+.composer-fields #reply-title, .composer-fields .select-kit .select-kit-header {
+    padding: 0px 10px;
+    min-height: 25px;
+}
+
+#reply-control .wmd-controls {
+    max-height:35vh !important;
+}
+.reply-area .select-tags-section {
+    margin: 5px 0px 0px 0px !important;
+}
+
+.select-tags-section .select-tags-body .tag-list-section ul li {
+    font-size: 0.9em;
+}
+
+#reply-control .submit-panel {
+    display: flex;
+    flex-shrink: 0;
+    margin: 2px 0 3px 0;
+}
+
+.d-editor-preview-wrapper  {
+    background: #ecf3eb;
+    padding: 0 2px 0 8px;
+    margin-left: 3px;
+}
+
+.d-editor-container .d-editor-button-bar button.upload:after {
+    content: url($image-upload);
+    filter: invert(63%) sepia(4%) saturate(0%) hue-rotate(131deg) brightness(91%) contrast(84%);
+    transition: filter 0.4s;
+    margin: 4px 0px 0px 7px;
+}
+
+.d-editor-container .d-editor-button-bar button.upload:hover:after,
+.d-editor-container .d-editor-button-bar button.upload:hover:after {
+    filter: invert(100%) sepia(3%) saturate(515%) hue-rotate(241deg) brightness(113%) contrast(83%);
+}
+
+.d-editor-container .d-editor-button-bar button.upload {
+    white-space: nowrap;
+}
+
+//Set the maximum height of the composer
+.composer-popup {
+    max-height: 50vh;
+}
+/*** Composer CSS Ends ***/
+
+/*** Container Navigation Bar CSS ***/
+// Make the navigation links background transparent and change the color scheme.
+.nav-pills > li a.active {
+    background: transparent !important;
+    border-bottom: 2px solid #9a50f8 !important;
+    color: #9a50f8 !important;
+    padding-bottom: 2px !important;
+}
+
+.nav-pills>li>a:hover {
+    background-color: rgba(154, 80, 248, 0.3) !important;
+}
+
+//Ordering tags in home page dropdown
+.tag-drop [data-name="Adabas-Natural"] {
+    order: -5;
+}
+.tag-drop [data-name="Cumulocity-IoT"] {
+    order: -4;
+}
+
+.tag-drop [data-name="webMethods"] {
+    order: -3;
+}
+.tag-drop [data-name="all tags"] {
+    order: -2;
+}
+.tag-drop [data-name="webMethods-io-Integration"] {
+    order: -1;
+}
+.tag-drop [data-name="Integration-ESB"], .tag-drop [data-name="webMethods-Integration"], .tag-drop [data-name="webMethods-General"] {
+    order: 30;
+}
+/*** Container Navigation Bar CSS Ends ***/
+
+/*** Category Based CSS ***/
+//News Category based customization 
+.category-news.tag-page .topic-body {
+    width: calc(690px + (11px * 2)) !important;
+}
+.catego+ry-news.tag-page #topic-title .title-wrapper {
+    width: 100% !important;
+    text-align: left;
+}
+.category-news.tag-page #topic-title .topic-statuses .topic-status {
+    display: none;
+}
+
+.category-news.tag-page .topic-category, .category-news.tag-page .post-info {
+ 	display: none;
+}
+.category-news.tag-page .topic-body h1 a, .category-news.tag-page .topic-body h2 a, .category-news.tag-page .topic-body h3 a {
+    color: #3cc1b7 !important;
+}
+
+//News Category based customization 
+.category-knowledge-base #list-area .show-more.has-topics {
+    top: 25px;
+}
+
+@media only screen and (min-width: 900px) {
+    .category.category-knowledge-base .topic-meta-data .post-info a span.relative-date[title] {
+      color: transparent;
+    
+      &::before {
+        content: attr(title);
+        color: var(--primary-high-or-secondary-low);
+      }
+    }
+}
+body.category.archetype-regular.category-knowledge-base .topic-owner .topic-meta-data .post-date {
+    margin-bottom: 17.5px !important;
+}
+
+body.category.archetype-regular.category-knowledge-base .topic-body .contents h1 a,
+body.category.archetype-regular.category-knowledge-base .topic-body .contents h2 a,
+body.category.archetype-regular.category-knowledge-base .topic-body .contents h3 a{
+    color: #222 !important;
+}
+
+body.category.archetype-regular.category-knowledge-base h2, body.category.archetype-regular.category-knowledge-base h3 {
+    border-bottom: none !important;
+}
+
+.category-news #topic-title h1 {
+    margin-bottom: 10px;
+}
+
+.category-knowledge-base article nav.post-controls .actions {
+    padding-right: 1em;
+}
+
+body.category.archetype-regular.category-knowledge-base #post_1 .topic-body .topic-map {
+    margin-bottom: -1px;
+    margin-left: -27px;
+    display: block !important;
+    width: 863px;
+}
+
+body.category.archetype-regular.category-knowledge-base-video #post_1 .topic-body .topic-map {
+    margin-bottom: -1px;   
+    margin-left: -5px;
+    width: 865px;
+}
+
+.category-knowledge-base,
+.category-knowledge-base-video {
+    article {
+        .topic-avatar {
+            width: 22px !important;
+            padding-left: 6px;
+		    padding-top: 8px;
+            
+            img.avatar {
+                width: 27px !important;
+                height: 27px !important;
+            }           
+        }
+    }
+}
+
+.category-knowledge-base #post_1 .cooked p:first-child + div.lightbox-wrapper, .category-news #post_1 .cooked p:first-child + div.lightbox-wrapper, .category-drafts #post_1 .cooked p:first-child + div.lightbox-wrapper, .category-alfabet-user-group-meetings #post_1 .cooked p:first-child + div.lightbox-wrapper {
+    display: block !important;
+}
+
+.category.category-knowledge-base .shared-drafts {
+    display: none !important;
+}
+
+.category-knowledge-base .loading-container .topic-timer-info {
+    border-top: none;
+}
+
+//
+.category-knowledge-base .small-action, .category-news .small-action, .category-drafts .small-action,
+.category-alfabet-user-group-meetings .small-action, .category-knowledge-base .topic-status-info, 
+.category-news .topic-status-info, .category-drafts .topic-status-info, .category-alfabet-user-group-meetings .topic-status-info,
+.category-knowledge-base .signup-cta, .category-news .signup-cta, .category-drafts .signup-cta, 
+.category-alfabet-user-group-meetings .signup-cta {
+    margin: 0 0 2em 0 !important;
+}
+
+//
+.category-knowledge-base #post_1 .cooked>p ~ p img:not(.emoji), 
+.category-news #post_1 .cooked>p ~ p img:not(.emoji), 
+.category-drafts #post_1 .cooked>p ~ p img:not(.emoji), 
+.category-alfabet-user-group-meetings #post_1 .cooked>p ~ p img:not(.emoji) {
+    display: inline-block;
+}
+
+/*** Category based CSS ***/
+
+//hide images in attachments list
+.moved-attachments img {
+    display: none !important;
+}
+
+/*** Topic Timeline CSS ***/
+.timeline-container .topic-timeline .timeline-scrollarea {
+    border-color: var(--tertiary-high);
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+    background-color: var(--tertiary-hover);
+}
+/*** Timeline CSS Ends ***/
+
+//
+.d-tooltip .d-tooltip-content {
+    color: #000000;
+}
+
+// Set the Height and Width of the video iframes present in the topic with id 237328
+[data-topic-id="237328"] .post-stream .topic-body iframe[src*="vimeo"] {
+	max-width: 100% !important;
+	height: 240px !important;
+}
+
+//Set the background color and left border for the Quoted content in the topic/reply
+aside.quote .title, blockquote {
+    border-left: 5px solid var(--tertiary);
+    background-color: #f2f2ea;
+}
+
+/*** Bran Header CSS ***/
+//Center brand header bar 
+.brand-header .contents.clearfix {
+    text-align: center;
+}
+
+//Center brand header bar [Added by Saurabh 17-12-2021] 
+.brand-header .b-header .title {
+    //float: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+/*** Brand Header CSS Ends ***/
+
+/*** Main container Dismiss Banenr CSS ***/
+#banner-content a {
+    //font-size: 20px;
+    //color: #011f3d !important;
+}
+
+//banner post box border
+#banner {
+    border: 1px solid #d7d7b7;
+}
+
+#banner #banner-content img {
+    width: 16px !important;
+    height: 16px !important;
+    margin-top: -3px !important;
+    display:none;
+}
+
+.staff #banner #banner-content img {
+    display:inline;
+}
+/*** Main container Dismiss Banenr CSS Ends ***/
+
+/*** Discourse Post Event Widget CSS ***/
+.discourse-post-event-widget {
+    background: #f2f2ea !important;
+}
+
+.discourse-post-event-widget .event-url a::before {
+    content: "Register now";
+    display: block;
+    font-size: 2em;
+}
+
+.discourse-post-event-widget .event-dates {
+    display: none;
+}
+
+/*** Discourse Post Event Widget CSS Ends ***/
+
+//Upcoming-events Calander CSS
+#upcoming-events-calendar.fc-unthemed .fc-title {
+    white-space: break-spaces;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 43px;
+}
+
+
+// Hide the title of the topic with id 235228
+h1[data-topic-id="235228"] {
+    display: none;
+}
+
+// ------ End of CSS Moved From The "my component" ------------
