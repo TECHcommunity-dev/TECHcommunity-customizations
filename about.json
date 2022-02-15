@@ -1,5 +1,6 @@
 {
   "name": "TECHcommunity-customizations",
+  "authors": "Techcommunity",
   "about_url": "https://github.com/TECHcommunity-dev/TECHcommunity-customizations/blob/master/README.md",
   "license_url": "https://github.com/TECHcommunity-dev/TECHcommunity-customizations/blob/master/LICENSE",
   "component": true,
