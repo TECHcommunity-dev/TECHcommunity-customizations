@@ -840,3 +840,16 @@ div[data-wrap="webmethods-int-trial-guide"] {
     }
 }
 //end webMethods Integration Download page cust
+
+// ------ CSS Moved From The "my component - desktop.scss" [Date: 11-02-2022] ------------
+//Navigation bar
+ul#navigation-bar {
+    border-bottom: 1px solid #dadada;
+    padding-right: 4px;
+}
+
+//Footer 
+.custom-footer .first-box {
+    max-width: 23%;
+}
+// ------ End of CSS Moved From The "my component" ------------

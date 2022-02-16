@@ -242,3 +242,15 @@ body.tag-banner.tags-page {
             
     }
 }
+
+// ------ CSS Moved From The "my component - mobile.scss" [Date: 11-02-2022] ------------
+//Added the bottom margin for the tags in the topic list
+.mobile-view .topic-list-item .discourse-tags .discourse-tag.box {
+    margin-bottom: 2px;
+}
+
+//fix https://meta.discourse.org/t/discourse-tab-bar-for-mobile/75696
+html:not(.anon) #topic-progress-wrapper.docked {
+    margin-bottom: 0 !important;
+}
+// ------ End of CSS Moved From The "my component" ------------
