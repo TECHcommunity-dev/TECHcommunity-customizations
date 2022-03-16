@@ -383,6 +383,9 @@ body {
                 margin-left: -3.84em !important;
             }
         }
+	#topic-title .title-wrapper {
+    	    width: calc(961px + (11px * 2)) !important;
+	}    
     }
 }
 
