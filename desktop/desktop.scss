@@ -361,6 +361,31 @@ body {
 }
 /*end Customize topics in a news category*/
 
+/*Customize topics under a Blog category [Added By: Saurabh, Date: 15/03/2022] */
+//Make topic title and body wider under Blog category (applied only for Desktop)
+@include breakpoint(extra-large,  min-width) {
+    body.category-knowledge-base-blog {
+        .container.posts {
+            grid-template-columns: 94% 6% !important;
+            .topic-area #new-create-topic {
+                margin-right: -4em;
+            }
+            .topic-body {
+                width: 90%;
+            }
+            .topic-area>.loading-container {
+                width: calc( 45px + 917px + (11px * 2));
+            }
+            .topic-status-info, .topic-timer-info {
+                max-width: 100%;
+            }
+            .topic-navigation{
+                margin-left: -3.84em !important;
+            }
+        }
+    }
+}
+
 //Added the text for the post-control buttons for Desktop view (Like, Share and Bookmark) [Added by: Saurabh; Date: 24-11-2021]
 .container.posts {
 	.post-stream {
