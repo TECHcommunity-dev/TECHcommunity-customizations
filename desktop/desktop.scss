@@ -361,33 +361,39 @@ body {
 }
 /*end Customize topics in a news category*/
 
-/*Customize topics under a Blog category [Added By: Saurabh, Date: 15/03/2022] */
-//Make topic title and body wider under Blog category (applied only for Desktop)
-@include breakpoint(extra-large,  min-width) {
-    body.category-knowledge-base-blog {
-        .container.posts {
-            grid-template-columns: 94% 6% !important;
-            .topic-area #new-create-topic {
-                margin-right: -4em;
-            }
-            .topic-body {
-                width: 90%;
-            }
-            .topic-area>.loading-container {
-                width: calc( 45px + 917px + (11px * 2));
-            }
-            .topic-status-info, .topic-timer-info {
-                max-width: 100%;
-            }
-            .topic-navigation{
-                margin-left: -3.84em !important;
-            }
+/*Customize topics under a Blog category (only for Desktop view) [Modified By: Saurabh, Date: 24/03/2022] */
+//Make topic title and body wider under Blog category.
+// Hide the topic-timeline section under Blog category.
+body.category-knowledge-base-blog {
+    .container.posts {
+        grid-template-columns: 100% auto !important;
+        .topic-area #new-create-topic {
+            margin-right: 0px;
         }
-	#topic-title .title-wrapper {
-    	    width: calc(961px + (11px * 2)) !important;
-	}    
+        .topic-body {
+            width: calc(100% - 45px);
+        }
+        .topic-area>.loading-container {
+            width: 100%;
+        }
+        .topic-status-info, .topic-timer-info {
+            max-width: 100%;
+        }
+        .topic-navigation{
+            margin-left: -3.84em !important;
+        }
+    }
+    //Hide the topic-timeline section for the topics under the Blog category
+    .timeline-container {
+        display: none !important;
+    }
+    @include breakpoint(extra-large,  min-width) {
+        #topic-title .title-wrapper {
+            width: calc(961px + (11px * 2)) !important;
+        }
     }
 }
+/*End of customize topics under a Blog category [Added By: Saurabh, Date: 15/03/2022] */
 
 //Added the text for the post-control buttons for Desktop view (Like, Share and Bookmark) [Added by: Saurabh; Date: 24-11-2021]
 .container.posts {
