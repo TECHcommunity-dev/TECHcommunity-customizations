@@ -651,6 +651,8 @@ body.category-forum {
 	}
 }
 
+// Code commented to display the tag drop-down over header navigation. [Saurabh; Date: 28-03-2022]
+/*
 body.tags-page.category-knowledge-base,
 body.tags-page.category-forum,
 body.category.category-knowledge-base,
@@ -663,12 +665,13 @@ body.category.category-feedback{
         }
     }
 }
+*/
 
 body.tags-page.category-knowledge-base,
 body.category.category-knowledge-base,
 body.tags-page.category-news {
     .category-breadcrumb .combo-box.tag-drop {
-        margin-left: -14px;
+        margin-left: -14px !important;
     }
 }
 
