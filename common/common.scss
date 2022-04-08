@@ -1647,12 +1647,27 @@ aside.quote .title, blockquote {
     text-align: center;
 }
 
-//Center brand header bar [Added by Saurabh 17-12-2021] 
-.brand-header .b-header .title {
-    //float: none;
+//Center brand header Link [Modified by: Saurabh; Date: 17-12-2021] 
+.brand-header .b-header .links {
     position: absolute;
     width: 100%;
-    text-align: center;
+    ul {
+        width: 100%;
+        li:first-child {
+            width: 100%;
+            display: inline-block;
+            a {
+                font-size: 1.2rem !important;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+            a:hover {
+                background-color:transparent !important;
+            }
+        }
+    }
 }
 /*** Brand Header CSS Ends ***/
 
