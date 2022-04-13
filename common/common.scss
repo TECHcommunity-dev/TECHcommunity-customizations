@@ -1455,6 +1455,43 @@ body.navigation-topics #main>div:first-child .topic-list .topic-list-item.status
 .composer-popup {
     max-height: 50vh;
 }
+
+// Some color changes for the composer [Added by: Saurabh; Date: 11-04-2022]
+#reply-control {
+    .reply-to {
+        .reply-details .d-icon.d-icon-plus {
+            background-color: var(--tertiary-low);
+        }
+        .composer-controls {
+            .toggle-minimize {
+                background-color: var(--tertiary-low);
+            }
+        } 
+        .toggle-fullscreen { 
+            background-color: #9a50f8;
+            padding: 6px 10px;
+            .d-icon { 
+                color: #ffffff;
+            }
+        }
+    }  
+    .d-editor-button-bar { 
+        background-color: #f2f2ea;
+    }
+    &:not(.fullscreen) .reply-to {
+        .toggle-fullscreen::before {
+            content: "Enter Full screen mode for easier writing ";
+            background-color: #9a50f8;
+            color: #ffffff;
+            padding-right: 10px;
+        }
+    }
+    .submit-panel {
+        .btn-mini-toggle{ 
+            background-color: var(--tertiary-low);
+        }   
+    }
+} 
 /*** Composer CSS Ends ***/
 
 /*** Container Navigation Bar CSS ***/
