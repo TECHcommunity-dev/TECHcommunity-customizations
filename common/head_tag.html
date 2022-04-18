@@ -28,6 +28,8 @@ const news = [];
 const feedback = [];
 const videos = [];
 const events = [];
+const techieBlogs = [];
+const members = [];
 
 
 products.push(
@@ -473,6 +475,50 @@ events.push(
     )
 )
 
+techieBlogs.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/c/knowledge-base/blog/43'
+                
+            }, 
+            "Techie blogs"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Find out about hot trends and topics, new learning resources and opportunities."  
+        )
+    )
+)
+
+members.push(
+     h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'/u?order=likes_received&period=quarterly'
+                
+            }, 
+            "Members"  
+        )
+         
+    ),
+     h(
+          `li.dd-sections-list-item`, 
+        h(
+            'div.dd-sections-item', 
+            "Connect with peers, follow our prominent experts and build your Community network."  
+        )
+    )
+)
+
  dropdownMenuSections.push(
     h(
           'ul.dd-sections-knowledgeBase', knowledgeBase
@@ -484,6 +530,9 @@ events.push(
           'ul.dd-sections-news', news
     ),
     h(
+          'ul.dd-sections-news', members
+    ),
+    h(
           'ul.dd-sections-videos', videos
     ),
     h(
@@ -491,6 +540,9 @@ events.push(
     ),
     h(
           'ul.dd-sections-events', events
+    ),
+    h(
+          'ul.dd-sections-news', techieBlogs
     )
 )
 

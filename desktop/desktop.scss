@@ -168,12 +168,6 @@ header.hide-menus {
 .sections-caret {
     cursor: pointer;
     position: relative;
-    padding-top: 37.5px;
-    margin-left: 80px;
-    border-top: 7px dashed;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-top-color: #011f3d !important;
 }
 
 .dd-sections {
@@ -181,14 +175,14 @@ header.hide-menus {
     top: 3.5em;
     background-color: #fff;
     border: 1px #ccc solid;
-    padding: 24px 0px 20px 68px;
+    padding: 24px 0px 20px 28px;
     display: none;
 
     ul {
     	list-style: none;
     	margin-left: 0px !important;
     	float: left;
-	margin-right: 75px;
+	    margin-right: 10px;
     }
 
     .dd-sections-title {
@@ -207,14 +201,15 @@ header.hide-menus {
     display: inline-block;
     margin-right: 10px;
     margin-top: 10px;
-    width: 254px;
+    width: 250px;
    // font-size: 1.04em;
     color: var(--primary-high);
 }
 
 
 .sections-techcomm:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
-    display: inline-block !important;
+    display: grid !important;
+    grid-template-columns: auto auto auto auto;
 }
 
 header.hide-menus {
