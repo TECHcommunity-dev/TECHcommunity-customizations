@@ -1797,6 +1797,10 @@ body.category.category-knowledge-base-blog {
             td.likes {
                 display: none;
             }
+	    // Changed the opacity of the blog box title sections [Added by: Saurabh; Date: 19-04-2022]
+            .activity, .main-link, .posters { 
+                background-color: rgba(var(--primary-low-rgb), 0.95);    
+            }
         }
     }
     // Remove the New and Unreplied links from the topic header navigation
