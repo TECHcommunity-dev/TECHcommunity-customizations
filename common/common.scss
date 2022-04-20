@@ -1776,7 +1776,7 @@ body.category-knowledge-base-blog {
 
 //Customize the topic-thumbnails-masonry under Blog category. [Added By: Saurabh, Date: 12/04/2022] 
 body.category.category-knowledge-base-blog {
-    .topic-list-body {
+    .topic-list.topic-thumbnails-masonry .topic-list-body {
         tr.topic-list-item {
             .topic-list-thumbnail.no-thumbnail {
                 background: #1B5259;
