@@ -1384,6 +1384,43 @@ body.category {
 body.navigation-topics #main>div:first-child .topic-list .topic-list-item.status-solved, .status-solved {
     background: #ecffec !important;
 }
+
+//Added on Date: 15-04-2022
+body {
+    //Make the topics under “News” and “Community news, tips and tricks” category more visible in the home page and tag topic lists by changing the background color.
+    &.navigation-topics, &.tags-page:not(.category-header):not(.category-community-news):not(.category-news) {
+        #main>div:first-child .topic-list .topic-list-item {
+            &.category-feedback-community-news, &.category-news
+            {
+                background: #f2f2ea !important;
+                td.posts > button, td.likes > a, td.activity > a {
+                            display: none !important;
+                }
+            }
+        }
+    }
+    //Make the topics under “Knowledge base”, "Video", and “Blog” category more visible in the home page and tag topic lists by changing the background color.
+    &.navigation-topics, &.tags-page:not(.category-header):not(.category-knowledge-base):not(.category-video):not(.category-blog) {
+        #main>div:first-child .topic-list .topic-list-item {
+            &.category-knowledge-base, &.category-knowledge-base-blog, &.category-knowledge-base-video
+            {
+                background: #EBE7F5 !important;
+            }
+        }
+    }
+}
+html.home-search-banner { 
+    body.navigation-topics {
+        //Make the unread posts in the topic list a bit more visible. Add these only on the home page.
+        tr.unread-posts {
+            box-shadow: 0px 0px 8px 0px var(--primary-300);
+        }
+        .badge-notification.unread-posts {
+            background: #9a50f8 !important;
+        } 
+    }
+}
+
 /*** Topic list CSS Ends ***/
 
 /*** Tag selected view ***/
@@ -1797,7 +1834,7 @@ body.category.category-knowledge-base-blog {
             td.likes {
                 display: none;
             }
-	    // Changed the opacity of the blog box title sections [Added by: Saurabh; Date: 19-04-2022]
+            // Changed the opacity of the blog box title sections [Added by: Saurabh; Date: 19-04-2022]
             .activity, .main-link, .posters { 
                 background-color: rgba(var(--primary-low-rgb), 0.95);    
             }
