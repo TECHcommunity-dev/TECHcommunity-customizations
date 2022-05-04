@@ -1381,8 +1381,12 @@ body.category {
 }
 
 //Set the Background color to #ecffec for the topic item in the topic-list if the topic has accepted answer (i.e. Solved).
-body.navigation-topics #main>div:first-child .topic-list .topic-list-item.status-solved, .status-solved {
-    background: #ecffec !important;
+body.category-header #main > div:first-child .topic-list, 
+body.tags-page #main > div:first-child .topic-list, 
+body.navigation-topics #main > div:first-child .topic-list {
+    .topic-list-item.status-solved, .status-solved {
+        background: #ecffec !important;
+    }
 }
 
 //Added on Date: 15-04-2022
