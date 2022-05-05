@@ -425,9 +425,11 @@ button.widget-button.btn.btn-primary.btn-small.sign-up-button.btn-text,
     width: 700px !important;
 }
 
+//Hide the Events category in the hamburger-panel [Added by: Saurabh; Date: 05-05-2022]
 .hamburger-panel .panel-body-contents .category-links .heading,
 .hamburger-panel .panel-body-contents .category-links li.category-link .badge.badge-notification,
-.hamburger-panel .panel-body-contents .category-links li.category-link .topics-count{
+.hamburger-panel .panel-body-contents .category-links li.category-link .topics-count,
+.hamburger-panel .panel-body-contents .category-links li.category-link.category-events{
 	display: none;
 }
 
