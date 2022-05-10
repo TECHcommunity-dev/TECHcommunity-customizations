@@ -1208,7 +1208,7 @@ body.navigation-topics {
         
         .topic-list .topic-list-item {
             background: #ffffff !important;
-            border-bottom: 10px solid #F2F4F5 !important;
+            //border-bottom: 10px solid #F2F4F5 !important;
         }
     }
 }
@@ -1414,6 +1414,24 @@ body {
             }
         }
     }
+    //Added border to the topic boxes on all the topic-lists (Except Knowledge-Base categories). [Added by: Saurabh; Date: 06-05-2022]
+    &:not([class*="category-knowledge-base"]) {
+        #list-area {
+            table.topic-list { //Add the space betwee the topic boxes and remove the borders
+                border-collapse: separate;
+                border-spacing: 0 10px;
+                thead.topic-list-header th { // Add the bottom border to the topic-list header columns
+                    padding-bottom: 0px;
+                }
+                tr.topic-list-item { //Add the outline to topic boxes
+                    outline: 1px solid #dedede;
+                    .clearfix:before, .clearfix:after { //Remove the extra spacing above and below the topic title column.
+                        border-collapse: collapse;
+                    }
+                }
+            }
+        }
+    }  
 }
 html.home-search-banner { 
     body.navigation-topics {
