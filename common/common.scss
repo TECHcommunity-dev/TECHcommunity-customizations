@@ -1872,3 +1872,12 @@ body.category.category-knowledge-base-blog {
     }
 }
 /* Blog category changes ends*/
+
+//hide lock icon on this category https://tech.forums.softwareag.com/c/internal-forum/kompaas/125
+body.category.category-internal-forum-kompaas {
+    .discourse-category-banners {
+        svg.d-icon-lock {
+            display: none;
+        }
+    }
+}
