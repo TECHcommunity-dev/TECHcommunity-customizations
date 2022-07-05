@@ -281,6 +281,14 @@ header.hide-menus {
      }
 }
 
+@media only screen and (max-width: 1475px) {
+    .select-tags-list-wrapper .select-tags-body .tag-list-section ul {
+        margin-bottom: 0 !important;
+        margin-left: 0.5em !important;
+        margin-top: 0.3em !important;
+    }
+}
+
 div#webmethods ul {
     column-count: 4;
 
