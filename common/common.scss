@@ -1881,3 +1881,15 @@ body.category.category-internal-forum-kompaas {
         }
     }
 }
+
+//Resolved the alignment issue of the Header navigation and Topic list on Desktop view.
+#main {
+    #main-outlet-wrapper {
+        @media only screen and (min-width: 1050px) {
+         box-sizing: content-box !important;   
+        }
+       #main-outlet {
+           max-width: 100% !important;
+       }
+    }   
+}
