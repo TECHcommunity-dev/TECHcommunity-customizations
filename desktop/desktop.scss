@@ -281,6 +281,14 @@ header.hide-menus {
      }
 }
 
+@media only screen and (max-width: 1475px) {
+    .select-tags-list-wrapper .select-tags-body .tag-list-section ul {
+        margin-bottom: 0 !important;
+        margin-left: 0.5em !important;
+        margin-top: 0.3em !important;
+    }
+}
+
 div#webmethods ul {
     column-count: 4;
 
@@ -524,7 +532,7 @@ html:not(.anon) .d-header .d-header-icons .search-dropdown {
 
 html.anon .d-header .d-header-icons .search-dropdown {
     position: absolute !important;
-    right: 14.4em !important;
+    right: 15em !important;
 }
 
 @media only screen and (min-width: 1050px) {
