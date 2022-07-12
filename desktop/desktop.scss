@@ -967,6 +967,9 @@ html.home-search-banner {
     body.navigation-topics .topic-list {
         tr.unread-posts {
             transform: scale(1.02);
+            //Resolved the hover tooltip issue for Unread posts on home page.
+            position: relative;
+            z-index: 1;
         }
     }
 }
