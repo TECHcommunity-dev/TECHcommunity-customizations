@@ -1860,7 +1860,11 @@ body.category.category-knowledge-base-blog {
             }
             // Changed the opacity of the blog box title sections [Added by: Saurabh; Date: 19-04-2022]
             .activity, .main-link, .posters { 
-                background-color: rgba(var(--primary-low-rgb), 0.95);    
+                background-color: var(--tertiary-400);
+                opacity: 0.95;    
+            }
+            .discourse-tags {
+                font-size: 1rem !important;
             }
         }
     }
