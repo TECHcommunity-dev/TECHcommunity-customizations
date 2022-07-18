@@ -1660,6 +1660,7 @@ body.category.archetype-regular.category-knowledge-base-video #post_1 .topic-bod
     width: 865px;
 }
 
+//Modified to align the flair image on the KB and Video category topics. [Modified by: Saurabh; Date: 18-07-2022]
 .category-knowledge-base,
 .category-knowledge-base-video {
     article {
@@ -1671,7 +1672,21 @@ body.category.archetype-regular.category-knowledge-base-video #post_1 .topic-bod
             img.avatar {
                 width: 27px !important;
                 height: 27px !important;
-            }           
+            }
+            .post-avatar .avatar-flair.avatar-flair-image {
+                background-size: 12px 12px !important;
+                width: 16px !important;
+                height: 16px!important;
+                top: unset !important;
+                bottom: -3px !important;
+                right: -3px;
+                &.avatar-flair-team {
+                    left: -6px !important;
+                }
+            }
+        }
+        &:not(#post_1) .topic-avatar {
+            height: auto;
         }
     }
 }
@@ -1695,6 +1710,10 @@ body.category.archetype-regular.category-knowledge-base-video #post_1 .topic-bod
 .category-knowledge-base .signup-cta, .category-news .signup-cta, .category-drafts .signup-cta, 
 .category-alfabet-user-group-meetings .signup-cta {
     margin: 0 0 2em 0 !important;
+}
+
+.category-knowledge-base .time-gap.small-action .topic-avatar {
+    background: none !important;
 }
 
 //
