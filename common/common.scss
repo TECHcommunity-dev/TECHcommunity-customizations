@@ -462,6 +462,13 @@ body.category.archetype-regular.category-knowledge-base .d-editor-preview h6 {
     margin: 24px 0 10px;
 }
 
+// Make the Links bold within the Topic/Post [Added by: Saurabh; Date: 01-08-2022]
+.topic-area .post-stream .cooked, .d-editor-preview {
+    a { 
+        font-weight: bold;    
+    }
+}
+
 .tag-title-header {
     padding-top: 0px !important;
 }
