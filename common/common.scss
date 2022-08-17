@@ -23,10 +23,20 @@ body.category-news #topic-title {
     justify-content: normal !important;
 }
 
-//hide suggested topic and share\bookmark\flag\notification buttons
-.category-news #topic-footer-buttons,
+//hide suggested topic under News category topics [Modified by: Saurabh; Date: 17-08-2022]
 .category-news .suggested-topics-wrapper {
     display: none;
+}
+//hide share\bookmark\flag\notification buttons for non-staff members under News category topics [Modified by: Saurabh; Date: 17-08-2022]
+.category-news:not(.staff) #topic-footer-buttons {
+    display: none;
+}
+
+.category-news .topic-area>.loading-container {
+    width: 100%;
+    .topic-status-info, .topic-timer-info {
+        max-width: 100%;    
+    }
 }
 
 .category-news .topic-status-info {
@@ -969,7 +979,7 @@ body.category-feedback,
 body.category-community-news,
 body.category-news,
 body.category-knowledge-base,
-body.tags-page.tag-banner {
+body.tags-page.tag-banner:not(.category-forum) {
     li.solved-status-filter {
         display: none;
     }
