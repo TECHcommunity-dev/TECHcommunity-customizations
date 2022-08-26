@@ -596,3 +596,22 @@ api.decorateWidget("home-logo:after", helper => {
   
 </script>
 
+<script type="text/discourse-plugin" version="0.8">
+    //Change the link for the Try free button in the header navigation on "Cumulocity-IoT" tag page. [Added by: Saurabh; Date: 26-08-2022]
+    api.onPageChange((url, title) => {
+        var tryFreeButton = document.querySelector('.custom-header-links .try-free-custom-header-links a');
+        var tryFreeButtonLink = "https://techcommunity.softwareag.com/en_en/downloads.html?_ga=2.72844629.736011890.1660634606-1993569499.1649310503"
+        var tryFreeButtonCumulocityLink = "https://signup.softwareag.cloud/#/basic?product=cumulocity&utm_referrer=TechCommunity"
+        if (url.toLowerCase().indexOf("/tag/cumulocity-iot") > -1){
+            if(tryFreeButton){
+               tryFreeButton.href = tryFreeButtonCumulocityLink;
+            }
+        }
+        else {
+            if(tryFreeButton){
+               tryFreeButton.href = tryFreeButtonLink;
+            }
+       }
+      
+    });
+</script>
