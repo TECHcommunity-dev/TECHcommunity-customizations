@@ -1871,9 +1871,11 @@ body.category-knowledge-base-blog {
 }
 
 //Customize the topic-thumbnails-masonry under Blog category. [Added By: Saurabh, Date: 12/04/2022] 
+//Make the text background white nad add the box-shadow to topic-list-item (boxes) [Modified By: Saurabh, Date: 01/09/2022]
 body.category.category-knowledge-base-blog {
     .topic-list.topic-thumbnails-masonry .topic-list-body {
         tr.topic-list-item {
+            box-shadow: 0px 0px 3px #bfbfbf;
             .topic-list-thumbnail.no-thumbnail {
                 background: #1B5259;
                 
@@ -1890,13 +1892,18 @@ body.category.category-knowledge-base-blog {
                     }
                 }
             }
+            .link-top-line a.title {
+                color: var(--primary);
+            }
+            &.visited .link-top-line a.title {
+                color: var(--primary);
+            }
             td.likes {
                 display: none;
             }
-            // Changed the opacity of the blog box title sections [Added by: Saurabh; Date: 19-04-2022]
+            // Remove the opacity of the blog box title sections [Added by: Saurabh; Date: 01-09-2022]
             .activity, .main-link, .posters { 
-                background-color: var(--tertiary-400);
-                opacity: 0.95;    
+                background-color: #ffffff;    
             }
             .discourse-tags {
                 font-size: 1rem !important;
