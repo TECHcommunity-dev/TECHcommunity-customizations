@@ -1905,6 +1905,10 @@ body.category.category-knowledge-base-blog {
             .activity, .main-link, .posters { 
                 background-color: #ffffff;    
             }
+            //Add top padding for the activity [Added by: Saurabh; Date: 05-09-2022]
+            .activity {
+                padding-top: 15px;
+             }
             .discourse-tags {
                 font-size: 1rem !important;
             }
