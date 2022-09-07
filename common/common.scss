@@ -1961,3 +1961,35 @@ body.category.category-internal-forum-kompaas {
     left: -14px !important;
 }
 /** User Avatar Flair for Team group Ends**/
+
+// Make the related links that are shown after the post (post-links) to be green and bold [Added by: Saurabh; Date: 06-09-2022]
+.post-links-container ul li a[href] {
+    color: var(--tertiary);
+    font-weight: bold;
+}
+
+//CSS for topic category and tags whcih are shown below the topic-footer-buttons. [Added by: Saurabh; Date: 06-09-2022]
+html {
+    &.anon {
+        .topic-above-suggested-outlet.topic-category-and-tags {
+             //Display topic-categiry on teh next line with top padding 10px.
+             .topic-category {
+                 padding-top: 10px;
+             }
+         }
+    }
+    
+    .topic-above-suggested-outlet.topic-category-and-tags {
+         //Display topic-categiry on teh next line with top padding 10px.
+         .topic-category {
+             clear: both;
+             .badge-wrapper, .list-tags {
+                 font-size: var(--font-0) !important;
+             }
+         }
+         //Hide the votes
+         .list-vote-count { 
+             display: none;
+         }
+     }
+ }
