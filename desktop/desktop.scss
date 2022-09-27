@@ -989,3 +989,21 @@ html.home-search-banner {
     }
 }
 /*** Search Input CSS Ends ***/
+
+/** Votes text/box Align CSS [Date: 27-09-2022] **/
+.title-voting {
+    padding-top: 0px;
+}
+#topic-title {
+    .discourse-tag.list-vote-count {
+        margin-top: 2.5px !important;
+        margin-left: 3px;
+    }    
+}
+
+.topic-list-item {
+    .discourse-tag.list-vote-count {
+        padding: 2px 10px 2px 0px;
+        margin-top: 3px;
+    } 
+} 
