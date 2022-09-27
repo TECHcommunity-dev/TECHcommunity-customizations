@@ -258,3 +258,19 @@ html:not(.anon) #topic-progress-wrapper.docked {
     margin-bottom: 0 !important;
 }
 // ------ End of CSS Moved From The "my component" ------------
+
+/** Votes text/box Align CSS [Date: 27-09-2022] **/
+.vote-count-wrapper {
+    min-height: 34px !important;
+}
+#topic-title {
+    .discourse-tag.list-vote-count {
+        margin-top: 2.5px !important;
+    }    
+}
+
+.topic-list-item {
+    .discourse-tag.list-vote-count {
+        padding: 2px 10px 2px 0px;
+    } 
+} 
