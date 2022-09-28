@@ -1421,6 +1421,19 @@ body {
             }
         }
     }
+    //Make the topics under "Event" category more visible in the home page and tag topic lists by changing the background color. [Added by: Saurabh; Date: 28-09-2022]
+    //And change the background for the "event-date-container" for the Event category topics in topic list
+    &.navigation-topics, &.tags-page:not(.category-header):not(.category-event) {
+        #main>div:first-child .topic-list .topic-list-item {
+            &.category-events
+            {
+                background: #f2f2ea !important;
+                .event-date-container .event-date {
+                    background: #EBE7F5 !important;
+                }
+            }
+        }
+    }
     //Make the topics under “Knowledge base”, "Video", and “Blog” category more visible in the home page and tag topic lists by changing the background color.
     &.navigation-topics, &.tags-page:not(.category-header):not(.category-knowledge-base):not(.category-video):not(.category-blog) {
         #main>div:first-child .topic-list .topic-list-item {
