@@ -1981,28 +1981,28 @@ body.category.category-internal-forum-kompaas {
     font-weight: bold;
 }
 
-//CSS for topic category and tags whcih are shown below the topic-footer-buttons. [Added by: Saurabh; Date: 06-09-2022]
+//CSS for topic category and tags that are shown below the topic-footer-buttons. [Added by: Saurabh; Date: 06-09-2022]
 html {
     &.anon {
-        .topic-above-suggested-outlet.topic-category-and-tags {
-             //Display topic-categiry on teh next line with top padding 10px.
-             .topic-category {
-                 padding-top: 10px;
-             }
-         }
+        .topic-above-suggested-outlet {
+            //Display topic-categiry on teh next line with top padding 10px.
+            .topic-category.custom-topic-category-tags {
+                padding-top: 10px;
+            }
+        }
     }
     
-    .topic-above-suggested-outlet.topic-category-and-tags {
-         //Display topic-categiry on teh next line with top padding 10px.
-         .topic-category {
-             clear: both;
-             .badge-wrapper, .list-tags {
-                 font-size: var(--font-0) !important;
-             }
-         }
-         //Hide the votes
-         .list-vote-count { 
-             display: none;
-         }
-     }
- }
+    .topic-above-suggested-outlet {
+        //Display topic-categiry on teh next line with top padding 10px.
+        .topic-category.custom-topic-category-tags {
+            clear: both;
+            .badge-wrapper, .list-tags {
+                font-size: var(--font-0) !important;
+            }
+        }
+        //Hide the votes
+        .list-vote-count { 
+            display: none;
+        }
+    }
+}
