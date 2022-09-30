@@ -24,8 +24,13 @@ body.category-news #topic-title {
 }
 
 //hide suggested topic under News category topics [Modified by: Saurabh; Date: 17-08-2022]
-.category-news .suggested-topics-wrapper {
-    display: none;
+.category-news {
+    .suggested-topics-wrapper, .custom-related-topics-wrapper {
+        display: none;
+    }
+    .topic-category-and-tags {
+        margin-bottom: 2em;
+    }
 }
 //hide share\bookmark\flag\notification buttons for non-staff members under News category topics [Modified by: Saurabh; Date: 17-08-2022]
 .category-news:not(.staff) #topic-footer-buttons {
@@ -115,10 +120,13 @@ body.archetype-regular.category-news:not(.staff) span[title="This topic is unlis
 	min-width: 73px !important;
 }
 
-
-//hide views column on home page
-.topic-list .views {
-    display: none;
+//Modified to display views column only for Staff users everywhere. [Modified by:Saurabh; Date: 29-09-2022]
+body {
+    &:not(.staff) {
+        .topic-list .views {
+            display: none;
+        }    
+    }
 }
 
 //hide no-tags option in tags dropdown menu
