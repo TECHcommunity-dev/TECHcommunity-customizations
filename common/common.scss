@@ -2014,3 +2014,10 @@ html {
         }
     }
 }
+
+//Make the reply button bold under the topic-footer-buttons [Added by: Saurabh; Date: 04-010-2022]
+#topic-footer-buttons {
+    button.btn.create, button.btn.btn-primary {
+        font-weight: bold !important;
+    }
+}
