@@ -2034,7 +2034,7 @@ html {
                         color: #011f3d !important;
                     }
                 }
-                .actions .double-button:hover button:not(.like):not(.like-count) {
+                .actions .double-button:hover button:not(.like):not(.like-count):not(.toggle-like) {
                     background-color: var(--tertiary-hover) ;
                     color: #011f3d !important;
                     .d-icon {
