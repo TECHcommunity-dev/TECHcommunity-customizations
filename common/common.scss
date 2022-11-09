@@ -2024,34 +2024,48 @@ html {
 
 // Make the post action buttons to have font color #011f3d and on hover the box to turn green (except for the like buton) [Added by: Saurabh; Date: 10-10-2022]
 
-    .container.posts {
-        .post-stream {
-            .post-controls {
-                .actions > button.widget-button:not(.delete):hover {
-                    background-color: var(--tertiary-hover) !important;
-                    color: #011f3d !important;
-                    .d-icon {
-                        color: #011f3d !important;
-                    }
-                }
-                .actions .double-button:hover button:not(.like):not(.like-count):not(.toggle-like) {
-                    background-color: var(--tertiary-hover) ;
-                    color: #011f3d !important;
-                    .d-icon {
-                        color: #011f3d !important;
-                    }
-                }
-                .actions button.widget-button:not(.d-hover) {
-                    color: #011f3d;
-                    &.reply {
-                        opacity: 1 !important;
-                        background-color: var(--tertiary-medium);
-                        color: #011f3d !important;
-                    }
-                    &:not(.bookmarked) .d-icon:not(.d-icon-far-check-square) {
-                        color: #011f3d;
-                    }
-                }
+.container.posts {
+    .post-stream {
+        .post-controls {
+        .actions > button.widget-button:not(.delete):hover {
+            background-color: var(--tertiary-hover) !important;
+            color: #011f3d !important;
+            .d-icon {
+            color: #011f3d !important;
             }
         }
+        .actions .double-button:hover button:not(.like):not(.like-count):not(.toggle-like) {
+            background-color: var(--tertiary-hover) ;
+            color: #011f3d !important;
+            .d-icon {
+            color: #011f3d !important;
+            }
+        }
+        .actions button.widget-button:not(.d-hover) {
+            color: #011f3d;
+            &.reply {
+            opacity: 1 !important;
+            background-color: var(--tertiary-medium);
+            color: #011f3d !important;
+            }
+            &:not(.bookmarked) .d-icon:not(.d-icon-far-check-square) {
+            color: #011f3d;
+            }
+        }
+        }
     }
+}
+
+//Added top and bottom margin to post-menu-area of Private messsages. [Added by: Saurabh; Date: 09-11-2022]
+.archetype-private_message .post-menu-area {
+    margin: 0.5em 0 !important;
+}
+
+// Resolve the "show-all" and "notifications-dismiss" buttons hover issue on user-menu doropdown panel. [Added by: Saurabh; Date: 09-11-2022]
+.user-menu.menu-panel {
+  .panel-body-bottom {
+    .btn:hover .d-icon{
+      color: var(--primary-medium);
+    }
+  }
+}
