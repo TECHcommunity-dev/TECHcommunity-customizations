@@ -2062,7 +2062,7 @@ html {
 }
 
 // Resolve the "show-all" and "notifications-dismiss" buttons hover issue on user-menu doropdown panel. [Added by: Saurabh; Date: 09-11-2022]
-menu-panel {
+.menu-panel {
   .panel-body-bottom {
     .btn:hover .d-icon{
       color: var(--primary-medium);
