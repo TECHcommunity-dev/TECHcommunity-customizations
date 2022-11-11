@@ -1652,16 +1652,6 @@ html.home-search-banner {
     top: 25px;
 }
 
-@media only screen and (min-width: 900px) {
-    .category.category-knowledge-base .topic-meta-data .post-info a span.relative-date[title] {
-      color: transparent;
-    
-      &::before {
-        content: attr(title);
-        color: var(--primary-high-or-secondary-low);
-      }
-    }
-}
 body.category.archetype-regular.category-knowledge-base .topic-owner .topic-meta-data .post-date {
     margin-bottom: 17.5px !important;
 }
