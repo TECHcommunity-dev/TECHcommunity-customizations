@@ -2017,31 +2017,34 @@ html {
 .container.posts {
     .post-stream {
         .post-controls {
-        .actions > button.widget-button:not(.delete):hover {
-            background-color: var(--tertiary-hover) !important;
-            color: #011f3d !important;
-            .d-icon {
-            color: #011f3d !important;
-            }
-        }
-        .actions .double-button:hover button:not(.like):not(.like-count):not(.toggle-like) {
-            background-color: var(--tertiary-hover) ;
-            color: #011f3d !important;
-            .d-icon {
-            color: #011f3d !important;
-            }
-        }
-        .actions button.widget-button:not(.d-hover) {
-            color: #011f3d;
-            &.reply {
-            opacity: 1 !important;
-            background-color: var(--tertiary-medium);
-            color: #011f3d !important;
-            }
-            &:not(.bookmarked) .d-icon:not(.d-icon-far-check-square) {
-            color: #011f3d;
-            }
-        }
+		.actions > button.widget-button:not(.delete):hover {
+		    background-color: var(--tertiary-hover) !important;
+		    color: #011f3d !important;
+		    .d-icon {
+		    color: #011f3d !important;
+		    }
+		}
+		.actions .double-button:hover button:not(.like):not(.like-count):not(.toggle-like) {
+		    background-color: var(--tertiary-hover) ;
+		    color: #011f3d !important;
+		    .d-icon {
+		    color: #011f3d !important;
+		    }
+		}
+		.actions button.widget-button:not(.d-hover) {
+		    color: #011f3d;
+		    &.reply {
+		    opacity: 1 !important;
+		    background-color: var(--tertiary-medium);
+		    color: #011f3d !important;
+		    }
+		    &:not(.bookmarked) .d-icon:not(.d-icon-far-check-square) {
+		    color: #011f3d;
+		    }
+		}
+		.actions .double-button button.has-like .d-icon {
+		    color: var(--love) !important;
+		}
         }
     }
 }
