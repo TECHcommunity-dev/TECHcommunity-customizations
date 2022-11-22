@@ -1281,7 +1281,7 @@ body.tags-page.tag-newsletter .topic-list-thumbnail {
 
 //Apply style on the hamburger menu,search icon,user menu in the header And topic-notifications [Added by: Ajroddin; Date:20-01-2022]
 /* search icon in header */
-body:not(.archetype-regular):not(.archetype-private_message) .d-header {
+body:not(.archetype-regular):not(.archetype-private_message):not(.archetype-banner) .d-header {
     #search-button {
       background: #9a50f838;
       border-radius: 40%;
