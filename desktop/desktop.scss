@@ -400,9 +400,16 @@ body {
 body.category-knowledge-base-blog {
     .container.posts {
         grid-template-columns: 100% auto !important;
-        .time-gap.small-action {
-            .small-action-desc.timegap {
-                flex-grow: 1;
+        .small-action {
+            &.topic-post-visited {
+                .topic-post-visited-line {
+                    flex-grow: 1;
+                }
+            }
+            &.time-gap{
+                .small-action-desc.timegap {
+                    flex-grow: 1;
+                }
             }
         }
         .topic-area #new-create-topic {
