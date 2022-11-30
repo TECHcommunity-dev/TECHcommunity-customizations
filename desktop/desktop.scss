@@ -400,6 +400,11 @@ body {
 body.category-knowledge-base-blog {
     .container.posts {
         grid-template-columns: 100% auto !important;
+        .time-gap.small-action {
+            .small-action-desc.timegap {
+                flex-grow: 1;
+            }
+        }
         .topic-area #new-create-topic {
             margin-right: 0px;
         }
@@ -414,6 +419,10 @@ body.category-knowledge-base-blog {
         }
         .topic-navigation{
             margin-left: -3.84em !important;
+            /*Hide TOC on the Blog Article for Desktop view. As TOC overlapps on the post content [Added by Saurabh; Date: 30-11-2022]*/
+            .d-toc-wrapper {
+                display: none !important;
+            }
         }
     }
     //Hide the topic-timeline section for the topics under the Blog category
