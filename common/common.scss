@@ -2062,3 +2062,17 @@ html {
     }
   }
 }
+
+// Add the background color for the restricted Category names everywhere [Added by: Saurabh; Date: 07-12-2022]
+body {
+    span.badge-category.restricted {
+        background-color: #ff000026;
+        padding-right: 3px;   
+    }
+    //removing padding-right for the topic-list restiricted categories.
+    .topic-list {
+        span.badge-category.restricted {
+            padding-right: 0px;   
+        }       
+    }
+}
