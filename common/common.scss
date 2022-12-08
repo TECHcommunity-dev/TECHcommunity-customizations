@@ -2076,3 +2076,18 @@ body {
         }       
     }
 }
+
+/* Category groups changes [Added by: Saurabh; Date: 07-12-2022]*/
+body.categories-list {
+    .custom-categories-groups {
+        // Background color for the private category group
+        .custom-category-group-private-sections.is-expanded .category-box {
+            background: #ff00000f;
+        }
+        // Background color for Staff only category group.
+        .custom-category-group-software-ag-staff-only\!.is-expanded .category-box {
+            background: #ff00005e;
+        }
+    }
+}
+/* End of Category groups changes*/
