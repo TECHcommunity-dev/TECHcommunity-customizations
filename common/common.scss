@@ -2062,3 +2062,32 @@ html {
     }
   }
 }
+
+// Add the background color for the restricted Category names everywhere [Added by: Saurabh; Date: 07-12-2022]
+body {
+    span.badge-category.restricted {
+        background-color: #ff000026;
+        padding-right: 3px;   
+    }
+    //removing padding-right for the topic-list restiricted categories.
+    .topic-list {
+        span.badge-category.restricted {
+            padding-right: 0px;   
+        }       
+    }
+}
+
+/* Category groups changes [Added by: Saurabh; Date: 07-12-2022]*/
+body.categories-list {
+    .custom-categories-groups {
+        // Background color for the private category group
+        .custom-category-group-private-sections.is-expanded .category-box {
+            background: #ff00000f;
+        }
+        // Background color for Staff only category group.
+        .custom-category-group-software-ag-staff-only\!.is-expanded .category-box {
+            background: #ff00005e;
+        }
+    }
+}
+/* End of Category groups changes*/
