@@ -470,6 +470,10 @@ body.category.category-alfabet {
 		li.category-box {
 	            border-color: var(--primary-low) !important;
             	    border-width: 0px !important;
+			
+		    h3 {
+                	text-align: center !important;
+           	    }
 		}
 		
 		a.custom-category-group-toggle {
