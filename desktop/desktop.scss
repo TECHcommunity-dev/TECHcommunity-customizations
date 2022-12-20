@@ -463,17 +463,22 @@ body.category-knowledge-base-blog {
 }
 //End of Adding the text for the post-control buttons
 
-/*Alfabet user section
+/*Alfabet user section*/
 
 body.category.category-alfabet {
-	.category-boxes {
-		.category-box {
-	    		width: 30% !important;
+	section.category-boxes {
+		li.category-box {
+	            border-color: var(--primary-low) !important;
+            	    border-width: 0px !important;
+		}
+		
+		a.custom-category-group-toggle {
+		    display: none !important;
 		}
 	}
 }
 
-end alfabet user section*/
+/*end alfabet user section*/
 
 /*webmethods-connectors category*/
 
