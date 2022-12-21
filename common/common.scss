@@ -2091,3 +2091,20 @@ body.categories-list {
     }
 }
 /* End of Category groups changes*/
+
+/* Display Ninja icon next to user-tips [Added by: Saurabh; Date: 21-12-2022] */
+.tippy-box[data-theme="user-tips"] {
+	.tippy-content::before {
+		content: url(https://sea1.discourse-cdn.com/techcommunity/user_avatar/tech.forums.softwareag.com/discobot/45/24031_2.png);
+		padding-top: 0.5em;
+	}
+	.tippy-content {
+		display: flex;
+		padding: 5px 5px;
+		
+		.user-tip-container {
+	        min-width: 280px;
+	    }
+	}
+}
+/* End of Display Ninja icon next to user-tips*/
