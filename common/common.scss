@@ -184,9 +184,12 @@ ol.category-breadcrumb .solved-status-filter {
     display: none;
 }
 
-//hide edits on news topic for non staff
-body.category-news:not(.staff) .topic-area .edits {
-	display: none;
+//hide edits on news and community-news topic for non staff
+body.category-news:not(.staff),
+body.category-feedback-community-news:not(.staff) {
+    .topic-area .edits {
+	    display: none;
+    }
 }
 
 //move date on news topic for non staff
