@@ -1925,6 +1925,9 @@ body.category.category-knowledge-base-blog {
             }
             .discourse-tags {
                 font-size: 1rem !important;
+                //Show max three rows of tags in the Blog boxes [Date: 09-01-2023]
+                max-height: 5.8em;
+                overflow: hidden;
             }
         }
     }
