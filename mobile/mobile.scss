@@ -274,3 +274,16 @@ html:not(.anon) #topic-progress-wrapper.docked {
         padding: 2px 10px 2px 0px;
     } 
 } 
+
+//Customize the topic-thumbnails-masonry under Blog category. [Added By: Saurabh, Date: 09/01/2023] 
+//Show max three rows of tags in the Blog boxes [Date: 09-01-2023]
+body.category.category-knowledge-base-blog {
+    .topic-list.topic-thumbnails-masonry .topic-list-body {
+        tr.topic-list-item { 
+            .discourse-tags {
+                max-height: 5em;
+                overflow: hidden;
+            }
+        }
+    }
+}
