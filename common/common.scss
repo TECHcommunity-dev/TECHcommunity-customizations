@@ -2114,3 +2114,26 @@ body.categories-list {
 	}
 }
 /* End of Display Ninja icon next to user-tips*/
+
+/* CSS for the Shared draft link on Activity page [Added by: Saurabh; Date: 11-09-2023] */
+body {
+    /* Shared draft link should be visible only to admins, Gurus, staff, team group members*/
+    &.group-admins, &.group-Gurus, &.group-staff, &.group-team, &.primary-group-team {
+        .activity-nav.nav-stacked > span,
+        .activity-nav.mobile-nav .drop > span {
+            display: flex;
+            flex-direction: column;
+            li.shared-drafts-link {
+                order: -1;
+                display: block !important;       
+            }
+        }
+    }
+    .activity-nav.nav-stacked > span,
+    .activity-nav.mobile-nav .drop > span {
+        li.shared-drafts-link {
+            display: none;
+        }
+    }
+}
+/* End og the CSS for the Shared draft */
