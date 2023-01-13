@@ -1472,6 +1472,16 @@ body {
             }
         }
     }  
+
+    //Change the color of the "new" text on badge notification [Added by: Saurabh; Date: 13-01-2023]
+    .topic-list .topic-list-item {
+        .topic-post-badges .badge-notification[href].new-topic {
+            color: var(--tertiary);
+            &::before {
+                margin-right: 3px;
+            }
+        }
+    }
 }
 html.home-search-banner { 
     body.navigation-topics {
