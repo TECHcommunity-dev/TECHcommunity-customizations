@@ -1472,6 +1472,16 @@ body {
             }
         }
     }  
+
+    //Change the color of the "new" text on badge notification [Added by: Saurabh; Date: 13-01-2023]
+    .topic-list .topic-list-item {
+        .topic-post-badges .badge-notification[href].new-topic {
+            color: var(--tertiary);
+            &::before {
+                margin-right: 3px;
+            }
+        }
+    }
 }
 html.home-search-banner { 
     body.navigation-topics {
@@ -2136,4 +2146,20 @@ body {
         }
     }
 }
-/* End og the CSS for the Shared draft */
+/* End of the CSS for the Shared draft */
+
+/* CSS for the page-not-found page [Added by: Saurabh; Date: 13-01-2023]*/
+body #main-outlet.not-found-container {
+    // Make the Login button bigger.
+    div.page-not-found .btn-primary[href="/login"] {
+        font-size: x-large;
+    }
+    // Move the Search bar above the lists of Popular/Recent topics.
+    div.row.page-not-found-topics {
+        order: 2;
+    }
+    div.row:last-of-type {
+        order: 1;
+    }
+}
+/* End of the CSS for the page-not-found page */
