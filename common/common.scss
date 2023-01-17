@@ -2154,7 +2154,7 @@ body {
         display: flex;
         flex-direction: column;
         // Make the Login button bigger.
-        div.page-not-found .btn-primary[href="/login"] {
+        div.page-not-found .btn-primary[href] {
             font-size: x-large;
         }
         // Move the Search bar above the list of Popular/Recent topics.
