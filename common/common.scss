@@ -1618,26 +1618,72 @@ html.home-search-banner {
     background-color: rgba(154, 80, 248, 0.3) !important;
 }
 
-//Ordering tags in home page dropdown
-.tag-drop [data-name="Adabas-Natural"] {
-    order: -5;
-}
-.tag-drop [data-name="Cumulocity-IoT"] {
-    order: -4;
+//Ordering tags in Topic list/Edit Topic/User Preferences Tags/User Prefrences Sidebar [Modifed by: Saurabh; Date: 06-02-2023]
+.edit-topic-title, .tag-notifications, .preferences-sidebar-tags {
+    .multi-select {
+        &.tag-chooser, &.mini-tag-chooser {
+            .select-kit-collection {
+                display: flex;
+                flex-direction: column;
+            }       
+        }        
+    }
 }
 
-.tag-drop [data-name="webMethods"] {
-    order: -3;
+.tag-drop, .tag-chooser .select-kit-collection, .mini-tag-chooser .select-kit-collection {
+    [data-name="Adabas-Natural"] {
+        order: -11;
+    }
+    [data-name="Cumulocity-IoT"] {
+        order: -10;
+    }
+    [data-name="webMethods"] {
+        order: -9;
+    }
+    [data-name="all tags"] {
+        order: -8;
+    }
+    [data-name="webMethods-io-Integration"] {
+        order: -7;
+    }
+    [data-name="Integration-Server-and-ESB"] {
+        order: -6;
+    }
+    [data-name="API-Management"] {
+        order: -5;
+    }
+    [data-name="webMethods-B2B"] {
+        order: -4;
+    }
+    [data-name="Managed-File-Transfer"] {
+        order: -3;
+    }
+    [data-name="API-Gateway"] {
+        order: -2;
+    } 
+    [data-name="Service-Designer"] {
+        order: -1;
+    }
+    
+    [data-name="Integration-ESB"], [data-name="webMethods-Integration"], [data-name="webMethods-General"] {
+        order: 30;
+    }
+    
+    [data-name="webMethods-Archive"] {
+        order: 97;
+    } 
+    [data-name="tamino"] {
+        order: 98;
+    } 
+    [data-name="webMethods-Tips-Tricks-and-Troubleshooting"] {
+        order: 99;
+    } 
+    [data-name="webMethods-Best-Practices"] {
+        order: 100;
+    }
 }
-.tag-drop [data-name="all tags"] {
-    order: -2;
-}
-.tag-drop [data-name="webMethods-io-Integration"] {
-    order: -1;
-}
-.tag-drop [data-name="Integration-ESB"], .tag-drop [data-name="webMethods-Integration"], .tag-drop [data-name="webMethods-General"] {
-    order: 30;
-}
+//End of Ordering tags in Topic list/Edit Topic/User Preferences Tags/User Prefrences Sidebar
+
 /*** Container Navigation Bar CSS Ends ***/
 
 /*** Category Based CSS ***/
