@@ -1982,10 +1982,9 @@ h1[data-topic-id="235228"] {
 
 /* Blog category changes*/
 /*Customize topics under a Blog category [Added By: Saurabh, Date: 15/03/2022] */
-//Hide the "topic footer buttons" and "SAG info banner" on the topic page for the Blog category
 body.category-knowledge-base-blog {
-    #topic-footer-buttons, .topic-above-footer-buttons-outlet, .container #banner {
-        display: none !important;
+    #topic-footer-buttons {
+            max-width: 100% !important;
     }
 }
 
