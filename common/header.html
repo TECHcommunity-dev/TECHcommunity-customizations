@@ -15,3 +15,13 @@
 <script type="text/x-handlebars" data-template-name="/connectors/above-related-topics/topic-category-and-tags">
   <TopicCategory @topic={{this.model}} @class="topic-category custom-topic-category-tags" />
 </script>
+
+<script type="text/discourse-plugin" version="0.8">
+  // Search drop-down enhancements (done for both search modules "header search and custom search bar") [Added by: Saurabh; Date: 20-02-2023]
+  api.decorateWidget('search-result-category:before', helper => {
+    return helper.h('div.search-result-category-title', { "attributes":{"style":"margin-bottom:0.3em"}, innerHTML: "<b>Sections</b> & <b>Tags</b> matching the search term:" });
+  });
+  api.decorateWidget('search-result-user:before', helper => {
+    return helper.h('div.search-result-user-title', { "attributes":{"style":"margin-bottom:0.3em"}, innerHTML: "<b>Members</b> matching the search term:" });
+  });
+</script>

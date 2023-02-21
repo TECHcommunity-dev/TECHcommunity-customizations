@@ -1196,15 +1196,68 @@ body {
     }
 }
 
-// Binjan; Show content (Advance options) for Advance Search button; 22.12.2021
+// Search drop-down enhancements (done for both search modules "header search and custom search bar") [Added by: Saurabh; Date: 20-02-2023]
 .search-menu .search-input {
     input#search-term {
-        padding-right: 150px; 
+        padding-right: 180px; 
     }
     a.show-advanced-search:after {
-        content: ' Advanced options';
+        content: ' Advanced Search';
     }
 }
+.d-header .search-menu .search-input {
+    .searching {
+        top: 0em;
+        right: 0em;
+        a.show-advanced-search {
+            padding: 5.5px 5px;
+            background-color: var(--success); 
+            &:hover {
+                background-color: var(--success-hover);
+                .d-icon {
+                    color: var(--primary-high);    
+                }
+            }
+            .d-icon {
+                color: var(--primary-medium);    
+            }
+        }
+    }
+}
+.search-menu .results {
+    .search-menu-initial-options > :not(.search-menu-recent) {
+        &.search-menu-assistant-item:not(:last-child), .search-menu-assistant-item {
+                border-bottom: 1px solid var(--primary-300);
+        }
+        .search-link {
+            background-color: var(--success-low);
+            padding: 0.6em 1.2em;
+            span[aria-label="Search"]::before {
+                color: #011f3d;
+                content: 'Search ';
+            }
+            .search-item-slug .keyword, .search-item-slug span:first-child, .search-item-prefix {
+                color: #011f3d;
+                font-weight: bolder;
+                font-style: italic;
+            }
+            .extra-hint {
+                color: #9a50f8;
+                font-size: var(--font-up-1);
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+        .search-link:focus,
+        .search-link:hover {
+            background-color: var(--highlight-medium);
+        }
+    } 
+    .search-result-category {
+        margin-top: 1.5em !important;
+    }
+}
+// End of Search drop-down enhancements
 
 // Hide the below 7 section on the topic page if the topic contains plain-view tag [Added by: Saurabh; Date:10-01-2022]
 //1. New Topic button
