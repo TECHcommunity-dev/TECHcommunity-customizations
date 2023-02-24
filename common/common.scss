@@ -2141,6 +2141,11 @@ body.category.category-internal-forum-kompaas {
     color: var(--tertiary);
     font-weight: bold;
 }
+// Hide the Post-links for the particualr topic [Added by: Saurabh; Date: 24-02-2023]:
+// "https://tech.forums.softwareag.com/t/guide-to-download-and-install-webmethods-service-designer-free-download/235210"
+#post_1[data-topic-id="235210"] .post-links-container .post-links {
+    display: none;
+}
 
 //CSS for topic category and tags that are shown below the topic-footer-buttons. [Added by: Saurabh; Date: 06-09-2022]
 html {
