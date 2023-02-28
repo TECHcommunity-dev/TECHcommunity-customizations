@@ -1335,25 +1335,7 @@ body.tags-page.tag-newsletter .topic-list-thumbnail {
     display: none;
 }
 
-//Apply style on the hamburger menu,search icon,user menu in the header And topic-notifications [Added by: Ajroddin; Date:20-01-2022]
-/* search icon in header */
-body:not(.archetype-regular):not(.archetype-private_message):not(.archetype-banner) .d-header {
-    #search-button {
-      background: #9a50f838;
-      border-radius: 40%;
-      border-bottom-right-radius: 0;
-      padding-bottom: 1px;
-      padding-right: 1px;
-      margin-left: -2px;
-    }
-}
-.drop-down-mode .d-header-icons .search-dropdown.active .icon {
-    background: var(--secondary) !important;
-}
-
-.drop-down-mode .d-header-icons .search-dropdown.active .icon:after {
-    border-top: none !important;
-}
+// CSS for the hamburger-dropdown panel.
 .contents .panel {
     .panel-body, .panel-body-contents {
         .category-links {
@@ -1373,9 +1355,7 @@ body:not(.archetype-regular):not(.archetype-private_message):not(.archetype-bann
         }
     }
 }
-html.anon .header-dropdown-toggle.search-dropdown {
-    padding-right: 5px;
-}
+
 /*topic list avatars */
 .topic-list-body .posters.topic-list-data {
     img.avatar:hover {
