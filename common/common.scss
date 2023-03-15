@@ -2027,6 +2027,14 @@ body.category.category-knowledge-base-blog {
     .topic-list.topic-thumbnails-masonry .topic-list-body {
         tr.topic-list-item {
             box-shadow: 0px 0px 3px #bfbfbf;
+	    .topic-list-thumbnail {
+                .main-thumbnail {
+                    object-fit: cover !important;
+                }
+                .background-thumbnail {
+                    display: none !important;
+                }
+            }
             .topic-list-thumbnail.no-thumbnail {
                 background: #1B5259;
                 
