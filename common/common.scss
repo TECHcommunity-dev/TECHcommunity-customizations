@@ -15,14 +15,6 @@ body.category-news:not(.staff) #post_1 .topic-avatar {
     display:none;
 }
 
-body.category-news:not(.staff) #post_1 .topic-meta-data {
-    margin-left: -7px !important;   
-}
-
-body.category-news #topic-title {
-    justify-content: normal !important;
-}
-
 //hide suggested topic under News category topics [Modified by: Saurabh; Date: 17-08-2022]
 .category-news {
     .suggested-topics-wrapper, .custom-related-topics-wrapper {
@@ -91,24 +83,15 @@ body.archetype-regular.category-news:not(.staff) span[title="This topic is unlis
 
 /*small misc changes*/
 
-//make category description wider
-.category-title-contents {
-	max-width: 1000px !important;
-}
-
-
 //make solved checkbox green and bigger
 .topic-statuses {
     margin-bottom: -5px;
 }
 .d-icon-far-check-square {
-    color: #7fc02a; //color: #ffffff;
+    color: #7fc02a;
     height: 0.96em !important;
     width: 0.91em !important;
-    //background-color: #7fc02a;
-    //border-radius: 3px;
     margin-top: 0.16em;
-    //margin-bottom: 0px;
 }
 .topic-list-icons .d-icon-thumbtack.unpinned, .latest-topic-list .d-icon-thumbtack.unpinned, .top-topic-list .d-icon-thumbtack.unpinned, .topic-list .d-icon-thumbtack.unpinned {
     top: -2px;
@@ -202,10 +185,6 @@ body.category-news .topic-area .returning-user {
     display: none;
 }
 
-body.category-news:not(.staff) #topic-title {
-    margin-bottom: 0px !important;
-}
-
 //hide replies column in news category
 body.category-news .topic-list .posts {
     display: none;
@@ -222,34 +201,9 @@ body:not(.staff) #show-tag-info {
     display: none !important;
 }
 
-//Versatile banner custom style
-.single-box a {
-    color: #011f3d !important;
-    background-color: #f2f2ea;
-    display: block;
-    width: 250px;
-    padding: 10px 0px;
-    margin: 0 auto;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.single-box a:hover {
-    box-shadow: 1px 1px 3px 1px #ffffff3d;
-    color: #9a50f8 !important;
-}
-
 //change background color and font size on tag sidebar
 .tag-title-header {
     background-color: #f2f2ea !important;
-}
-
-.tag-title-header .tag-title-contents h1 {
-    font-size: 1.22em !important;
-    text-transform: uppercase;
-}
-
-#banner {
-    background-color: #f2f2ea;
 }
 
 .custom-footer {
@@ -260,8 +214,7 @@ body:not(.staff) #show-tag-info {
     background: var(--quaternary) !important;
     border-top: 1px solid var(--secondary);
 }
-.cc-color-override--659527902 .cc-btn {
-    //background: #1cd469 !important;
+.cc-color-override--659527902 .cc-btn {    
     background: var(--highlight) !important;
 }
 
@@ -326,14 +279,6 @@ body:not(.staff) #show-tag-info {
 /*End try free button and dropdown menu in header*/
 
 /*tag-sidebar custom style*/
-body.custom-tag-sidebar .tag-sidebar {
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    background-color: #f2f2ea;
-    color: #000;
-    margin-top: -20px;
-    margin-bottom: 15px;
-}
 
 body.custom-tag-sidebar .tag-sidebar .cooked {
     max-width: 1100px;
@@ -342,23 +287,8 @@ body.custom-tag-sidebar .tag-sidebar .cooked {
     margin: 0 auto;
 }
 
-body.custom-tag-sidebar .wrap::before {
-    display: none !important;
-}
-
 body.custom-tag-sidebar .tag-header-widget {
     display: none;
-}
-
-body.custom-sidebar #navigation-bar a[href='/top'],
-body.custom-sidebar #navigation-bar a[href='/categories']{
-    display: none;
-}
-
-.custom-sidebar .tag-title-header,
-body.category-header .tag-sidebar,
-body.navigation-topics .tag-sidebar {
-    display: none !important;
 }
 
 .tag-sidebar [data-techcommunity-product-tags] a {
@@ -466,21 +396,6 @@ button.widget-button.btn.btn-primary.btn-small.sign-up-button.btn-text,
 }
 
 /*End navigation changes*/
-
-body.category.archetype-regular.category-knowledge-base .cooked h1, 
-body.category.archetype-regular.category-knowledge-base .cooked h2, 
-body.category.archetype-regular.category-knowledge-base .cooked h3, 
-body.category.archetype-regular.category-knowledge-base .cooked h4, 
-body.category.archetype-regular.category-knowledge-base .cooked h5, 
-.cooked h6, 
-.d-editor-preview h1, 
-body.category.archetype-regular.category-knowledge-base .d-editor-preview h2, 
-body.category.archetype-regular.category-knowledge-base .d-editor-preview h3, 
-body.category.archetype-regular.category-knowledge-base .d-editor-preview h4, 
-body.category.archetype-regular.category-knowledge-base .d-editor-preview h5, 
-body.category.archetype-regular.category-knowledge-base .d-editor-preview h6 {
-    margin: 24px 0 10px;
-}
 
 // Make the Links bold within the Topic/Post [Added by: Saurabh; Date: 01-08-2022]
 .topic-area .post-stream .cooked, .d-editor-preview {
@@ -1287,8 +1202,7 @@ body.navigation-topics {
         background-color: #F2F4F5;
         
         .topic-list .topic-list-item {
-            background: #ffffff !important;
-            //border-bottom: 10px solid #F2F4F5 !important;
+            background: #ffffff !important;            
         }
     }
 }
@@ -1378,9 +1292,6 @@ body.category {
                 border: 1px solid #d7ef00;
                 padding: 1em;
             }
-            .topic-notifications-options {
-                display: inline !important;
-            }
         }
         .select-kit-header-wrapper,
         .d-icon {
@@ -1416,16 +1327,7 @@ body.category {
 
 // ------ CSS Moved From The "my component - common.scss" [Date: 11-02-2022] ------------
 
-//Display the posters and activity headers of the topic-list in the table cell format mandatorily.
-.posters, .activity {
-    display: table-cell !important;
-}
-
 /*** Topics list CSS ***/
-//secondary nav
-.nav-pills>li>a {
-    font-size: 1em;
-}
 
 //make hearts lighter
 .likes svg.fa.d-icon.d-icon-heart.svg-icon.svg-string {
@@ -1438,7 +1340,7 @@ body.category {
     margin-top: 3px;
 }
 
-.link-bottom-line .discourse-tag, .topic-header-extra .discourse-tag {
+.topic-header-extra .discourse-tag {
     margin-bottom: 2px;
 }
 
@@ -1563,10 +1465,6 @@ html.home-search-banner {
     margin: 5px 0px 0px 0px !important;
 }
 
-.select-tags-section .select-tags-body .tag-list-section ul li {
-    font-size: 0.9em;
-}
-
 #reply-control .submit-panel {
     display: flex;
     flex-shrink: 0;
@@ -1576,7 +1474,6 @@ html.home-search-banner {
 .d-editor-preview-wrapper  {
     background: #ecf3eb;
     padding: 0 2px 0 8px;
-    margin-left: 3px;
 }
 
 .d-editor-container .d-editor-button-bar button.upload:after {
@@ -1721,13 +1618,6 @@ html.home-search-banner {
 
 /*** Category Based CSS ***/
 //News Category based customization 
-.category-news.tag-page .topic-body {
-    width: calc(690px + (11px * 2)) !important;
-}
-.catego+ry-news.tag-page #topic-title .title-wrapper {
-    width: 100% !important;
-    text-align: left;
-}
 .category-news.tag-page #topic-title .topic-statuses .topic-status {
     display: none;
 }
@@ -1739,137 +1629,10 @@ html.home-search-banner {
     color: #3cc1b7 !important;
 }
 
-//News Category based customization 
-.category-knowledge-base #list-area .show-more.has-topics {
-    top: 25px;
-}
-
-body.category.archetype-regular.category-knowledge-base .topic-owner .topic-meta-data .post-date {
-    margin-bottom: 17.5px !important;
-}
-
-body.category.archetype-regular.category-knowledge-base .topic-body .contents h1 a,
-body.category.archetype-regular.category-knowledge-base .topic-body .contents h2 a,
-body.category.archetype-regular.category-knowledge-base .topic-body .contents h3 a{
-    color: #222 !important;
-}
-
-body.category.archetype-regular.category-knowledge-base h2, body.category.archetype-regular.category-knowledge-base h3 {
-    border-bottom: none !important;
-}
-
 .category-news #topic-title h1 {
     margin-bottom: 10px;
 }
-
-.category-knowledge-base article nav.post-controls .actions {
-    padding-right: 1em;
-}
-
-body.category.archetype-regular.category-knowledge-base #post_1 .topic-body .topic-map {
-    margin-bottom: -1px;
-    margin-left: -27px;
-    display: block !important;
-    width: 863px;
-}
-
-body.category.archetype-regular.category-knowledge-base-video #post_1 .topic-body .topic-map {
-    margin-bottom: -1px;   
-    margin-left: -5px;
-    width: 865px;
-}
-
-//Modified to align the flair image on the KB and Video category topics. [Modified by: Saurabh; Date: 18-07-2022]
-//Flair icon CSS for KB/Videos/Draft categories [Modified by: Saurabh; Date: 18-01-2023]
-body{
-    &.category.archetype-regular.category-knowledge-base-video #post_1 {
-        .topic-avatar {
-            .post-avatar {
-                @include breakpoint(tablet, min-width) {
-                    .avatar-flair {
-                        top: 14px;
-                        right: -37px;
-                    }   
-                }
-            }
-        }
-    }
-    &.category.archetype-regular.category-knowledge-base #post_1 {
-        .topic-avatar {
-            .post-avatar {
-                .avatar-flair {
-                    top: 16px;
-                    right: -6px;
-                    .d-icon {
-                        font-size: 1rem !important;
-                        height: 1em;
-                        width: 1em;
-                    }
-                }
-            }
-        }
-    }
-    &.category.archetype-regular.category-drafts #post_1 {
-        .topic-avatar {
-            .post-avatar {
-                .avatar-flair.avatar-flair-team.rounded {
-                    left: -3px !important;
-                }
-            }
-        }
-    }
-    &.category-knowledge-base,
-    &.category-knowledge-base-video {
-        article {
-            .topic-avatar {
-                width: 20px !important;
-                padding-left: 6px;
-    		    padding-top: 8px;
-                
-                img.avatar {
-                    width: 26px !important;
-                    height: 26px !important;
-                }
-                
-                .post-avatar {
-                    .avatar-flair {
-                        top: 12px;
-                        right: -12px;
-                        
-                    }
-                    .avatar-flair.avatar-flair-image {
-                        background-size: 12px 12px !important;
-                        width: 15px !important;
-                        height: 15px!important;
-                        top: unset !important;
-                        bottom: -3px !important;
-                        right: -3px;
-                        &.avatar-flair-team {
-                            left: -6px !important;
-                        }
-                    }
-                    
-                }
-            }
-            &:not(#post_1) .topic-avatar {
-                height: auto;
-            }
-        }
-    }
-} 
-//End of Flair icon CSS for KB/Videos/Draft categories
-
-.category-knowledge-base #post_1 .cooked p:first-child + div.lightbox-wrapper, .category-news #post_1 .cooked p:first-child + div.lightbox-wrapper, .category-drafts #post_1 .cooked p:first-child + div.lightbox-wrapper, .category-alfabet-user-group-meetings #post_1 .cooked p:first-child + div.lightbox-wrapper {
-    display: block !important;
-}
-
-.category.category-knowledge-base .shared-drafts {
-    display: none !important;
-}
-
-.category-knowledge-base .loading-container .topic-timer-info {
-    border-top: none;
-}
+// End News Category based customization 
 
 //
 .category-knowledge-base .small-action, .category-news .small-action, .category-drafts .small-action,
@@ -1878,10 +1641,6 @@ body{
 .category-knowledge-base .signup-cta, .category-news .signup-cta, .category-drafts .signup-cta, 
 .category-alfabet-user-group-meetings .signup-cta {
     margin: 0 0 2em 0 !important;
-}
-
-.category-knowledge-base .time-gap.small-action .topic-avatar {
-    background: none !important;
 }
 
 //
@@ -1957,11 +1716,6 @@ aside.quote .title, blockquote {
 /*** Brand Header CSS Ends ***/
 
 /*** Main container Dismiss Banenr CSS ***/
-#banner-content a {
-    //font-size: 20px;
-    //color: #011f3d !important;
-}
-
 //banner post box border
 #banner {
     border: 1px solid #d7d7b7;
@@ -2097,18 +1851,9 @@ body.category.category-internal-forum-kompaas {
     }
 }
 
-//Resolved the alignment issue of the Header navigation and Topic list on Desktop view.
-#main {
-    #main-outlet-wrapper {
-        @media only screen and (min-width: 1050px) {
-         box-sizing: content-box !important;   
-        }
-       #main-outlet {
-           max-width: 100% !important;
-       }
-    }   
+#main-outlet {
+    max-width: 100% !important;
 }
-
 
 /** User Avatar Flair for Team group **/
 .user-card-avatar .avatar-flair.avatar-flair-team.rounded, .user-profile-avatar .avatar-flair.avatar-flair-team.rounded, .topic-map .poster .avatar-flair.rounded {
@@ -2307,3 +2052,8 @@ body {
     }
 }
 /* End of the CSS for the page-not-found page */
+
+.category-drop .category-drop-header .badge-category {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
