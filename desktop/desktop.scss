@@ -364,12 +364,15 @@ body {
       }
     }
 
-    #topic-title .title-wrapper {
-      width: calc(961px + (11px * 2)) !important;
-      //Set the topic title width in tablet view(To resolve the issue of overflow for topic title)
-      @include breakpoint(tablet) {
-        width: 70% !important;
-      }
+    #topic-title {
+        justify-content: normal !important;
+        .title-wrapper {
+            width: calc(961px + (11px * 2)) !important;
+            //Set the topic title width in tablet view(To resolve the issue of overflow for topic title)
+            @include breakpoint(tablet) {
+                width: 70% !important;
+            }
+        }
     }
   }
 
@@ -379,6 +382,9 @@ body {
     .contents {
       margin-left: 0px !important;
     }	
+    #topic-title {
+        margin-bottom: 0px !important;
+    }
     @include breakpoint(tablet) {	  
       #topic-title .title-wrapper {	  
         width: calc(100% - 47px) !important;	  
@@ -709,22 +715,6 @@ body.category-forum {
 	}
 }
 
-// Code commented to display the tag drop-down over header navigation. [Saurabh; Date: 28-03-2022]
-/*
-body.tags-page.category-knowledge-base,
-body.tags-page.category-forum,
-body.category.category-knowledge-base,
-body.category.category-feedback{
-    .navigation-container {
-        .category-breadcrumb,
-        #navigation-bar,
-        .navigation-controls {
-             z-index: 50 !important;
-        }
-    }
-}
-*/
-
 body.tags-page.category-knowledge-base,
 body.category.category-knowledge-base,
 body.tags-page.category-news {
@@ -898,12 +888,6 @@ body.tags-page.category-forum {
     }
 }
 
-.likes {
-    svg.fa.d-icon.d-icon-heart.svg-icon.svg-string {
-        fill: var(--danger-low-mid);
-    }
-}
-
 body.category .navigation-container #navigation-bar li {
     margin-right: 0.1em !important;
 }
@@ -1032,3 +1016,19 @@ html.home-search-banner {
         margin-top: 3px;
     } 
 } 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body.custom-tag-sidebar #main-outlet .discovery-list-container-top-outlet.tag-sidebar .tag-sidebar {
+        margin-left: calc(-50vw + 50%) !important;
+        margin-right: calc(-50vw + 50%) !important;
+    }
+}
+
+//Resolved the alignment issue of the Header navigation and Topic list on Desktop view.
+#main {
+    #main-outlet-wrapper {
+        @media only screen and (min-width: 1050px) {
+         box-sizing: content-box !important;   
+        }
+    }   
+}
