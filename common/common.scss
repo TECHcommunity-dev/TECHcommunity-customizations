@@ -295,6 +295,12 @@ body.custom-tag-sidebar .tag-header-widget {
     display: none;
 }
 
+.custom-sidebar .tag-title-header,
+body.category-header .tag-sidebar,
+body.navigation-topics .tag-sidebar {
+    display: none !important;
+}
+
 .tag-sidebar [data-techcommunity-product-tags] a {
     background-color: #fff !important;
 }
