@@ -185,11 +185,12 @@ body.category-news .topic-area .returning-user {
     display: none;
 }
 
-//hide replies column in news category
-body.category-news .topic-list .posts {
-    display: none;
+//hide replies, posters and likes columns in news category topic-list
+body.category-news .topic-list {
+    .posters, .posts, .likes {
+        display: none !important;
+    }
 }
-
 
 //change color of links in titles
 .topic-body h1 a, .topic-body h2 a, .topic-body h3 a, .topic-body h4 a, .topic-body h5 a, .topic-body h6 a {
