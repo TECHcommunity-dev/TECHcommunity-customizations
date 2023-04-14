@@ -397,6 +397,9 @@ body {
 	.title-wrapper {
     		width: 70% !important;
 	}
+    .topic-category {
+        margin-top: 5px;
+    }
 }
 /*end Customize topics in a news category*/
 
@@ -456,13 +459,24 @@ body.category-knowledge-base-blog {
 		.post-controls {
 			.actions {
 				@include breakpoint(large) {
-					button.like::after { content: "" !important; }
-					button.share::after { content: "" !important; }
-					button.bookmark::after { content: "" !important; }
+					button.like::after { content: "" !important; padding-left: 5px; }
+					button.share::after { content: "" !important; padding-left: 5px; }
+					button.bookmark::after { content: "" !important; padding-left: 5px; }
 				}
 				button.like::after { content: " Like"; }
 				button.share::after { content: " Share"; }
 				button.bookmark::after { content: " Bookmark"; }
+
+                .discourse-reactions-actions {
+				    &:not(.has-reacted) {
+				        button.btn-toggle-reaction-like {
+				            color: #011f3d;
+				        }
+				    }
+				    .discourse-reactions-counter .reactions-counter {
+				        color: #011f3d;
+				    }
+			    }
 			}
 		}
 	}
