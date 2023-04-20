@@ -2070,3 +2070,10 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+//Hide the option to mute tags for users in their preferences [Added by: Saurabh; Date: 20-04-2023]
+.user-preferences {
+    .tracking-controls__muted-tags, .tracking-controls__muted-tags + .instructions {
+        display: none;
+    }
+}
