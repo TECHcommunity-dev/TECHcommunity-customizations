@@ -2105,7 +2105,7 @@ body {
     	}
     	&:not(.undefined) {
     		order: -3;
-    		a svg {
+    		a svg, a img {
     		    height: 1.7em !important;
     		    width: 1.7em !important;
     		    vertical-align:0.05em
