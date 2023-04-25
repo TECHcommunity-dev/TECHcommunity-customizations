@@ -2077,3 +2077,98 @@ body {
         display: none;
     }
 }
+
+//Reorder badges on post: [Added by: Saurabh; Date: 21-04-2023]
+.topic-body {
+    padding: 10px 0 0 0 !important;
+    .topic-meta-data .poster-icon {
+        a svg {
+            height: 1.1em !important;
+            width: 1.1em !important;
+            vertical-align: -0.2em;
+        }
+        
+    	&.badge-type-silver {
+    		order: -1;
+    		a svg {
+    		    height: 1.35em !important;
+    		    width: 1.35em !important;
+    		}
+    
+    	}
+    	&.badge-type-gold {
+    		order: -2;
+    		a svg {
+    		    height: 1.6em !important;
+    		    width: 1.6em !important;
+    		}
+    	}
+    	&:not(.undefined) {
+    		order: -3;
+    		a svg {
+    		    height: 1.7em !important;
+    		    width: 1.7em !important;
+    		    vertical-align:0.05em
+    		}
+    		
+            
+    	}
+    }    
+}
+
+// End of Reorder badges on post: [Added by: Saurabh; Date: 21-04-2023]
+
+// Changes for Trust level avatar flair
+.topic-avatar .tl-avatar-flair .tl-flair {
+    top: 13.2px;
+    right: -11px;
+    font-size: 0.9em !important;
+}
+.tl-avatar-flair .tl-flair { 
+    &.tl-2 {
+        background: #ffffffbf;
+        color: #b0b0b0 !important;
+    }
+    &.tl-3 {
+        background: #ffffffbf;
+        color: #e7c300 !important;
+    }
+}
+
+.collapsed-info .user-profile-avt .tl-flair {
+    font-size: 0.9em !important;
+}
+
+body.category.archetype-regular {
+    &.category-knowledge-base, &.category-knowledge-base-video {
+        article:not(#post_1) .topic-avatar .tl-avatar-flair .tl-flair {
+            height: 16px;
+            width: 16px;
+            top: 0px;
+            right: -12px;
+            font-size: .9em !important;
+        }
+        
+        .topic-avatar .tl-avatar-flair .tl-flair svg {
+            height: 0.55em !important;
+        }
+    }
+    &.category-knowledge-base-video {
+        article#post_1 .topic-avatar .tl-avatar-flair .tl-flair { 
+            height: 16px;
+            width: 16px;
+            top: -5px;
+            right: -36px;
+            font-size: .9em !important;
+        }   
+    }
+    &.category-knowledge-base {
+        article#post_1 .topic-avatar .tl-avatar-flair .tl-flair { 
+            height: 16px;
+            width: 16px;
+            top: -3px;
+            right: -12px;
+        }   
+    }
+}
+// End of Changes for Trust level avatar flair
