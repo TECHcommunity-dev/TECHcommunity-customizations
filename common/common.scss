@@ -2174,3 +2174,23 @@ body.category.archetype-regular {
     }
 }
 // End of Changes for Trust level avatar flair
+
+// Category and Tag drop-down changes [Added by Saurabh: 25-04-2023]
+.category-drop, .tag-drop {
+    &.has-selection {
+        .selected-name{
+            .category-name, .name, .category-badge-icon {
+                color: #9a50f8 !important;
+            }
+        }
+        border-bottom: 2px solid #9a50f8 !important;
+    }
+}
+
+//Added border for the alert boxes
+.alert.alert-info {
+    border: 1px solid var(--tertiary-medium);
+}
+#list-area .show-more {
+    top: 5px !important;
+}
