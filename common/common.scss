@@ -292,7 +292,8 @@ body.custom-tag-sidebar .tag-sidebar .cooked {
     margin: 0 auto;
 }
 
-body.custom-tag-sidebar .tag-header-widget {
+//Modified the tag-banner CSS class after updating the discourse-tag-banners component [Modified by: Saurabh; Date: 08-05-2023]
+body.custom-tag-sidebar .tag-banner-container {
     display: none;
 }
 
