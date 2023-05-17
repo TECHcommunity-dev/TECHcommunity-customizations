@@ -2195,3 +2195,12 @@ body.category.archetype-regular {
 #list-area .show-more {
     top: 5px !important;
 }
+
+//Make the color var(--danger-medium) of create date of topics in the KB, that are from before 2020. [Added by: Saurabh; Date: 17-05-2023]
+body.archetype-regular.category.category-knowledge-base {
+    span.sag-created + a.post-date, a.widget-link.post-date {
+        span[title*="201"] {
+            color: var(--danger-medium);
+        }
+    }
+}
