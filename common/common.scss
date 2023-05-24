@@ -1271,12 +1271,13 @@ body.tags-page.tag-newsletter .topic-list-thumbnail {
     /*user menu on header*/
     .user-menu {
         font-size: 1.15rem;
-        .glyphs .widget-button .d-icon {
+        /* Binjan; update Css for new user dropdown menu; 2023.05.24 */
+        div.menu-tabs-container .tabs-list a.user-menu-tab .d-icon { 
             color: #3cc1b7;
             height: 1.5em;
             width: 1.5em;
         }
-        div.menu-links-header .menu-links-row button.active .d-icon {
+        div.menu-tabs-container .tabs-list a.user-menu-tab.active .d-icon {
             color: #9a50f8;
         }
     }
