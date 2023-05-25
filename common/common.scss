@@ -705,9 +705,14 @@ body.category.category-webmethods-cloudstreams-connectors-z #navigation-bar {
 		display: none !important;
 	}
 }
-body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-boxes-with-topics .category-box {
-	width: 55px !important;
-	margin: 4.5px !important;
+body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-boxes-with-topics {
+	display: flex !important;
+    	gap: 0.5em !important;
+	
+	.category-box {
+		width: 55px !important;
+		margin: 4.5px !important;
+	}
 }
 body:not(.staff).archetype-regular.category.category-webmethods-cloudstreams-connectors-a,
 body:not(.staff).archetype-regular.category.category-webmethods-cloudstreams-connectors-c,
