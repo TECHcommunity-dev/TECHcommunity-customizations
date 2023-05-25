@@ -1859,6 +1859,16 @@ body.category.category-knowledge-base-blog {
         }
     }
 }
+
+body.archetype-regular.category.category-knowledge-base-blog {
+	article#post_1 {
+		.topic-body { 
+		    ul {
+			clear: left !important;
+		    }
+		}
+	}
+}
 /* Blog category changes ends*/
 
 //hide lock icon on this category https://tech.forums.softwareag.com/c/internal-forum/kompaas/125
