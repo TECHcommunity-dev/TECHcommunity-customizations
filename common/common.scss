@@ -2220,3 +2220,12 @@ body.archetype-regular.category.category-knowledge-base {
         }
     }
 }
+
+//Hide the about admins, about moderators (all kinds), about stats on About page (https://tech.forums.softwareag.com/about) [Added by: Saurabh; Date: 6-06-2023]
+body.about-page {
+    .about {
+        &.admins, &.moderators, &.category-moderators, &.stats {
+            display: none !important;
+        }
+    }
+}
