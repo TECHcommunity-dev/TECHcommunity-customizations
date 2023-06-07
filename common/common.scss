@@ -2229,3 +2229,17 @@ body.about-page {
         }
     }
 }
+
+body #main {
+    :not(header) > div > div > .title {
+        /* Binjan & Saurabh; 2023/06/07; CSS to hide product and section menu in add-to-home-screen popup component */
+        .products, .dd-products, .sections-techcomm, .dd-sections {
+            display: none !important;
+        } 
+        /* Binjan & Saurabh; 2023/06/07; CSS to display logo image in add-to-home-screen popup component */
+        > a:first-of-type img {
+            display: block !important; 
+            margin: 0 auto 5px auto;
+        }
+    }
+}
