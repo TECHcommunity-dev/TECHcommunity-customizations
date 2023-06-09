@@ -156,9 +156,14 @@ body.category.category-alfabet-alfabet-newsletter {
     }
 }
 
-
-html.anon .d-header .d-header-icons .search-dropdown {
-    right: 130px !important;
+/* Binjan & Saurabh; 2023/06/09; fix issue Login button & Search button overlaping in IPhone */
+html.anon {
+    &.ios-device .d-header .d-header-icons .search-dropdown {
+        right: 140px !important;
+    }
+    .d-header .d-header-icons .search-dropdown {
+        right: 130px !important;
+    }
 }
 
 .d-header {

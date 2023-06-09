@@ -9,6 +9,11 @@
     display: none !important;
 }
 
+/* Binjan; 2023/06/09; set alignment of topic avtar with avtar details & badges */
+.category-news .topic-avatar {
+    padding: 8px 0 0 0 !important;
+}
+
 //remove author info if it is a regular user
 body.category-news:not(.staff) #post_1 .topic-meta-data .trigger-user-card,
 body.category-news:not(.staff) #post_1 .topic-avatar {
