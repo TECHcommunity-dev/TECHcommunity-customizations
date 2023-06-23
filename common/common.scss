@@ -2248,3 +2248,56 @@ body #main {
         }
     }
 }
+
+/* Binjan; 2023/06/21; Per trust level visibility of functionalities */
+/* 1. if the User belongs to TL0 or TL1 then hide the following:
+a. buttons/links in the topic composer
+b. Votes & Shared Draft tab from the User Activity
+
+2. if the User belongs to TL0, TL1 and TL2 then hide the following:
+a. Users tab from the User Preferences
+b. Some of the configuration under the Emails tab
+c. Some of the configurations under the Preferences --> Interface tab
+d. Pause notification menu from the User drop-down menu. */
+body {
+	&:not(.group-trust_level_2, .group-Gurus, .group-trust_level_4) {
+	    #reply-control .d-editor-button-bar {
+	        .underline_button, .strikethrough_button, .superscript_button, .subscript_button,
+	        .bullet, .list, .local-dates, .align_center_button, .align_right_button, .align_justify_button {
+	            display: none;
+	        }
+	    }
+	    .user-navigation {
+	        .shared-drafts-link, .user-voted-topics {
+                    display: none;
+    	    }
+	    }
+	}
+
+	&:not(.group-Gurus, .group-trust_level_4) {
+	    .user-navigation .user-nav__preferences-users {
+            display: none;
+	    }
+	    .pref-email-settings {
+    	    div.controls:nth-of-type(3),
+    	    div.controls:nth-of-type(4),
+    	    span {
+                display: none;
+    	    }
+	    }
+	    .pref-mailing-list-mode {
+            display: none;
+	    }
+	    
+	    .user-preferences {
+	        .pref-external-links, .pref-enable-quoting, .pref-defer-unread, 
+	        .pref-page-title, .pref-bookmark-after-notification {
+                display: none;
+	        }
+	    }
+	    
+	    .user-menu #quick-access-profile .do-not-disturb {
+            display: none;
+	    }
+	}
+}
