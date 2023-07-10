@@ -2301,15 +2301,3 @@ body {
 	    }
 	}
 }
-
-/* Binjan; 2023.07.05; Add watermark text on image thumbnail for draft video */
-.topic-list-item.category-drafts .topic-list-thumbnail::before {
-    content: 'DRAFT NOT SHOWN TO EVERYONE';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    color: red;
-    background-color: yellow;
-    font-weight: 700;
-    z-index: 3;
-}
