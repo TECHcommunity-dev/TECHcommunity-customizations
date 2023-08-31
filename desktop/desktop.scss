@@ -115,8 +115,10 @@
     right: 310px;	
 }
 
+/* Binjan; 2023.08.25; update to hide title menu and button on detail page after scroll down */
+/* 1. System added CSS class "custom-header-links--hide-links" for "try free" button when scroll down on detail page */
 //hide products dropdown menu on topic page
-header.hide-menus {
+.title--minimized {
 	.products, .products-caret, .search-dropdown {
 		display: none;
 	}
@@ -212,10 +214,15 @@ header.hide-menus {
     grid-template-columns: auto auto auto auto;
 }
 
-header.hide-menus {
+/* Binjanl; 2023.08.25; header.hide-menus replace with .title--minimized */
+.title--minimized {
     .sections-techcomm, .sections-caret {
     	display: none;
     }
+}
+/* Binjan; 2023.08.31; hide search on detail page */
+.title--minimized + .extra-info-wrapper + .before-header-panel-outlet + .panel .search-dropdown {
+    display: none;
 }
 
 /*End sections dropdown menu in header*/
