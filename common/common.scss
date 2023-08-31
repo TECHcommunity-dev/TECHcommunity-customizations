@@ -1717,7 +1717,8 @@ aside.quote .title, blockquote {
 
 //Center brand header Link [Modified by: Saurabh; Date: 17-12-2021] 
 .brand-header .b-header .links {
-    position: absolute;
+    /* Binjan; 2023.08.31; solve top bar very narrow issue */
+    /*position: absolute;*/
     width: 100%;
     ul {
         width: 100%;
