@@ -562,10 +562,11 @@ body.category.archetype-regular.category-drafts {
     }
 }
 
-html:not(.anon) .d-header .d-header-icons .search-dropdown {
+/* Binjan; 2023.08.25; commented to solve hovering issue on "try free button" */
+/*html:not(.anon) .d-header .d-header-icons .search-dropdown {
     position: relative !important;
     right: 6.5em !important;
-}
+}*/
 
 .products,
 .sections-techcomm {
