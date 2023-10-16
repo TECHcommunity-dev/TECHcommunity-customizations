@@ -242,6 +242,9 @@ body:not(.staff) #show-tag-info {
     background-color: var(--tertiary) !important;
     color: #011f3d !important;
     font-weight: bold !important;
+    /* added by Binjan on 2023.10.16 */
+    font-size: 1.1rem !important;
+    padding: 17px 0.5em 18px 0.5em !important;
 	
     .svg-icon {
     	color: #011f3d !important;
