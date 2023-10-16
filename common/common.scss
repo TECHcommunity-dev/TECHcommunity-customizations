@@ -198,9 +198,10 @@ body.category-news .topic-list {
 }
 
 //change color of links in titles
-.topic-body h1 a, .topic-body h2 a, .topic-body h3 a, .topic-body h4 a, .topic-body h5 a, .topic-body h6 a {
+/* Binjan; 2023.10.16; Commented style requested by Client */
+/*.topic-body h1 a, .topic-body h2 a, .topic-body h3 a, .topic-body h4 a, .topic-body h5 a, .topic-body h6 a {
     color: var(--primary-or-primary-low-mid) !important;
-}
+}*/
 
 //hide tag info button 
 body:not(.staff) #show-tag-info {
