@@ -1719,24 +1719,30 @@ aside.quote .title, blockquote {
 }
 
 //Center brand header Link [Modified by: Saurabh; Date: 17-12-2021] 
-.brand-header .b-header .links {
-    /* Binjan; 2023.08.31; solve top bar very narrow issue */
-    /*position: absolute;*/
-    width: 100%;
-    ul {
+/*.brand-header .b-header .links {*/
+/* Binjan; change class hierarchy of brand header; 2023.10.16*/
+#main > div > header.b-header {
+    order: -4;
+
+    .links {
+        /* Binjan; 2023.08.31; solve top bar very narrow issue */
+        /*position: absolute;*/
         width: 100%;
-        li:first-child {
+        ul {
             width: 100%;
-            display: inline-block;
-            a {
-                font-size: 1.2rem !important;
-                font-weight: bold;
+            li:first-child {
                 width: 100%;
-                text-align: center;
-                justify-content: center;
-            }
-            a:hover {
-                background-color:transparent !important;
+                display: inline-block;
+                a {
+                    font-size: 1.2rem !important;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                }
+                a:hover {
+                    background-color:transparent !important;
+                }
             }
         }
     }
