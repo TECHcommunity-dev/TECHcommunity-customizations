@@ -2324,3 +2324,12 @@ body {
     font-weight: 700;
     z-index: 3;
 }
+/* Binjan; 2023.10.18; fix width issue of "You might be intereste" topic list on detail page */
+.more-topics__container {
+    max-width: 100%;
+}
+
+.topic-list .age,
+.topic-list .activity {
+    width: 75px;
+}
