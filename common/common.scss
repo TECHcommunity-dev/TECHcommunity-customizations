@@ -2333,3 +2333,7 @@ body {
 .topic-list .activity {
     width: 75px;
 }
+/* Binjan; 2023.11.23; remove open-quote symbol from blockquote element */
+blockquote:before {
+    content: "" !important;
+}
