@@ -393,7 +393,7 @@ button.widget-button.btn.btn-primary.btn-small.sign-up-button.btn-text,
 }
 
 .search-menu .menu-panel {
-    width: 700px !important;
+    width: 950px !important; /* Binjan; 2023.11.28; change width */
 }
 
 //Hide the Events category in the hamburger-panel [Added by: Saurabh; Date: 05-05-2022]
@@ -1153,14 +1153,18 @@ body {
         a.show-advanced-search {
             padding: 5.5px 5px;
             background-color: var(--success); 
+            /* Binjan; 2023.11.28; additional style for the button */
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.1em;
             &:hover {
                 background-color: var(--success-hover);
                 .d-icon {
-                    color: var(--primary-high);    
+                    color: var(--secondary); // Binjan; 2023;11;28; change value    
                 }
             }
             .d-icon {
-                color: var(--primary-medium);    
+                color: var(--secondary); // Binjan; 2023;11;28; change value  
             }
         }
     }
@@ -1196,6 +1200,24 @@ body {
     } 
     .search-result-category {
         margin-top: 1.5em !important;
+    }
+    
+    /* Binjan; 2023.11.28; add tag-box font size */
+    .discourse-tag.box {
+        font-size: 0.8em;
+    }
+    /* Binjan; 2023.11.28; add css for show-more */
+    .search-menu__show-more {
+        background-color: #1c5569;    
+        a {
+            color: var(--secondary);
+            font-size: 1.1em;
+            font-weight: bold;
+            &:hover {
+                color: var(--tertiary);
+                border: 1px solid var(--tertiary);
+            }
+        }
     }
 }
 // End of Search drop-down enhancements
@@ -2005,7 +2027,7 @@ html {
 .menu-panel {
   .panel-body-bottom {
     .btn:hover .d-icon{
-      color: var(--primary-medium);
+      color: #FFF; // Binjan; 2023.11.28; update new value
     }
   }
 }
