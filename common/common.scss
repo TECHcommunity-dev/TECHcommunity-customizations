@@ -2177,8 +2177,8 @@ body {
 
 // Changes for Trust level avatar flair
 .topic-avatar .tl-avatar-flair .tl-flair {
-    top: 13.2px;
-    right: -11px;
+    top: 0px; /* Binjan; 2023.12.01; adjust star position on avtar */
+    right: -15px; /*Binjan; 2023.12.01 */
     font-size: 0.9em !important;
 }
 .tl-avatar-flair .tl-flair { 
@@ -2214,8 +2214,8 @@ body.category.archetype-regular {
         article#post_1 .topic-avatar .tl-avatar-flair .tl-flair { 
             height: 16px;
             width: 16px;
-            top: -5px;
-            right: -36px;
+            top: 0px; /* Binjan; 2023.12.01; adjust star position on avtar */
+            right: -15px; /* Binjan; 2023.12.01 */
             font-size: .9em !important;
         }   
     }
@@ -2292,6 +2292,16 @@ a. Users tab from the User Preferences
 b. Some of the configuration under the Emails tab
 c. Some of the configurations under the Preferences --> Interface tab
 d. Pause notification menu from the User drop-down menu. */
+
+/* Binjan; 2023/11/29; Per trust level visibility of functionalities 
+1. if the User belongs to TL0, TL1, TL2 and TL3 then hide the following:
+a. Topic label inside User Preferences => Subscriptions & alerts
+
+2. if the User belongs to TL0, TL1 and TL2 then hide the following 
+   inside User Preferences=>Subscriptions & alerts:
+a. "Consider topics new when" label and control
+b. "Automatically track topics I enter" label and control 
+c. "When I post in a topic, set that topic to" label and control */
 body {
 	&:not(.group-trust_level_2, .group-Gurus, .group-trust_level_4) {
 	    #reply-control .d-editor-button-bar {
@@ -2326,13 +2336,29 @@ body {
 	        .pref-external-links, .pref-enable-quoting, .pref-defer-unread, 
 	        .pref-page-title, .pref-bookmark-after-notification {
                 display: none;
-	        }
+	        }            
 	    }
 	    
 	    .user-menu #quick-access-profile .do-not-disturb {
             display: none;
 	    }
 	}
+
+    // Binjan; 2023.11.29; hide for all
+    .user-preferences {
+        .user-preferences__tracking-topics-wrapper {
+            .control-label:first-child {
+                display: none;
+            }
+        }
+    }
+
+    // Binjan; 2023.11.29; hide for all except TL3
+    &:not(.group-Gurus) {
+        .user-preferences_tracking-topics-controls {
+            display: none;
+        }
+    }
 }
 
 /* Binjan; 2023.07.05; Add watermark text on image thumbnail for draft video */
