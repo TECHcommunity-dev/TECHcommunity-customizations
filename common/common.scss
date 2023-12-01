@@ -2177,8 +2177,8 @@ body {
 
 // Changes for Trust level avatar flair
 .topic-avatar .tl-avatar-flair .tl-flair {
-    top: 13.2px;
-    right: -11px;
+    top: 0px; /* Binjan; 2023.12.01; adjust star position on avtar */
+    right: -15px; /*Binjan; 2023.12.01 */
     font-size: 0.9em !important;
 }
 .tl-avatar-flair .tl-flair { 
@@ -2214,8 +2214,8 @@ body.category.archetype-regular {
         article#post_1 .topic-avatar .tl-avatar-flair .tl-flair { 
             height: 16px;
             width: 16px;
-            top: -5px;
-            right: -36px;
+            top: 0px; /* Binjan; 2023.12.01; adjust star position on avtar */
+            right: -15px; /* Binjan; 2023.12.01 */
             font-size: .9em !important;
         }   
     }
