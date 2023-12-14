@@ -304,3 +304,33 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors {
 		}
 	}
 }
+
+//webMethods Service Designer Download - https://tech.forums.softwareag.com/t/webmethods-service-designer-download/235227
+//Binjan; 2023.12.14
+div[data-wrap*="flex-2column"] {
+    div[data-wrap="free-trial-info"] {
+        display: block;
+    }
+
+    div[data-wrap*="flex-left"],
+    div[data-wrap*="flex-right"] {
+        width: auto;
+        padding: .5rem 1rem;
+    }
+}
+
+div[data-wrap="free-trial-guide"] {
+    padding: .5rem 1rem;
+}
+
+div[data-wrap="free-trial-getting-started"] {
+
+    div[data-wrap="free-trial-getting-started-column"],
+    div[data-wrap="free-trial-getting-started-column-2"] {
+        width: auto !important;
+
+        p {
+            width: auto !important;
+        }
+    }
+}
