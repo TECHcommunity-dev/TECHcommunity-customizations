@@ -1086,8 +1086,6 @@ div[data-wrap="free-trial-guide"] {
 
 
 div[data-wrap="free-trial-info"] {
-    display: flex; /* Binjan; 2023.12.12 */
-
     img[src="https://global.discourse-cdn.com/techcommunity/original/2X/2/217856cbfb35f00c05bfd9a2469b298227ec57d5.png"] {
         width: 10% !important;
     }
@@ -2393,6 +2391,10 @@ blockquote:before {
 div[data-wrap*="flex-2column"] {
     display: flex;
     flex-direction: row;
+    
+    div[data-wrap="free-trial-info"] {
+        display: flex; /* Binjan; 2023.12.12 */
+    }
 
     div[data-wrap*="flex-left"] {
         width: 60%;
