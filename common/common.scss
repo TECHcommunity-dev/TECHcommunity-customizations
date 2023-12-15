@@ -2423,3 +2423,28 @@ div[data-wrap*="flex-2column"] {
         color: #3b2c5e !important;
     }
 }
+
+//Mariela; 2023.12.15
+div[data-wrap="gradient-banner"] {
+    padding: 1%;
+    text-align: center;
+    background: linear-gradient(99.14deg,#8e3cf7 6.93%,#3cc1b6 93.07%);
+    color: #fff !important;
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    div[data-wrap="button-white-background"] {
+        kbd {
+            color: var(--primary);
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+            background: var(--primary-very-low);
+            font-family: var(--font-family);
+            padding: 1rem 3rem;
+            border-radius: 0;
+            font-size: 1.25rem;
+        }
+    }
+}
