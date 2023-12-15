@@ -1053,3 +1053,12 @@ html.home-search-banner {
         }
     }   
 }
+
+div[data-wrap=free-trial-guide] div[data-wrap=free-trial-getting-started] div[data-wrap=free-trial-what-is-included] {
+    float: left;
+    width: 50% !important;
+
+    p {
+        width: 90% !important;
+    }
+}
