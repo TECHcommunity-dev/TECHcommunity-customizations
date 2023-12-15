@@ -1036,9 +1036,9 @@ div[data-wrap="free-trial-guide"] {
     div[data-wrap="free-trial-getting-started"] {
         /*padding: 40px 60px;*/ /* Binja; 2023.12.13 */
         
-        div[data-wrap="free-trial-getting-started-column"] {
-            float: left;
-            width: 33%;
+        div[data-wrap="free-trial-getting-started-column"],
+        div[data-wrap="free-trial-getting-started-column-2"] {
+            float: left;            
         
             p {
         		width: 80%;
@@ -1061,8 +1061,11 @@ div[data-wrap="free-trial-guide"] {
     	
         }
         
+        div[data-wrap="free-trial-getting-started-column"] {
+            width: 33%;
+        }
+
         div[data-wrap="free-trial-getting-started-column-2"] {
-            float: left;
             width: 50%;
         
             p {
