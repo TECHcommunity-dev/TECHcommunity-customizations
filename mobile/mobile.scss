@@ -331,6 +331,10 @@ div[data-wrap="free-trial-getting-started"] {
 
         p {
             width: auto !important;
+
+            a {
+                display: flex;
+            }
         }
     }
 }
