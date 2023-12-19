@@ -2445,18 +2445,18 @@ div[data-wrap="gradient-banner"] {
     h2 {
         font-size: 2rem;
     }
+}
     
-    div[data-wrap="button-white-background"] {
-        kbd {
-            color: var(--primary);
-            margin-top: 1rem;
-            margin-bottom: 2.5rem;
-            background: var(--primary-very-low);
-            font-family: var(--font-family);
-            padding: 1rem 3rem;
-            border-radius: 0;
-            font-size: 1.25rem;
-        }
+div[data-wrap="button-white-background"] {
+    kbd {
+	color: var(--primary);
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        background: var(--primary-very-low);
+        font-family: var(--font-family);
+        padding: 1rem 3rem;
+        border-radius: 0;
+        font-size: 1.25rem;
     }
 }
 
