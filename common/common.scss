@@ -264,14 +264,11 @@ body:not(.staff) #show-tag-info {
 
 .custom-header-links {
 	.try-free-custom-header-links {
-		padding: 6.3px 18px 5.8px 18px !important;
-		background-color: var(--highlight);
+        // Binjan; 2023/12/29; Update Css 
+        padding: 3px 10px 2px;        
+        background-color: var(--secondary);        
+        border: 2px solid #011f3d;
 		cursor: pointer;
-		
-		&:hover {
-			background-color: #abbb17 !important;
-			transition: all 0.25s;
-		}
 		
 		a {
 			padding: 0px !important;
@@ -366,7 +363,6 @@ button.widget-button.btn.btn-primary.btn-small.sign-up-button.btn-text,
 }
 
 .d-header .login-button .d-button-label {
-    color: #011f3d !important;
     font-weight: bold !important;
 }
 
@@ -2489,3 +2485,7 @@ div[data-wrap=free-trial-guide] {
     }
 }
 
+/* Binjan; 2023/12/29 */
+.list-cell, .category-list td, .category-list th, .table-heading {
+    color: var(--primary-high);
+}
