@@ -694,12 +694,14 @@ body:not(.category-knowledge-base).custom-sidebar .contents>.topic-list tbody {
 /*webmethods-connectors category*/
 
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-box-inner {
+body.category.category-webmethods-cloudstreams-connectors #header-list-area .category-box-inner {
+	border-width: 2px !important;
+	
 	.featured-topics, svg.fa {
 		display: none !important;
 	}
 }
-body.categories-list.category.category-webmethods-cloudstreams-connectors #navigation-bar,
+body.category.category-webmethods-cloudstreams-connectors #navigation-bar,
 body.category.category-webmethods-cloudstreams-connectors-a #navigation-bar,
 body.category.category-webmethods-cloudstreams-connectors-c #navigation-bar,
 body.category.category-webmethods-cloudstreams-connectors-d #navigation-bar,
@@ -721,13 +723,14 @@ body.category.category-webmethods-cloudstreams-connectors-z #navigation-bar {
 		display: none !important;
 	}
 }
-body.categories-list.category.category-webmethods-cloudstreams-connectors #header-list-area .category-boxes-with-topics {
+body.category.category-webmethods-cloudstreams-connectors #header-list-area .category-boxes-with-topics {
 	display: flex !important;
     	gap: 0.5em !important;
 	
 	.category-box {
 		width: 55px !important;
 		margin: 4.5px !important;
+		border-left-width: 0px !important;
 	}
 }
 body:not(.staff).archetype-regular.category.category-webmethods-cloudstreams-connectors-a,
@@ -781,7 +784,7 @@ body.archetype-regular.category.category-webmethods-cloudstreams-connectors-z {
 	}
 }
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .category-navigation li.tag-drop,
+body.category.category-webmethods-cloudstreams-connectors .category-navigation li.tag-drop,
 body.category.category-webmethods-cloudstreams-connectors-a .category-navigation li.tag-drop,
 body.category.category-webmethods-cloudstreams-connectors-c .category-navigation li.tag-drop,
 body.category.category-webmethods-cloudstreams-connectors-d .category-navigation li.tag-drop,
@@ -839,7 +842,7 @@ body.category.category-webmethods-cloudstreams-connectors-s #list-area .topic-li
 body.category.category-webmethods-cloudstreams-connectors-t #list-area .topic-list-thumbnail .main-thumbnail,
 body.category.category-webmethods-cloudstreams-connectors-w #list-area .topic-list-thumbnail .main-thumbnail,
 body.category.category-webmethods-cloudstreams-connectors-z #list-area .topic-list-thumbnail .main-thumbnail,
-body.categories-list.category.category-webmethods-cloudstreams-connectors #list-area .topic-list-thumbnail .main-thumbnail
+body.category.category-webmethods-cloudstreams-connectors #list-area .topic-list-thumbnail .main-thumbnail
 {
     height: calc(100%) !important;
     margin-top: 25%;
@@ -850,7 +853,7 @@ body.categories-list.category.category-webmethods-cloudstreams-connectors #list-
     left: 0px !important
 }
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-thumbnails-list .topic-list-thumbnail, 
+body.category.category-webmethods-cloudstreams-connectors .topic-thumbnails-list .topic-list-thumbnail, 
 .topic-thumbnails-grid .topic-list-thumbnail, .topic-thumbnails-masonry .topic-list-thumbnail {
 	position: unset !important;
 }
@@ -872,22 +875,22 @@ body.category.category-webmethods-cloudstreams-connectors-s .topic-list .topic-l
 body.category.category-webmethods-cloudstreams-connectors-t .topic-list .topic-list-item .badge-wrapper,
 body.category.category-webmethods-cloudstreams-connectors-w .topic-list .topic-list-item .badge-wrapper,
 body.category.category-webmethods-cloudstreams-connectors-z .topic-list .topic-list-item .badge-wrapper,
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .badge-wrapper,
+body.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .badge-wrapper,
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .posters a,
+body.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .posters a,
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item td.num.age.activity a,
+body.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item td.num.age.activity a,
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item td.num.likes,
+body.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item td.num.likes,
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .link-bottom-line,
+body.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .link-bottom-line,
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .link-top-line .d-tooltip
+body.category.category-webmethods-cloudstreams-connectors .topic-list .topic-list-item .link-top-line .d-tooltip
 {
 	display: none !important;
 }
 
-body.categories-list.category.category-webmethods-cloudstreams-connectors .topic-list-item.visited a.title:not(.badge-notification) {
+body.category.category-webmethods-cloudstreams-connectors .topic-list-item.visited a.title:not(.badge-notification) {
 	color: var(--primary) !important;
 }
 
