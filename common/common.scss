@@ -241,14 +241,14 @@ body:not(.staff) #show-tag-info {
 //change create topic button style on homepage
 #create-topic {
     background-color: var(--tertiary) !important;
-    color: #011f3d !important;
+    color: var(--secondary) !important;
     font-weight: bold !important;
     /* added by Binjan on 2023.10.16 */
     font-size: 1.1rem !important;
     padding: 17px 0.5em 18px 0.5em !important;
 	
     .svg-icon {
-    	color: #011f3d !important;
+    	color: var(--secondary) !important;
     	width: 0.8em !important;
     }
 	
@@ -2488,4 +2488,9 @@ div[data-wrap=free-trial-guide] {
 /* Binjan; 2023/12/29 */
 .list-cell, .category-list td, .category-list th, .table-heading {
     color: var(--primary-high);
+}
+
+/* Mariela //Mariela; 2024.01.03
+.featured-topic a {
+  color: #011F3D;
 }
