@@ -2,14 +2,13 @@
 <script type="text/javascript" nonce="{{nonce}}" src="//assets.adobedtm.com/081e57b01871/7a4a555f3f4e/launch-29da95ff591c.min.js" async></script>
 
 <script type='text/x-handlebars' data-template-name='/connectors/below-badges-title/custom-content'>
-  <p>
-   Take one of our Tech Community <strong>Challenges</strong>, earn badges and level up your <strong>Reputation</strong>!
-  </p>
+    <p>
+        Take one of our Tech Community <strong>Challenges</strong>, earn badges and level up your <strong>Reputation</strong>!
+    </p>
 </script>
 <!-- End of the JS Moved From The "my component"  -->
 
 <script type="text/discourse-plugin" version="0.8">
-  
 
 /*Products dropdown menu in header*/  
 const h = require("virtual-dom").h;
@@ -532,46 +531,6 @@ api.decorateWidget("home-logo:after", helper => {
 
   
 /*End products dropdown menu in header*/
-
-</script>
-
-<script type="text/discourse-plugin" version="0.8">
-  const ajax = require('discourse/lib/ajax').ajax;
-  const Topic = require('discourse/models/topic').default;
-  // We're using ajax and the Topic model from Discourse
-
-  api.registerConnectorClass('discovery-below', 'connectors-foot-note', {
-    // above-main-container is the plugin outlet,
-    // featured-topics is your custom component name
-
-    setupComponent(args, component) {
-
-      api.onPageChange((url, title) => {
-        if (url.indexOf("/c/webmethods-cloudstreams-connectors/") > -1){
-        // on page change, check if url matches
-        // if your homepage isn't /latest change this to /categories
-        
-          $('html').addClass('connectors-foot-note');
-          // add a class to the HTML tag for easy CSS targetting
-
-          component.set('displayfootNoteTopics', true);
-          // we'll use this later to show our template
-
-        } 
-        else {
-        // If the page doesn't match the urls above, do this:
-
-          $('html').removeClass('connectors-foot-note');
-          // Remove our custom class
-
-          component.set('displayfootNoteTopics', false);
-          // Don't display our customization
-        }
-      });
-     }
-  });
-  
-  
 </script>
 
 <script type="text/discourse-plugin" version="0.8">
