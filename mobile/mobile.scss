@@ -338,3 +338,23 @@ div[data-wrap="free-trial-getting-started"] {
         }
     }
 }
+
+//webMethods Integration Download page design - https://techcommunity.staged-by-discourse.com/t/webmethods-integration-free-trial-download/230378
+// Binjan; 2024.02.09
+div[data-wrap="sag-content-wrapper"] {
+
+    div[data-wrap*="webmethods-serviced-designer"],
+    div[data-wrap*="webmethods-package-manager"],
+    div[data-wrap*="webmethods-integration-platform"],
+    div[data-wrap*="webmethodsio-connector-builder"],
+    div[data-wrap*="cloudStreams-connectors"] {
+        grid-column: col-start / span 12;
+        text-align: center;
+        padding: .5rem 2rem;
+    }
+
+    div[data-wrap=button-white-background] kbd {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}
