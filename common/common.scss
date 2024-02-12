@@ -1038,6 +1038,7 @@ body.archetype-regular.category-knowledge-base-video {
 
 //webMethods Integration Download page cust - https://tech.forums.softwareag.com/t/webmethods-integration-free-trial-download/235077
 div[data-wrap="free-trial-guide"] {
+    width: 100%; // added by Binjan; 2024.02.09
 	display: inline-block;
     background-color: #F2F4F5;
     margin-top: 50px;
@@ -2454,7 +2455,7 @@ div[data-wrap="button-white-background"] {
         margin-bottom: 2.5rem;
         background: var(--primary-very-low);
         font-family: var(--font-family);
-        padding: 1rem 3rem;
+        padding: 1rem 2rem; // Binjan; 2024.02.07
         border-radius: 0;
         font-size: 1.25rem;
     }
