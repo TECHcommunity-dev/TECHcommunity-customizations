@@ -59,6 +59,7 @@
     border: 1px #ccc solid;
     padding: 24px 0px 20px 50px;
     display: none;
+    box-shadow: 0px 1px 5px 1px #c9c9c9;
 
     .dd-products-list-item {
     	a:hover {
@@ -90,6 +91,20 @@
 
 .dd-products-transformation .dd-products-item {
     margin-right: 0;
+}
+
+ul.dd-products-freeTrials {
+	width: 100% !important;
+	
+	a.dd-products-title::before {
+		content: "↗ ";
+	}
+	
+	hr {
+		width: 90%;
+		border-top: 1px solid var(--header_primary) !important;
+		margin: 0.2em 0em 1.7em 0em !important;
+	}
 }
 
 .dd-products-hovered {
@@ -182,6 +197,7 @@
     border: 1px #ccc solid;
     padding: 24px 0px 20px 28px;
     display: none;
+    box-shadow: 0px 1px 5px 1px #c9c9c9;
 
     ul {
     	list-style: none;
