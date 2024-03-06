@@ -18,6 +18,7 @@ const integration = [];
 const iot = [];
 const adanat = [];
 const transformation = [];
+const freeTrials = [];
 
 const sections = [];
 const dropdownMenuSections = [];
@@ -282,6 +283,34 @@ transformation.push(
     )
 )
 
+freeTrials.push(
+	h(
+	 `hr`
+	),
+	h(
+         `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-title',
+            {
+                href:'https://www.softwareag.com/en_corporate/platform/free-trials.html?deployment=cloud'
+                
+            }, 
+            "Explore Software AG Free Trials"  
+        )
+    ),
+	h(
+         `li.dd-products-list-item`, 
+        h(
+            'a.dd-products-title',
+            {
+                href:'https://www.softwareag.com/en_corporate/platform/free-trials.html?deployment=self-hosted'
+                
+            }, 
+            "Download Software AG assets"  
+        )
+    )
+)
+
   dropdownMenu.push(
      h(
           'ul.dd-products-integration', integration
@@ -294,6 +323,9 @@ transformation.push(
     ),
     h(
           'ul.dd-products-transformation', transformation
+    ),
+    h(
+          'ul.dd-products-freeTrials', freeTrials
     )
 )
 
