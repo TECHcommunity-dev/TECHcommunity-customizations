@@ -1038,7 +1038,6 @@ body.archetype-regular.category-knowledge-base-video {
 
 //webMethods Integration Download page cust - https://tech.forums.softwareag.com/t/webmethods-integration-free-trial-download/235077
 div[data-wrap="free-trial-guide"] {
-    width: 100%; // added by Binjan; 2024.02.09
 	display: inline-block;
     background-color: #F2F4F5;
     margin-top: 50px;
@@ -1191,9 +1190,14 @@ body {
         .search-link {
             background-color: var(--success-low);
             padding: 0.6em 1.2em;
-            span[aria-label="Search"]::before {
-                color: #011f3d;
-                content: 'Search ';
+            span[aria-label="Search"] {
+                svg {
+                    display: inline; // Binjan; 2024/03/14; to show search SVG which is hidden on Home page search  
+                }
+                &::before {
+                    color: #011f3d;
+                    content: 'Search ';
+                }
             }
             .search-item-slug .keyword, .search-item-slug span:first-child, .search-item-prefix {
                 color: #011f3d;
