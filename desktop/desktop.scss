@@ -227,6 +227,19 @@ ul.dd-products-freeTrials {
     color: var(--primary-high);
 }
 
+ul.dd-sections-subscribe {
+    width: 150% !important;
+	
+    a.dd-sections-title::before {
+	content: "↗ ";
+    }
+	
+    hr {
+	width: 260%;
+	border-top: 1px solid var(--header_primary) !important;
+	margin: 0.2em 0em 1.7em 0em !important;
+    }
+}
 
 .sections-techcomm:hover ~ .dd-sections, .sections-caret:hover ~ .dd-sections, .dd-sections:hover {
     display: grid !important;
