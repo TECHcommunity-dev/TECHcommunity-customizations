@@ -30,6 +30,7 @@ const videos = [];
 const events = [];
 const techieBlogs = [];
 const members = [];
+const subscribe = [];
 
 
 products.push(
@@ -527,6 +528,22 @@ members.push(
         )
     )
 )
+subscribe.push (
+    	h(
+		`hr`
+	),
+	h(
+         `li.dd-sections-list-item`, 
+        h(
+            'a.dd-sections-title',
+            {
+                href:'https://info.softwareag.com/TechCommunity-Subscription-Page.html'
+                
+            }, 
+            "Subscribe to our Tech newsletter"  
+        )
+    )
+)
 
  dropdownMenuSections.push(
     h(
@@ -552,6 +569,9 @@ members.push(
     ),
     h(
           'ul.dd-sections-news', techieBlogs
+    ),
+    h(
+        'ul.dd-sections-subscribe', subscribe
     )
 )
 
