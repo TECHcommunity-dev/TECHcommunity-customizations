@@ -1191,9 +1191,14 @@ body {
         .search-link {
             background-color: var(--success-low);
             padding: 0.6em 1.2em;
-            span[aria-label="Search"]::before {
-                color: #011f3d;
-                content: 'Search ';
+            span[aria-label="Search"] {
+                svg {
+                    display: inline; // Binjan; 2024/03/14; to show search SVG which is hidden on Home page search  
+                }
+                &::before {
+                    color: #011f3d;
+                    content: 'Search ';
+                }
             }
             .search-item-slug .keyword, .search-item-slug span:first-child, .search-item-prefix {
                 color: #011f3d;
