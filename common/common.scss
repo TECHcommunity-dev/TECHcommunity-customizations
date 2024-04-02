@@ -15,9 +15,26 @@
 }
 
 //remove author info if it is a regular user
-body.category-news:not(.staff) #post_1 .topic-meta-data .trigger-user-card,
-body.category-news:not(.staff) #post_1 .topic-avatar {
-    display:none;
+body.category-news:not(.staff) #post_1 {
+    .topic-meta-data .trigger-user-card,
+    .topic-avatar {
+        display: none;
+    }
+}
+
+/* Binjan; 2024.04.01; add css for new category "category-news-release-updates" */
+body.category-news-release-updates #post_1 {
+    .topic-meta-data,
+    .topic-avatar {
+        display: none;
+    }
+    .topic-body {
+        padding: 0 !important;
+
+        .cooked {
+            padding-left: 0 !important;
+        }
+    }
 }
 
 //hide suggested topic under News category topics [Modified by: Saurabh; Date: 17-08-2022]
@@ -2552,4 +2569,14 @@ div[data-wrap="sag-content-wrapper"] {
         padding: .5rem 0 .5rem 2rem;
         grid-column: col-start 9/ span 4;
     }
+}
+/* Binjan; 2024.04.01; add css for topic list */
+.navigation-topics .discourse-root,
+.navigation-category .discourse-root,
+.tags-page .discourse-root {
+    background: var(--primary-50);
+}
+
+tr.topic-list-item {
+    background: var(--secondary);
 }
