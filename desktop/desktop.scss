@@ -253,7 +253,7 @@ ul.dd-sections-subscribe {
     }
 }
 /* Binjan; 2023.08.31; hide search on detail page */
-.title--minimized + .extra-info-wrapper + .before-header-panel-outlet + .panel .search-dropdown {
+.extra-info-wrapper + .before-header-panel-outlet + .panel .search-dropdown {
     display: none;
 }
 
