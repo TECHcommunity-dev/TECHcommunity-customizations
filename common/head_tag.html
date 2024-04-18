@@ -590,7 +590,7 @@ api.decorateWidget("home-logo:after", helper => {
     api.onPageChange((url, title) => {
         var tryFreeButton = document.querySelector('.custom-header-links .try-free-custom-header-links a');
         var tryFreeButtonLink = "https://techcommunity.softwareag.com/en_en/downloads.html"
-        var tryFreeButtonCumulocityLink = "https://signup.softwareag.cloud/#/basic?product=cumulocity&utm_referrer=TechCommunity"
+        var tryFreeButtonCumulocityLink = "https://cumulocity.com/pages/free-trial/"
         if (url.toLowerCase().indexOf("/tag/cumulocity-iot") > -1){
             if(tryFreeButton){
                tryFreeButton.href = tryFreeButtonCumulocityLink;
