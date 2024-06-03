@@ -257,6 +257,16 @@ ul.dd-sections-subscribe {
     display: none;
 }
 
+
+.btn-icon.ai-bot-button {
+  position: absolute;
+  right: 341px;
+}
+
+.extra-info-wrapper + .before-header-panel-outlet + .panel .btn-icon.ai-bot-button {
+    display: none;
+}
+
 /*End sections dropdown menu in header*/
 
 #banner-content {
