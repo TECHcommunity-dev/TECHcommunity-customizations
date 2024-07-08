@@ -609,3 +609,101 @@ api.decorateWidget("home-logo:after", helper => {
 <script type="text/x-handlebars" data-template-name="/connectors/user-activity-bottom/shared-drafts-link">
     <a href="/c/drafts/29" class="custom-shared-draft-link">{{d-icon "users"}} Shared Drafts</a>
 </script>
+
+<!-- Add Products/Sections dropdown menus in header -->
+<script type='text/x-handlebars' data-template-name='/connectors/home-logo__after/products-sections-menu'>
+   <div class="products">
+	   <div class="btn-products">Products</div>
+	   <span class="products-caret"></span>
+   </div>
+   <div class="dd-products">
+   <ul class="dd-products-integration">
+     <li class="dd-products-list-item"><a href="/tag/webmethods" class="dd-products-title">Integration &amp; APIs</a></li>
+     <li class="dd-products-list-item"><a href="/tag/integration-server-and-esb" class="dd-products-item">webMethods Integration</a></li>
+     <li class="dd-products-list-item"><a href="/tag/webmethods-io-integration" class="dd-products-item">webMethods.io Integration</a></li>
+     <li class="dd-products-list-item"><a href="/tag/api-management" class="dd-products-item">webMethods API Management</a></li>
+     <li class="dd-products-list-item"><a href="/tag/b2b-integration" class="dd-products-item">webMethods B2B</a></li>
+     <li class="dd-products-list-item"><a href="/tag/managed-file-transfer" class="dd-products-item">webMethods Managed File Transfer</a></li>
+     <li class="dd-products-list-item"><a href="/tag/webMethods-BPMS" class="dd-products-item">webMethods BPMS</a></li>
+     <li class="dd-products-list-item"><a href="/tag/Mainframe-Integration" class="dd-products-item">Mainframe &amp; Data Integration</a></li>
+   </ul>
+   <ul class="dd-products-iot">
+     <li class="dd-products-list-item"><a href="/tag/IoT" class="dd-products-title">IoT &amp; Analytics</a></li>
+     <li class="dd-products-list-item"><a href="/tag/Cumulocity-IoT" class="dd-products-item">Cumulocity IoT</a></li>
+     <li class="dd-products-list-item"><a href="/tag/TrendMiner" class="dd-products-item">TrendMiner</a></li>
+     <li class="dd-products-list-item"><a href="/tag/Streaming-Analytics-Apama" class="dd-products-item">Streaming Analytics Apama</a></li>
+   </ul>
+   <ul class="dd-products-adanat">
+     <li class="dd-products-list-item"><a href="/tag/Adabas-Natural" class="dd-products-title">Adabas &amp; Natural</a></li>
+     <li class="dd-products-list-item"><a href="/tag/Adabas" class="dd-products-item">Adabas</a></li>
+     <li class="dd-products-list-item"><a href="/tag/Natural" class="dd-products-item">Natural</a></li>
+     <li class="dd-products-list-item"><a href="/tag/NaturalONE" class="dd-products-item">NaturalONE</a></li>
+   </ul>
+   <ul class="dd-products-transformation">
+     <li class="dd-products-list-item"><a href="/t/process-it-transformation" class="dd-products-title">Transformation</a></li>
+     <li class="dd-products-list-item"><a href="https://tech.forums.softwareag.com/ariscommunity" class="dd-products-item">ARIS</a></li>
+     <li class="dd-products-list-item"><a href="/t/alfabet-or-alfabet-fastlane-customer" class="dd-products-item">Alfabet</a></li>
+     <li class="dd-products-list-item"><a href="/t/alfabet-fastlane-user/" class="dd-products-item">Alfabet FastLane</a></li>
+   </ul>
+   <ul class="dd-products-freeTrials">
+     <hr>
+     <li class="dd-products-list-item"><a href="https://www.softwareag.com/en_corporate/platform/free-trials.html?deployment=cloud" class="dd-products-title">Explore Software AG Free Trials</a></li>
+     <li class="dd-products-list-item"><a href="https://www.softwareag.com/en_corporate/platform/free-trials.html?deployment=self-hosted" class="dd-products-title">Download Software AG assets</a></li>
+   </ul>
+   </div>
+   <div class="sections-techcomm"><div class="btn-sections">Sections</div><span class="sections-caret"></span></div>
+   <div class="dd-sections">
+   <ul class="dd-sections-knowledgeBase">
+     <li class="dd-sections-list-item"><a href="/c/knowledge-base/6" class="dd-sections-title">Knowledge base</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Browse through our vast Knowledge base of tutorials, articles, code samples, tips and tricks.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-forum">
+     <li class="dd-sections-list-item"><a href="/c/forum/1" class="dd-sections-title">Forum</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Get your questions answered, brainstorm solutions and connect with Community experts.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-news">
+     <li class="dd-sections-list-item"><a href="/c/news/7" class="dd-sections-title">News</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Stay up-to-date with the latest Software AG news, alerts and release announcements.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-news">
+     <li class="dd-sections-list-item"><a href="/u?order=likes_received&amp;period=quarterly" class="dd-sections-title">Members</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Connect with peers, follow our prominent experts and build your Community network.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-videos">
+     <li class="dd-sections-list-item"><a href="/c/knowledge-base/video/8" class="dd-sections-title">Videos</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Find the latest video tutorials, series, product demos and more all in one place.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-feedback">
+     <li class="dd-sections-list-item"><a href="/c/feedback/2" class="dd-sections-title">Feedback &amp; ideas</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Let us know what you think of the Tech Community and how we can improve it for you.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-events">
+     <li class="dd-sections-list-item"><a href="/upcoming-events" class="dd-sections-title">Events</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Upcoming User Group meetings, hackatons and other events.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-news">
+     <li class="dd-sections-list-item"><a href="/c/knowledge-base/blog/28" class="dd-sections-title">Techie blogs</a></li>
+     <li class="dd-sections-list-item">
+        <div class="dd-sections-item">Find out about hot trends and topics, new learning resources and opportunities.</div>
+     </li>
+   </ul>
+   <ul class="dd-sections-subscribe">
+     <hr>
+     <li class="dd-sections-list-item"><a href="https://info.softwareag.com/TechCommunity-Subscription-Page.html" class="dd-sections-title">Subscribe to our Tech newsletter</a></li>
+   </ul>
+   </div>
+</script>
