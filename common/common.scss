@@ -375,6 +375,16 @@ button.widget-button.btn.btn-primary.btn-small.sign-up-button.btn-text,
     display: none !important;
 }
 
+/*Hide sign up button*/
+button.btn.btn-primary.btn-small.sign-up-button.btn-text {
+    display: none !important;
+}
+
+.d-header li.vdo {
+    float: right;
+    order: 0 !important;
+}
+
 .d-header .login-button .fa {
     display: none;
 }
