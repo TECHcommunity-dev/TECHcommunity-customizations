@@ -68,10 +68,10 @@
 	}
 	    
     	a:hover {
-    		color: #9a50f8;
+    		color: #9a50f8 !important;
 	}
 	    
-	a {
+	a:visited {
 		color: var(--header_primary);
 	}
     }
@@ -227,7 +227,7 @@ ul.dd-products-freeTrials {
 	    }
 
 	    a:hover {
-    		color: #9a50f8;
+    		color: #9a50f8 !important;
 	    }
 
 	    a:visited {
