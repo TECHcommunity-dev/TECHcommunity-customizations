@@ -2599,3 +2599,9 @@ div[data-wrap="sag-content-wrapper"] {
 tr.topic-list-item {
     background: var(--secondary);
 }
+
+/*Change IoT Awards button in the banner https://tech.forums.softwareag.com/tag/Cumulocity-IoT*/
+div.tag-title-header.tag-banner-Cumulocity .tag-title-contents .t-d-b a:nth-child(3) {
+    color: var(--secondary) !important;
+    background-color: transparent !important;
+}
