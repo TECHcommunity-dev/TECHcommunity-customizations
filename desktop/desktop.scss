@@ -394,7 +394,7 @@ div#iot, div#adanat {
     min-height: 105px !important;
 	
     .tag-title-contents {
-    	padding-bottom: 0px !important;
+	flex-wrap: nowrap !important;
     }
 }
 
@@ -1124,5 +1124,16 @@ div[data-wrap=free-trial-guide] div[data-wrap=free-trial-getting-started] div[da
 
     p {
         width: 90% !important;
+    }
+}
+
+//fix Terracotta published thank you page title and body
+body.published-page.topic-235312,
+body.published-page.topic-235309,
+body.published-page.topic-235310,
+body.published-page.topic-235313 {
+    .published-page-header-wrapper,
+    .published-page-content-wrapper {
+        margin: 0;
     }
 }
