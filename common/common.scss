@@ -209,8 +209,14 @@ body.category-news .topic-area .returning-user {
 
 //hide replies, posters and likes columns in news category topic-list
 body.category-news .topic-list {
-    .posters, .posts, .likes {
+    .posts, .likes {
         display: none !important;
+    }
+
+    .posters {
+	    a {
+		    display: none !important;
+	    }
     }
 }
 
