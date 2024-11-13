@@ -2611,3 +2611,25 @@ div.tag-title-header.tag-banner-Cumulocity .tag-title-contents .t-d-b a:nth-chil
     color: var(--secondary) !important;
     background-color: transparent !important;
 }
+
+
+/*hide Reply button on private messages*/
+.archetype-private_message .topic-post:last-child .widget-button.btn-flat.reply.create.fade-out.btn-icon-text {
+  display: block !important;
+}
+.archetype-private_message .topic-post .widget-button.btn-flat.reply.create.fade-out.btn-icon-text {
+  display: none !important;
+}
+
+//Search drop-down enhancements (done for both search modules "header search and custom search bar")
+.search-result-category::before {
+    content: "Sections & Tags matching the search term:";
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+.search-result-user::before {
+    content: "Members matching the search term:";
+    margin-bottom: 0.3em;
+    display: block;
+}
