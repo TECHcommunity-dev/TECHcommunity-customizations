@@ -1137,3 +1137,9 @@ body.published-page.topic-235313 {
         margin: 0;
     }
 }
+
+
+.tag- .container.posts, .category-news .container.posts, .category-knowledge-base .container.posts, 
+.category-drafts .container.posts, .category-blog .container.posts, .category-alfabet-user-group-meetings .container.posts {
+    justify-items: normal !important;
+}
