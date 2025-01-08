@@ -17,7 +17,7 @@ const products = [];
 const integration = [];
 /*const iot = [];*/
 const adanat = [];
-const transformation = [];
+/*const transformation = [];*/
 const freeTrials = [];
 
 const sections = [];
@@ -227,7 +227,7 @@ adanat.push(
     )
 )
 
-transformation.push(
+/*transformation.push(
     h(
          `li.dd-products-list-item`, 
         h(
@@ -272,6 +272,7 @@ transformation.push(
         )
     )
 )
+*/
 
 freeTrials.push(
 	h(
@@ -305,15 +306,17 @@ freeTrials.push(
      h(
           'ul.dd-products-integration', integration
     ),
+    /*
     h(
-          'ul.dd-products-iot', iot
+          'ul.dd-products-iot', it
     ),
+    */
     h(
           'ul.dd-products-adanat', adanat
     ),
-    h(
+    /*h(
           'ul.dd-products-transformation', transformation
-    ),
+    ),*/
     h(
           'ul.dd-products-freeTrials', freeTrials
     )
@@ -627,13 +630,13 @@ api.decorateWidget("home-logo:after", helper => {
      <li class="dd-products-list-item"><a href="/tag/TrendMiner" class="dd-products-item">TrendMiner</a></li>
      <li class="dd-products-list-item"><a href="/tag/Streaming-Analytics-Apama" class="dd-products-item">Streaming Analytics Apama</a></li>
    </ul>
-   -->
    <ul class="dd-products-transformation">
      <li class="dd-products-list-item"><a href="/t/process-it-transformation" class="dd-products-title">Transformation</a></li>
      <li class="dd-products-list-item"><a href="https://tech.forums.softwareag.com/ariscommunity" class="dd-products-item">ARIS</a></li>
      <li class="dd-products-list-item"><a href="/t/alfabet-or-alfabet-fastlane-customer" class="dd-products-item">Alfabet</a></li>
      <li class="dd-products-list-item"><a href="/t/alfabet-fastlane-user/" class="dd-products-item">Alfabet FastLane</a></li>
    </ul>
+   -->
    <ul class="dd-products-freeTrials">
      <hr>
      <li class="dd-products-list-item"><a href="https://www.softwareag.com/en_corporate/platform/free-trials.html?deployment=cloud" class="dd-products-title">Explore Software AG Free Trials</a></li>
