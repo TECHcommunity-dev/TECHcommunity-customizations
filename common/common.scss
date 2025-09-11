@@ -3,6 +3,12 @@
 
 /*Customize topics in a news category*/
 
+
+/* Hide the top navigation bar on signup pages */
+.signup-page .d-header-nav {
+  display: none !important;
+}
+
 //hide avatar flairf.custom-header-links 
 .category-news .avatar-flair,
 .category-news .tl-avatar-flair {
