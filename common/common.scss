@@ -546,7 +546,7 @@ body:not(.category-knowledge-base).custom-sidebar .contents>.topic-list tbody {
 .topic-list {
 	a.badge-wrapper.box, a.discourse-tag.box {
     		color: var(--primary-medium) !important;
-    		background-color: unset !important;
+    		background-color:  var(--primary) !important;
 	}
 	
 	.topic-list-item {
@@ -861,7 +861,7 @@ body {
     
     /* Binjan; 2023.11.28; add tag-box font size */
     .discourse-tag.box {
-        font-size: 1.8em;
+        font-size: 0.8em;
     }
     /* Binjan; 2023.11.28; add css for show-more */
     .search-menu__show-more {
@@ -1045,6 +1045,8 @@ body.category {
     margin-bottom: 3px;
     margin-top: 3px;
 }
+
+
 
 .topic-header-extra .discourse-tag {
     margin-bottom: 2px;
