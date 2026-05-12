@@ -1181,7 +1181,96 @@ html.home-search-banner {
 }
 /*** Tag selected view Ends ***/
 
+/*** Composer CSS ***/
+//make composer more compact
+#reply-control .reply-to {
+    margin: 0px 0 4px 0;
+}
+.composer-fields .title-and-category {
+    margin-bottom: 0 !important;
+}
 
+.composer-fields #reply-title, .composer-fields .select-kit .select-kit-header {
+    padding: 0px 10px;
+    min-height: 25px;
+}
+
+#reply-control .wmd-controls {
+    max-height:35vh !important;
+}
+.reply-area .select-tags-section {
+    margin: 5px 0px 0px 0px !important;
+}
+
+#reply-control .submit-panel {
+    display: flex;
+    flex-shrink: 0;
+    margin: 2px 0 3px 0;
+}
+
+.d-editor-preview-wrapper  {
+    background: #ecf3eb;
+    padding: 0 2px 0 8px;
+}
+
+.d-editor-container .d-editor-button-bar button.upload:after {
+    content: url($image-upload);
+    filter: invert(63%) sepia(4%) saturate(0%) hue-rotate(131deg) brightness(91%) contrast(84%);
+    transition: filter 0.4s;
+    margin: 4px 0px 0px 7px;
+}
+
+.d-editor-container .d-editor-button-bar button.upload:hover:after,
+.d-editor-container .d-editor-button-bar button.upload:hover:after {
+    filter: invert(100%) sepia(3%) saturate(515%) hue-rotate(241deg) brightness(113%) contrast(83%);
+}
+
+.d-editor-container .d-editor-button-bar button.upload {
+    white-space: nowrap;
+}
+
+//Set the maximum height of the composer
+.composer-popup {
+    max-height: 50vh;
+}
+
+// Some color changes for the composer [Added by: Saurabh; Date: 11-04-2022]
+#reply-control {
+    .reply-to {
+        .reply-details .d-icon.d-icon-plus {
+            background-color: var(--tertiary-low);
+        }
+        .composer-controls {
+            .toggle-minimize {
+                background-color: var(--tertiary-low);
+            }
+        } 
+        .toggle-fullscreen { 
+            background-color: #9a50f8;
+            padding: 6px 10px;
+            .d-icon { 
+                color: #ffffff;
+            }
+        }
+    }  
+    .d-editor-button-bar { 
+        background-color: #f2f2ea;
+    }
+    &:not(.fullscreen) .reply-to {
+        .toggle-fullscreen::before {
+            content: "Enter Full screen mode for easier writing ";
+            background-color: #9a50f8;
+            color: #ffffff;
+            padding: 5px 10px;
+        }
+    }
+    .submit-panel {
+        .btn-mini-toggle{ 
+            background-color: var(--tertiary-low);
+        }   
+    }
+} 
+/*** Composer CSS Ends ***/
 
 /*** Container Navigation Bar CSS ***/
 // Make the navigation links background transparent and change the color scheme.
@@ -1890,6 +1979,105 @@ html.mobile-view body #main {
     }
 }
 
+/* Binjan; 2023/06/21; Per trust level visibility of functionalities */
+/* 1. if the User belongs to TL0 or TL1 then hide the following:
+a. buttons/links in the topic composer
+b. Votes & Shared Draft tab from the User Activity
+
+2. if the User belongs to TL0, TL1 and TL2 then hide the following:
+a. Users tab from the User Preferences
+b. Some of the configuration under the Emails tab
+c. Some of the configurations under the Preferences --> Interface tab
+d. Pause notification menu from the User drop-down menu. */
+
+/* Binjan; 2023/11/29; Per trust level visibility of functionalities 
+1. if the User belongs to TL0, TL1, TL2 and TL3 then hide the following:
+a. Topic label inside User Preferences => Subscriptions & alerts
+
+2. if the User belongs to TL0, TL1 and TL2 then hide the following 
+   inside User Preferences=>Subscriptions & alerts:
+a. "Consider topics new when" label and control
+b. "Automatically track topics I enter" label and control 
+c. "When I post in a topic, set that topic to" label and control */
+body {
+	&:not(.group-trust_level_2, .group-Gurus, .group-trust_level_4) {
+	    #reply-control .d-editor-button-bar {
+	        .underline_button, .strikethrough_button, .superscript_button, .subscript_button,
+	        .bullet, .list, .local-dates, .align_center_button, .align_right_button, .align_justify_button {
+	            display: none;
+	        }
+	    }
+	    .user-navigation {
+	        .shared-drafts-link, .user-voted-topics {
+                    display: none;
+    	    }
+	    }
+	}
+
+	&:not(.group-Gurus, .group-trust_level_4) {
+	    .user-navigation .user-nav__preferences-users {
+            display: none;
+	    }
+	    .pref-email-settings {
+    	    div.controls:nth-of-type(3),
+    	    div.controls:nth-of-type(4),
+    	    span {
+                display: none;
+    	    }
+	    }
+	    .pref-mailing-list-mode {
+            display: none;
+	    }
+	    
+	    .user-preferences {
+	        .pref-external-links, .pref-enable-quoting, .pref-defer-unread, 
+	        .pref-page-title, .pref-bookmark-after-notification {
+                display: none;
+	        }            
+	    }
+	    
+	    .user-menu #quick-access-profile .do-not-disturb {
+            display: none;
+	    }
+	}
+
+    // Binjan; 2023.11.29; hide for all
+    .user-preferences {
+        .user-preferences__tracking-topics-wrapper {
+            .control-label:first-child {
+                display: none;
+            }
+        }
+    }
+
+    // Binjan; 2023.11.29; hide for all except TL3
+    &:not(.group-Gurus) {
+        .user-preferences_tracking-topics-controls {
+            display: none;
+        }
+    }
+}
+
+/* Binjan; 2023.07.05; Add watermark text on image thumbnail for draft video */
+.topic-list-item.category-drafts .topic-list-thumbnail::before {
+    content: 'DRAFT NOT SHOWN TO EVERYONE';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: red;
+    background-color: yellow;
+    font-weight: 700;
+    z-index: 3;
+}
+/* Binjan; 2023.10.18; fix width issue of "You might be interested" topic list on detail page */
+.more-topics__container {
+    max-width: 100%;
+}
+
+.topic-list .age,
+.topic-list .activity {
+    width: 75px;
+}
 /* Binjan; 2023.11.23; remove open-quote symbol from blockquote element */
 blockquote:before {
     content: "" !important;
